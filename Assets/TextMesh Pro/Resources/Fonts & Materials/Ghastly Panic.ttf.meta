@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 5297d462cc8e4d542aefd70e1d3f7abc
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Ghastly Panic
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: ee4ab145dbf60a04896634c3e3452f8d, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
