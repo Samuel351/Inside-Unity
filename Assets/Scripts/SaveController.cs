@@ -3,7 +3,7 @@ using UnityEngine;
 public class SaveController : MonoBehaviour
 {
     Historia id;
-    MainMenu pause;
+    SlotsMenu menu;
 
     public const string historia_key = "historia";
     public const string direita_key = "direita";
@@ -12,7 +12,7 @@ public class SaveController : MonoBehaviour
     void Awake()
     {
         id = GetComponent<Historia>();
-        pause = GetComponent<MainMenu>();
+        menu = GetComponent<SlotsMenu>();
     }
     public void Save(int historia, int direita, int esquerda)
     {
@@ -24,12 +24,9 @@ public class SaveController : MonoBehaviour
     }
     public void Load()
     {
-        int historia = PlayerPrefs.GetInt(historia_key);
-        int direita = PlayerPrefs.GetInt(direita_key);
-        int esquerda = PlayerPrefs.GetInt(esquerda_key);
-        id.estoria = historia;
-        id.direita = direita;
-        id.esquerda = esquerda;
+        id.estoria = PlayerPrefs.GetInt(historia_key);
+        id.direita = PlayerPrefs.GetInt(direita_key);
+        id.esquerda = PlayerPrefs.GetInt(esquerda_key);
         Debug.Log("Jogo carregado!");
     }
     public void Delete()

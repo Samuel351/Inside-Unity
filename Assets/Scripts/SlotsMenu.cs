@@ -3,20 +3,17 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class MainMenu : MonoBehaviour
+public class SlotsMenu : MonoBehaviour
 {
-    private SaveController saveGame;
+    [HideInInspector]
+    public SaveController saveGame;
+
     [SerializeField]
     private Text _title;
 
     [SerializeField]
     private Text _title2;
 
-    public void PlayGame()
-    {
-        SceneManager.LoadScene(2);
-    }
-    
     void Start()
     {
         saveGame = GetComponent<SaveController>();
@@ -33,10 +30,12 @@ public class MainMenu : MonoBehaviour
     public void save()
     {
         _title.text = "Save 1: dia " + DateTime.Now;
+        SceneManager.LoadScene(2);
     }
     public void save2()
     {
         _title2.text = "Save 2: dia " + DateTime.Now;
+        SceneManager.LoadScene(2);
     }
     public void delete()
     {
