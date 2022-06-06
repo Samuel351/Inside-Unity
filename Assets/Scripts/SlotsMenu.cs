@@ -35,7 +35,7 @@ public class SlotsMenu : MonoBehaviour
     public void save2()
     {
         _title2.text = "Save 2: dia " + DateTime.Now;
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
     }
     public void delete()
     {

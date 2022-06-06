@@ -16,7 +16,7 @@ public class OptionsMenu : MonoBehaviour
         {
             EventSystem.current.SetSelectedGameObject(Geral.gameObject);
             mixer.SetFloat(MIXER_MUSICA, Mathf.Log10(Geral.value) * 20);
-            if(Geral.value == Geral.maxValue)
+            if(Geral.maxValue == Geral.value)
             {
                 Geral.value = Geral.minValue;
             }

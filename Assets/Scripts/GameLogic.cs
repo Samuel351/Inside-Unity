@@ -2,14 +2,15 @@ using UnityEngine;
 using System;
 using System.Collections;
 using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 
-public class Historia : MonoBehaviour
+public class GameLogic : MonoBehaviour
 {
     public AudioMixerGroup mixer;
     static SaveController saveGame;
-    public Sound[] vetor1;
+    public Sound[] historia;
     private Sound som;
-    public Sound[] vetor2;
+    public Sound[] escolha;
     private Sound som2;
 
     [HideInInspector]
@@ -22,7 +23,7 @@ public class Historia : MonoBehaviour
     public int esquerda = 1;
     private bool verificacao = false, verificacao2 = false;
 
-    public static Historia instance;
+    public static GameLogic instance;
 
     void Awake()
     {
@@ -35,14 +36,14 @@ public class Historia : MonoBehaviour
         }
 
         DontDestroyOnLoad(gameObject);
-        foreach (Sound som in vetor1)
+        foreach (Sound som in historia)
         {
             som.source = gameObject.AddComponent<AudioSource>();
             som.source.clip = som.clip;
             som.source.volume = Sound.volume;
             som.source.outputAudioMixerGroup = mixer;
         }
-        foreach (Sound som2 in vetor2)
+        foreach (Sound som2 in escolha)
         {
             som2.source = gameObject.AddComponent<AudioSource>();
             som2.source.clip = som2.clip;
@@ -256,7 +257,7 @@ public class Historia : MonoBehaviour
     // Funções que buscam os aúdios no vetores por ID
     public void Narracao(int id)
     {
-        som = Array.Find(vetor1, sound => sound.ID == id);
+        som = Array.Find(historia, sound => sound.ID == id);
         if (som == null)
         {
             Debug.LogWarning("O som: " + id + " não foi encontrado!");
@@ -271,7 +272,7 @@ public class Historia : MonoBehaviour
 
     public void Escolha(int id)
     {
-        som2 = Array.Find(vetor2, som => som.ID == id);
+        som2 = Array.Find(escolha, som => som.ID == id);
         if (som2 == null)
         {
             Debug.LogWarning("O som: " + id + " não foi encontrado!");

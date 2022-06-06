@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class SaveController : MonoBehaviour
 {
-    Historia id;
+    GameLogic id;
     SlotsMenu menu;
 
     public const string historia_key = "historia";
@@ -11,7 +11,7 @@ public class SaveController : MonoBehaviour
 
     void Awake()
     {
-        id = GetComponent<Historia>();
+        id = GetComponent<GameLogic>();
         menu = GetComponent<SlotsMenu>();
     }
     public void Save(int historia, int direita, int esquerda)
