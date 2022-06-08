@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8583007797984513361
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8583007797984513362}
+  - component: {fileID: 8583007797984513363}
+  - component: {fileID: 8583007797984513360}
+  m_Layer: 0
+  m_Name: LogicaJogo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8583007797984513362
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8583007797984513361}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 613.9172, y: 394.02216, z: -3375.0198}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8583007797984513363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8583007797984513361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 442ea2aecbaa14f4795f391e6c09512d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mixer: {fileID: 24300002, guid: efc581289d111cd4a88d02781b7932c1, type: 2}
+  historia:
+  - id: 1
+    name: historia
+    mixer: {fileID: 0}
+    clip: {fileID: 8300000, guid: 6cfc525cc03737349b7155562c09f7f5, type: 3}
+    source: {fileID: 0}
+  - id: 2
+    name: historia2
+    mixer: {fileID: 0}
+    clip: {fileID: 8300000, guid: 6cfc525cc03737349b7155562c09f7f5, type: 3}
+    source: {fileID: 0}
+  escolha:
+  - id: 1
+    name: esquerda
+    mixer: {fileID: 0}
+    clip: {fileID: 8300000, guid: d80eb6409d1a9a648a5625db0e8f280e, type: 3}
+    source: {fileID: 0}
+  - id: 2
+    name: direita2
+    mixer: {fileID: 0}
+    clip: {fileID: 8300000, guid: f1e0733b76b7a764d8708b3c44260d99, type: 3}
+    source: {fileID: 0}
+  - id: 3
+    name: esquerda2
+    mixer: {fileID: 0}
+    clip: {fileID: 8300000, guid: d80eb6409d1a9a648a5625db0e8f280e, type: 3}
+    source: {fileID: 0}
+  - id: 4
+    name: direita2
+    mixer: {fileID: 0}
+    clip: {fileID: 8300000, guid: f1e0733b76b7a764d8708b3c44260d99, type: 3}
+    source: {fileID: 0}
+  - id: 0
+    name: instancia
+    mixer: {fileID: 0}
+    clip: {fileID: 8300000, guid: 90c1d838ea8fc3740935a1c6c49b1a06, type: 3}
+    source: {fileID: 0}
+  som:
+    id: 0
+    name: 
+    mixer: {fileID: 0}
+    clip: {fileID: 0}
+    source: {fileID: 0}
+  som2:
+    id: 0
+    name: 
+    mixer: {fileID: 0}
+    clip: {fileID: 0}
+    source: {fileID: 0}
+--- !u!114 &8583007797984513360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8583007797984513361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff27b08da44f859498f09c34433395e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -6,27 +6,20 @@ using UnityEngine.SceneManagement;
 
 public class GameLogic : MonoBehaviour
 {
+    GameLogic instancia;
     public AudioMixerGroup mixer;
-    static SaveController saveGame;
     public Sound[] historia;
-    private Sound som;
     public Sound[] escolha;
-    private Sound som2;
-
+    private int input = 1;
     [HideInInspector]
-    public int estoria = 0;
+    public Sound som;
 
-    [HideInInspector]
-    public int direita = 0;
-
-    [HideInInspector]
-    public int esquerda = 1;
-    private bool verificacao = false, verificacao2 = false;
-
+    private int estoria = 0, direita = 0, esquerda = 0;
     public static GameLogic instance;
 
     void Awake()
     {
+        instancia = GameObject.Find("AudioController").GetComponent<GameLogic>();
         if (instance == null)
             instance = this;
         else
@@ -35,7 +28,6 @@ public class GameLogic : MonoBehaviour
             return;
         }
 
-        DontDestroyOnLoad(gameObject);
         foreach (Sound som in historia)
         {
             som.source = gameObject.AddComponent<AudioSource>();
@@ -43,6 +35,7 @@ public class GameLogic : MonoBehaviour
             som.source.volume = Sound.volume;
             som.source.outputAudioMixerGroup = mixer;
         }
+
         foreach (Sound som2 in escolha)
         {
             som2.source = gameObject.AddComponent<AudioSource>();
@@ -50,239 +43,94 @@ public class GameLogic : MonoBehaviour
             som2.source.volume = Sound.volume;
             som2.source.outputAudioMixerGroup = mixer;
         }
-        saveGame = GetComponent<SaveController>();
-        saveGame.Load();
-
-        if (estoria == 0)
-        {
-            Narracao(estoria);
-            Escolha(0);
-            direita = 2;
-            estoria++;
-            verificacao2 = false;
-        }
-        else
-        {
-            Narracao(estoria);
-            Escolha(0);
-            verificacao2 = false;
-        }
+        Historia(1, "historia", historia);
+        Historia(0, "instancia", escolha);
         Update();
     }
-
     void Update()
     {
         StartCoroutine(Escolhas());
+        
     }
 
     IEnumerator Escolhas()
     {
-        saveGame = GetComponent<SaveController>();
-        if (!som.source.isPlaying && !som2.source.isPlaying)
+        if (!som.source.isPlaying)
         {
             if (Input.GetKey(KeyCode.LeftArrow))
             {
-                Esquerda();
-                yield return new WaitUntil(() => som2.source.isPlaying == false);
-                verificacao = false;
-                Story();
+                eEsquerda();
+                yield return new WaitUntil(() => som.source.isPlaying == false);
+                pHistoria();
             }
             else if (Input.GetKey(KeyCode.RightArrow))
             {
-                Direita();
-                yield return new WaitUntil(() => som2.source.isPlaying == false);
-                verificacao = false;
-                Story();
+                eDireita();
+                yield return new WaitUntil(() => som.source.isPlaying == false);
+                pHistoria();
             }
         }
         if (Input.GetKey(KeyCode.Escape))
         {
-            Destroy(gameObject);
+            yield return new WaitUntil(() => Input.GetKey(KeyCode.Space));
+            som.source.Pause();
+            
         }
         if (Input.GetKey(KeyCode.Space))
         {
-            saveGame.Delete();
+            som.source.UnPause();
         }
     }
 
-    // Aúdios da história
-    public void Story()
+    public void pHistoria()
     {
-        if (estoria == 1)
+        if (estoria == 0)
         {
-            Narracao(estoria);
-            estoria++;
-            verificacao2 = false;
-            verificacao = true;
+            Historia(1, "historia", historia);
         }
-        else if (estoria == 2)
+        else if (estoria == 1)
         {
-            Narracao(estoria);
-            verificacao2 = false;
-            verificacao = true;
+            Historia(2, "historia2", historia);
         }
-        else if (estoria == 3)
+        estoria++;
+    }
+    public void eDireita()
+    {
+        if (direita == 0)
         {
-            Narracao(estoria);
-            estoria++;
-            verificacao2 = false;
-            verificacao = true;
+            Historia(2, "direita", escolha);
         }
-        else if (estoria == 4)
+        else if (direita == 1)
         {
-            Narracao(estoria);
-            estoria++;
-            verificacao2 = false;
-            verificacao = true;
+            Historia(4, "direita2", escolha);
         }
-        else if (estoria == 5)
+        direita++;
+        esquerda++;
+    }
+    public void eEsquerda()
+    {
+        if (esquerda == 0)
         {
-            Narracao(estoria);
-            estoria++;
-            verificacao2 = false;
-            verificacao = true;
+            Historia(1, "esquerda", escolha);
         }
-        else if (estoria == 6)
+        else if (esquerda == 1)
         {
-            Narracao(estoria);
-            estoria++;
-            verificacao2 = false;
-            verificacao = true;
+            Historia(3, "esquerda2", escolha);
         }
-        else if (estoria == 7)
-        {
-            Narracao(estoria);
-            estoria++;
-            verificacao2 = false;
-            verificacao = true;
-        }
+        esquerda++;
+        direita++;
     }
 
-    // Escolhas da Direita
-    public void Direita()
+    // Funções que buscam os aúdios no vetores por nome
+    public void Historia(int id, string name, Sound[] vetor)
     {
-        if (!som2.source.isPlaying)
-        {
-            Debug.LogWarning("Direita: ");
-            if (direita == 2)
-            {
-                Escolha(direita);
-                esquerda = 3;
-                direita = 4;
-                Debug.Log("Valor da direita: " + direita);
-                verificacao = false;
-            }
-            else if (direita == 4)
-            {
-                Escolha(direita);
-                esquerda = 5;
-                direita = 6;
-                Debug.Log("Valor da direita: " + direita);
-                verificacao = false;
-            }
-            else if (direita == 6)
-            {
-                Escolha(direita);
-                esquerda = 7;
-                direita = 8;
-                Debug.Log("Valor da direita: " + direita);
-                verificacao = false;
-            }
-            else if (direita == 8)
-            {
-                Escolha(direita);
-                esquerda = 9;
-                direita = 10;
-                Debug.Log("Valor da direita: " + direita);
-                verificacao = false;
-            }
-            else if (direita == 10)
-            {
-                Escolha(direita);
-                Debug.Log("Valor da direita: " + direita);
-                verificacao = false;
-            }
-            saveGame.Save(estoria, direita, esquerda);
-        }
-    }
-
-    // Escolhas da Esquerda
-    public void Esquerda()
-    {
-        if (!som2.source.isPlaying)
-        {
-            Debug.LogWarning("Esquerda: ");
-            if (esquerda == 1)
-            {
-                Escolha(esquerda);
-                esquerda = 3;
-                direita = 4;
-                Debug.Log("Valor da esquerda: " + esquerda);
-                verificacao = false;
-            }
-            else if (esquerda == 3)
-            {
-                Escolha(direita);
-                esquerda = 5;
-                direita = 6;
-                Debug.Log("Valor da esquerda: " + esquerda);
-                verificacao = false;
-            }
-            else if (esquerda == 5)
-            {
-                Escolha(direita);
-                esquerda = 7;
-                direita = 8;
-                Debug.Log("Valor da esquerda: " + esquerda);
-                verificacao = false;
-            }
-            else if (esquerda == 7)
-            {
-                Escolha(direita);
-                esquerda = 9;
-                direita = 10;
-                Debug.Log("Valor da esquerda: " + esquerda);
-                verificacao = false;
-            }
-            else if (esquerda == 9)
-            {
-                Escolha(direita);
-                Debug.Log("Valor da esquerda: " + esquerda);
-                verificacao = false;
-            }
-            saveGame.Save(estoria, direita, esquerda);
-        }
-    }
-
-    // Funções que buscam os aúdios no vetores por ID
-    public void Narracao(int id)
-    {
-        som = Array.Find(historia, sound => sound.ID == id);
+        som = Array.Find(vetor, som => som.name == name && som.id == id);
         if (som == null)
         {
-            Debug.LogWarning("O som: " + id + " não foi encontrado!");
+            Debug.LogWarning("O som: " + name + " não foi encontrado!");
             return;
         }
-        if (!verificacao)
-        {
-            som.source.Play();
-            verificacao = true;
-        }
+        som.source.Play();
     }
-
-    public void Escolha(int id)
-    {
-        som2 = Array.Find(escolha, som => som.ID == id);
-        if (som2 == null)
-        {
-            Debug.LogWarning("O som: " + id + " não foi encontrado!");
-            return;
-        }
-        if (!verificacao2)
-        {
-            som2.source.Play();
-            verificacao2 = true;
-        }
-    }
-    // 
 }
+

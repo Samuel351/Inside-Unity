@@ -4,7 +4,8 @@ using UnityEngine.Audio;
 [System.Serializable]
 public class Sound
 {
-    public int ID;
+    public int id;
+    public string name;
 
     [HideInInspector]
     public AudioMixerGroup mixer;

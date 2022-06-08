@@ -24,9 +24,10 @@ public class SaveController : MonoBehaviour
     }
     public void Load()
     {
-        id.estoria = PlayerPrefs.GetInt(historia_key);
-        id.direita = PlayerPrefs.GetInt(direita_key);
-        id.esquerda = PlayerPrefs.GetInt(esquerda_key);
+        
+        // id.estoria = PlayerPrefs.GetInt(historia_key);
+        // id.direita = PlayerPrefs.GetInt(direita_key);
+        // id.esquerda = PlayerPrefs.GetInt(esquerda_key);
         Debug.Log("Jogo carregado!");
     }
     public void Delete()

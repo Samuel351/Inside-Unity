@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1650829041414359505}
-  - component: {fileID: 1650829041414359504}
   m_Layer: 0
   m_Name: GameAudio
   m_TagString: Untagged
@@ -31,21 +30,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1650829041414359504
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1650829041414359510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 442ea2aecbaa14f4795f391e6c09512d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mixer: {fileID: 24300002, guid: efc581289d111cd4a88d02781b7932c1, type: 2}
-  historia: []
-  escolha: []
-  estoria: 0
-  direita: 0
-  esquerda: 1
