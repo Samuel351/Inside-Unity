@@ -43,14 +43,13 @@ public class GameLogic : MonoBehaviour
             som2.source.volume = Sound.volume;
             som2.source.outputAudioMixerGroup = mixer;
         }
-        Historia(1, "historia", historia);
-        Historia(0, "instancia", escolha);
+        Play(1, "historia", historia);
+        Play(0, "instancia", escolha);
         Update();
     }
     void Update()
     {
         StartCoroutine(Escolhas());
-        
     }
 
     IEnumerator Escolhas()
@@ -72,13 +71,8 @@ public class GameLogic : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.Escape))
         {
-            yield return new WaitUntil(() => Input.GetKey(KeyCode.Space));
+            som.source = GetComponent<AudioSource>();
             som.source.Pause();
-            
-        }
-        if (Input.GetKey(KeyCode.Space))
-        {
-            som.source.UnPause();
         }
     }
 
@@ -86,11 +80,15 @@ public class GameLogic : MonoBehaviour
     {
         if (estoria == 0)
         {
-            Historia(1, "historia", historia);
+            Play(1, "historia", historia);
         }
         else if (estoria == 1)
         {
-            Historia(2, "historia2", historia);
+            Play(2, "historia2", historia);
+        }
+        else if (estoria == 2)
+        {
+            Play(2, "historia2", historia);
         }
         estoria++;
     }
@@ -98,11 +96,11 @@ public class GameLogic : MonoBehaviour
     {
         if (direita == 0)
         {
-            Historia(2, "direita", escolha);
+            Play(2, "direita", escolha);
         }
         else if (direita == 1)
         {
-            Historia(4, "direita2", escolha);
+            Play(4, "direita2", escolha);
         }
         direita++;
         esquerda++;
@@ -111,18 +109,18 @@ public class GameLogic : MonoBehaviour
     {
         if (esquerda == 0)
         {
-            Historia(1, "esquerda", escolha);
+            Play(1, "esquerda", escolha);
         }
         else if (esquerda == 1)
         {
-            Historia(3, "esquerda2", escolha);
+            Play(3, "esquerda2", escolha);
         }
         esquerda++;
         direita++;
     }
 
     // Funções que buscam os aúdios no vetores por nome
-    public void Historia(int id, string name, Sound[] vetor)
+    public void Play(int id, string name, Sound[] vetor)
     {
         som = Array.Find(vetor, som => som.name == name && som.id == id);
         if (som == null)
