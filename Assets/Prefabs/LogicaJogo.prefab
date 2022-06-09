@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8583007797984513362}
   - component: {fileID: 8583007797984513363}
-  - component: {fileID: 8583007797984513360}
   m_Layer: 0
   m_Name: LogicaJogo
   m_TagString: Untagged
@@ -88,21 +87,6 @@ MonoBehaviour:
     mixer: {fileID: 0}
     clip: {fileID: 0}
     source: {fileID: 0}
-  som2:
-    id: 0
-    name: 
-    mixer: {fileID: 0}
-    clip: {fileID: 0}
-    source: {fileID: 0}
---- !u!114 &8583007797984513360
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8583007797984513361}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff27b08da44f859498f09c34433395e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  estoria: 0
+  direita: 0
+  esquerda: 0

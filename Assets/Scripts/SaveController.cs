@@ -1,19 +1,13 @@
 using UnityEngine;
 
-public class SaveController : MonoBehaviour
+public class SaveController
 {
-    GameLogic id;
-    SlotsMenu menu;
-
     public const string historia_key = "historia";
     public const string direita_key = "direita";
     public const string esquerda_key = "esquerda";
 
-    void Awake()
-    {
-        id = GetComponent<GameLogic>();
-        menu = GetComponent<SlotsMenu>();
-    }
+    
+
     public void Save(int historia, int direita, int esquerda)
     {
         PlayerPrefs.SetInt(historia_key, historia);
@@ -24,10 +18,10 @@ public class SaveController : MonoBehaviour
     }
     public void Load()
     {
-        
-        // id.estoria = PlayerPrefs.GetInt(historia_key);
-        // id.direita = PlayerPrefs.GetInt(direita_key);
-        // id.esquerda = PlayerPrefs.GetInt(esquerda_key);
+        GameLogic gameLogic = new GameLogic();
+        gameLogic.estoria = PlayerPrefs.GetInt(historia_key);
+        gameLogic.direita = PlayerPrefs.GetInt(direita_key);
+        gameLogic.esquerda = PlayerPrefs.GetInt(esquerda_key);
         Debug.Log("Jogo carregado!");
     }
     public void Delete()

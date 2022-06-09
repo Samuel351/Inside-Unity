@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class SlotsMenu : MonoBehaviour
 {
-    [HideInInspector]
-    public SaveController saveGame;
+  
+    SaveController saveGame = new SaveController();
 
     [SerializeField]
     private Text _title;
@@ -16,7 +16,6 @@ public class SlotsMenu : MonoBehaviour
 
     void Start()
     {
-        saveGame = GetComponent<SaveController>();
         _title.text = PlayerPrefs.GetString("save1");
         _title2.text = PlayerPrefs.GetString("save2");
     }
@@ -43,7 +42,6 @@ public class SlotsMenu : MonoBehaviour
         _title2.text = "Novo jogo";
         PlayerPrefs.SetString("save1", _title.text);
         PlayerPrefs.SetString("save2", _title2.text);
-        saveGame = GetComponentInChildren<SaveController>();
         saveGame.Delete();
     }
 }

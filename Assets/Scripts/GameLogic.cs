@@ -2,24 +2,28 @@ using UnityEngine;
 using System;
 using System.Collections;
 using UnityEngine.Audio;
-using UnityEngine.SceneManagement;
 
 public class GameLogic : MonoBehaviour
 {
-    GameLogic instancia;
+
     public AudioMixerGroup mixer;
     public Sound[] historia;
     public Sound[] escolha;
     private int input = 1;
+    private SaveController saveController = new SaveController();
     [HideInInspector]
     public Sound som;
 
-    private int estoria = 0, direita = 0, esquerda = 0;
+    [HideInInspector]
+    public int estoria, direita, esquerda = 0;
+
     public static GameLogic instance;
 
     void Awake()
     {
-        instancia = GameObject.Find("AudioController").GetComponent<GameLogic>();
+        saveController.Save(estoria, direita, esquerda);
+        saveController.Load();
+        GameLogic instancia = GameObject.Find("AudioController").GetComponent<GameLogic>();
         if (instance == null)
             instance = this;
         else
@@ -91,6 +95,7 @@ public class GameLogic : MonoBehaviour
             Play(2, "historia2", historia);
         }
         estoria++;
+        saveController.Save(estoria, direita, esquerda);
     }
     public void eDireita()
     {
@@ -104,6 +109,7 @@ public class GameLogic : MonoBehaviour
         }
         direita++;
         esquerda++;
+        saveController.Save(estoria, direita, esquerda);
     }
     public void eEsquerda()
     {
@@ -117,6 +123,7 @@ public class GameLogic : MonoBehaviour
         }
         esquerda++;
         direita++;
+        saveController.Save(estoria, direita, esquerda);
     }
 
     // Funções que buscam os aúdios no vetores por nome
