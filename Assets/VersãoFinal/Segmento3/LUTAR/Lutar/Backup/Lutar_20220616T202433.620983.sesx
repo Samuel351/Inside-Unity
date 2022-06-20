@@ -1,0 +1,1569 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE sesx>
+<sesx version="1.9">
+
+  <session appBuild="22.0.0.96" appVersion="22.0" audioChannelType="fivePointOne" bitDepth="32" duration="9289080" sampleRate="44100">
+    <tracks>
+      <audioTrack automationLaneOpenState="false" id="10001" index="1" select="false" visible="true">
+        <trackParameters trackHeight="134" trackHue="160" trackMinimized="false">
+          <name>Faixa 1</name>
+        </trackParameters>
+        <trackAudioParameters audioChannelType="stereo" automationMode="1" monitoring="false" recordArmed="false" solo="false" soloSafe="false">
+          <trackOutput outputID="10000" type="trackID"/>
+          <trackInput inputID="1"/>
+          <component componentGuid="3b6b4a9c-cca0-4fa5-b742-82e73d581392" componentID="Audition.Fader" id="trackFader" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="5f230049-9a29-495b-8243-5c291c123d18" componentID="Audition.Mute" id="trackMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="7582fdb4-82f6-47ff-9510-039e0fd28015" componentID="Audition.StereoTo51Panner" id="trackPan" name="StereoTo51Panner" powered="true">
+            <parameter index="0" name="Panorâmica: Ângulo" parameterValue="1.5707962512969970703125"/>
+            <parameter index="1" name="Panorâmica: Raio" parameterValue="1"/>
+            <parameter index="2" name="Panorâmica: Centro" parameterValue="1"/>
+            <parameter index="3" name="Panorâmica: LFE" parameterValue="0"/>
+            <parameter index="4" name="Panorâmica: difusão estéreo" parameterValue="0.523599147796630859375"/>
+            <parameter index="5" name="leftEnable" parameterValue="1"/>
+            <parameter index="6" name="rightEnable" parameterValue="1"/>
+            <parameter index="7" name="centerEnable" parameterValue="1"/>
+            <parameter index="8" name="lfeEnable" parameterValue="1"/>
+            <parameter index="9" name="leftSurroundEnable" parameterValue="1"/>
+            <parameter index="10" name="rightSurroundEnable" parameterValue="1"/>
+            <parameter index="11" name="leftSolo" parameterValue="0"/>
+            <parameter index="12" name="rightSolo" parameterValue="0"/>
+            <parameter index="13" name="centerSolo" parameterValue="0"/>
+            <parameter index="14" name="lfeSolo" parameterValue="0"/>
+            <parameter index="15" name="leftSurroundSolo" parameterValue="0"/>
+            <parameter index="16" name="rightSurroundSolo" parameterValue="0"/>
+          </component>
+          <component componentGuid="10824503-49e3-40c7-9930-1f124153d9ca" componentID="Audition.EQ" id="trackEQ" name="EQ" powered="false">
+            <parameter index="0" name="Frequência de estante inferior" parameterValue="0.0009078529546968638896942138671875"/>
+            <parameter index="1" name="Ganho de estante inferior" parameterValue="0.5"/>
+            <parameter index="2" name="Frequência de prateleira superior" parameterValue="0.816159784793853759765625"/>
+            <parameter index="3" name="Ganho de estante superior" parameterValue="0.5"/>
+            <parameter index="4" name="Frequência central de banda de EQ 1" parameterValue="0.0013617794029414653778076171875"/>
+            <parameter index="5" name="Banda de EQ 1 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="6" name="Ganho de banda de EQ 1" parameterValue="0.5"/>
+            <parameter index="7" name="Ativar Banda de EQ 1" parameterValue="1"/>
+            <parameter index="8" name="Frequências centrais de banda de EQ 2" parameterValue="0.008170676417648792266845703125"/>
+            <parameter index="9" name="Banda de EQ 2 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="10" name="Ganho de banda de EQ 2" parameterValue="0.5"/>
+            <parameter index="11" name="Ativar banda de EQ 2" parameterValue="1"/>
+            <parameter index="12" name="Frequências centrais de banda de EQ 3" parameterValue="0.0354062654078006744384765625"/>
+            <parameter index="13" name="Banda de EQ 3 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="14" name="Ganho de banda de EQ 3" parameterValue="0.5"/>
+            <parameter index="15" name="Ativar banda de EQ 3" parameterValue="1"/>
+            <parameter index="16" name="Frequência central de banda de EQ 4" parameterValue="0.144348621368408203125"/>
+            <parameter index="17" name="Banda de EQ 4 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="18" name="Ganho de banda de EQ 4" parameterValue="0.5"/>
+            <parameter index="19" name="Ativar banda de EQ 4" parameterValue="1"/>
+            <parameter index="20" name="Frequências centrais de banda de EQ 5" parameterValue="0.580118000507354736328125"/>
+            <parameter index="21" name="Banda de EQ 5 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="22" name="Ganho de banda de EQ 5" parameterValue="0.5"/>
+            <parameter index="23" name="Ativar banda de EQ 5" parameterValue="1"/>
+            <parameter index="24" name="Ganho" parameterValue="0.666666686534881591796875"/>
+            <parameter index="25" name="ConstantQ" parameterValue="1"/>
+            <parameter index="26" name="Ordem de filtro de estante inferior" parameterValue="0"/>
+            <parameter index="27" name="Ordem de filtro de estante superior" parameterValue="0"/>
+            <parameter index="28" name="Modo ultra silencioso" parameterValue="0"/>
+            <parameter index="29" name="Ativar estante inferior" parameterValue="1"/>
+            <parameter index="30" name="Ativar estante superior" parameterValue="1"/>
+            <parameter index="31" name="Taxa de amostragem original" parameterValue="0.22968749701976776123046875"/>
+            <parameter index="32" name="Largura de banda de banda de EQ 1" parameterValue="0.002499990165233612060546875"/>
+            <parameter index="33" name="Largura de banda de EQ 2" parameterValue="0.0099999904632568359375"/>
+            <parameter index="34" name="Largura de banda de EQ 3" parameterValue="0.0399999916553497314453125"/>
+            <parameter index="35" name="Largura de banda de EQ 4" parameterValue="0.15999998152256011962890625"/>
+            <parameter index="36" name="Largura de banda de EQ 5" parameterValue="0.63999998569488525390625"/>
+            <parameter index="37" name="Ativar filtro de alta frequência" parameterValue="0"/>
+            <parameter index="38" name="Frequência de corte de alta frequência" parameterValue="0"/>
+            <parameter index="39" name="Inclinação de alta frequência" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="40" name="Ativar filtro de passagem de baixa aprovação" parameterValue="0"/>
+            <parameter index="41" name="Frequência de corte de passe para baixo" parameterValue="0.906945049762725830078125"/>
+            <parameter index="42" name="Inclinação de passe para baixo" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="43" name="Desvio" parameterValue="0"/>
+            <parameter index="44" name="Faixa de gráfico baixa" parameterValue="1"/>
+          </component>
+        </trackAudioParameters>
+        <editParameter parameterIndex="0" slotIndex="4294967280"/>
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="1" endPoint="1887348" fileID="2" hue="-1" id="0" lockedInTime="false" looped="false" name="Ato1Perg3Esc1D - NORMAL 44100 1" offline="false" select="false" sourceInPoint="49117" sourceOutPoint="1830308" startPoint="106157" zOrder="0">
+          <effectsRack preFader="true">
+            <component componentGuid="eea8398c-908f-47cf-91aa-3f136fadc819" componentID="Audition.ComponentGroup" id="rackMix" powered="true">
+              <parameter index="0" parameterValue="0"/>
+              <parameter index="1" parameterValue="0"/>
+            </component>
+            <component componentGuid="27914c02-87d0-46e9-a42c-0358ad260aa6" id="rackInput" powered="true">
+              <parameter index="0" parameterValue="1"/>
+              <parameter index="1" parameterValue="0"/>
+            </component>
+            <component componentGuid="59c6f267-042a-4a99-a1d8-45d6e6d9f86b" id="rackOutput" powered="true">
+              <parameter index="0" parameterValue="1"/>
+              <parameter index="1" parameterValue="0"/>
+            </component>
+            <slot powered="true" slotIndex="0">
+              <component componentGuid="3c6e7705-30bc-4333-ae23-cb1f6e44c8f8" componentID="4f327230-f04c-4c34-9ea5-a998b4459221" name="Filtro de FFT" presetName="(Personalizado)">
+                <busConfig><![CDATA[{"in":[{"layout":[100,101],"name":"","type":0}],"out":[{"layout":[100,101],"name":"","type":0}]}]]></busConfig>
+                <presetChunkData><![CDATA[AEQsRwAAAAAQP3w9AADAPgAAAAAOdFo6AACAPwAAAAAAAIA/AADgQPv8bToAAAAAwyG0O3eQ+D6qFyk8XxcKPyfBVTweJD4/l+drPg00Pz+Lz+o+AAAAAAAAgD8AAAAA]]></presetChunkData>
+              </component>
+            </slot>
+            <slot powered="true" slotIndex="1">
+              <component componentGuid="372ff10e-7d17-4b52-a3f2-08c63fb46e88" componentID="c23a8acb-affc-4ff4-9ca6-2b560b340a56" name="Conjunto de guitarras" presetName="(Personalizado)">
+                <busConfig><![CDATA[{"in":[{"layout":[100,101],"name":"","type":0}],"out":[{"layout":[100,101],"name":"","type":0}]}]]></busConfig>
+                <presetChunkData><![CDATA[EyBuYWZldFMNAAAAAQAAAOYSIUIAAHpEAACgQZ/noUEAAMhCAAEAAAAAAAABAAAAAAAAAAkAAAA=]]></presetChunkData>
+              </component>
+            </slot>
+            <slot powered="true" slotIndex="2">
+              <component componentGuid="64de6742-f902-47d4-8199-f26b99586faa" componentID="c5ca9e29-df07-42a6-8800-ba80324e5cbc" name="Misturador de canais" presetName="(Personalizado)">
+                <busConfig><![CDATA[{"in":[{"layout":[100,101],"name":"","type":0}],"out":[{"layout":[100,101],"name":"","type":0}]}]]></busConfig>
+                <parameter index="0" name="Número de canais" parameterValue="0.25"/>
+                <parameter index="1" name="E para E" parameterValue="0.75"/>
+                <parameter index="2" name="D para E" parameterValue="0.75"/>
+                <parameter index="3" name="3 para E" parameterValue="0.5"/>
+                <parameter index="4" name="4 para E" parameterValue="0.5"/>
+                <parameter index="5" name="5 para E" parameterValue="0.5"/>
+                <parameter index="6" name="6 para E" parameterValue="0.5"/>
+                <parameter index="7" name="7 para E" parameterValue="0.5"/>
+                <parameter index="8" name="8 para E" parameterValue="0.5"/>
+                <parameter index="9" name="E para D" parameterValue="0.75"/>
+                <parameter index="10" name="D para D" parameterValue="0.75"/>
+                <parameter index="11" name="3 para D" parameterValue="0.5"/>
+                <parameter index="12" name="4 para D" parameterValue="0.5"/>
+                <parameter index="13" name="5 para D" parameterValue="0.5"/>
+                <parameter index="14" name="6 para D" parameterValue="0.5"/>
+                <parameter index="15" name="7 para D" parameterValue="0.5"/>
+                <parameter index="16" name="8 para D" parameterValue="0.5"/>
+                <parameter index="17" name="E para 3" parameterValue="0.5"/>
+                <parameter index="18" name="D para 3" parameterValue="0.5"/>
+                <parameter index="19" name="3 para 3" parameterValue="1"/>
+                <parameter index="20" name="4 para 3" parameterValue="0.5"/>
+                <parameter index="21" name="5 para 3" parameterValue="0.5"/>
+                <parameter index="22" name="6 para 3" parameterValue="0.5"/>
+                <parameter index="23" name="7 para 3" parameterValue="0.5"/>
+                <parameter index="24" name="8 para 3" parameterValue="0.5"/>
+                <parameter index="25" name="E para 4" parameterValue="0.5"/>
+                <parameter index="26" name="D para 4" parameterValue="0.5"/>
+                <parameter index="27" name="3 para 4" parameterValue="0.5"/>
+                <parameter index="28" name="4 para 4" parameterValue="1"/>
+                <parameter index="29" name="5 para 4" parameterValue="0.5"/>
+                <parameter index="30" name="6 para 4" parameterValue="0.5"/>
+                <parameter index="31" name="7 para 4" parameterValue="0.5"/>
+                <parameter index="32" name="8 para 4" parameterValue="0.5"/>
+                <parameter index="33" name="E para 5" parameterValue="0.5"/>
+                <parameter index="34" name="D para 5" parameterValue="0.5"/>
+                <parameter index="35" name="3 para 5" parameterValue="0.5"/>
+                <parameter index="36" name="4 para 5" parameterValue="0.5"/>
+                <parameter index="37" name="5 para 5" parameterValue="1"/>
+                <parameter index="38" name="6 para 5" parameterValue="0.5"/>
+                <parameter index="39" name="7 para 5" parameterValue="0.5"/>
+                <parameter index="40" name="8 para 5" parameterValue="0.5"/>
+                <parameter index="41" name="E para 6" parameterValue="0.5"/>
+                <parameter index="42" name="D para 6" parameterValue="0.5"/>
+                <parameter index="43" name="3 para 6" parameterValue="0.5"/>
+                <parameter index="44" name="4 para 6" parameterValue="0.5"/>
+                <parameter index="45" name="5 para 6" parameterValue="0.5"/>
+                <parameter index="46" name="6 para 6" parameterValue="1"/>
+                <parameter index="47" name="7 para 6" parameterValue="0.5"/>
+                <parameter index="48" name="8 para 6" parameterValue="0.5"/>
+                <parameter index="49" name="E para 7" parameterValue="0.5"/>
+                <parameter index="50" name="D para 7" parameterValue="0.5"/>
+                <parameter index="51" name="3 para 7" parameterValue="0.5"/>
+                <parameter index="52" name="4 para 7" parameterValue="0.5"/>
+                <parameter index="53" name="5 para 7" parameterValue="0.5"/>
+                <parameter index="54" name="6 para 7" parameterValue="0.5"/>
+                <parameter index="55" name="7 para 7" parameterValue="1"/>
+                <parameter index="56" name="8 para 7" parameterValue="0.5"/>
+                <parameter index="57" name="E para 8" parameterValue="0.5"/>
+                <parameter index="58" name="D para 8" parameterValue="0.5"/>
+                <parameter index="59" name="3 para 8" parameterValue="0.5"/>
+                <parameter index="60" name="4 para 8" parameterValue="0.5"/>
+                <parameter index="61" name="5 para 8" parameterValue="0.5"/>
+                <parameter index="62" name="6 para 8" parameterValue="0.5"/>
+                <parameter index="63" name="7 para 8" parameterValue="0.5"/>
+                <parameter index="64" name="8 para 8" parameterValue="1"/>
+              </component>
+            </slot>
+          </effectsRack>
+          <component componentGuid="f9e42e10-f3c3-4fde-bf2d-e14d72e1ca81" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="3569b553-aa43-4d51-bc09-fba74d4d65f3" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="5fc4aff6-e8de-4080-aea5-7303ef22b2a9" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Deslocar" parameterValue="0"/>
+          </component>
+          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="19" startPoint="0" type="log"/>
+          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="1781191" shape="19" startPoint="1754932" type="log"/>
+          <editParameter parameterIndex="0" slotIndex="4294967280"/>
+          <editParameter parameterIndex="0" slotIndex="4294967281"/>
+          <channelMap>
+            <channel index="0" sourceIndex="0"/>
+            <channel index="1" sourceIndex="1"/>
+          </channelMap>
+        </audioClip>
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="0" crossFadeTailClipID="-1" endPoint="3949197" fileID="3" hue="-1" id="1" lockedInTime="false" looped="false" name="Ato1Perg3Esc2E 44100 1" offline="false" select="false" sourceInPoint="66546" sourceOutPoint="2154654" startPoint="1861089" zOrder="1">
+          <effectsRack preFader="true">
+            <component componentGuid="07e9eac9-c4e9-452f-af2f-a9e5ff031f17" componentID="Audition.ComponentGroup" id="rackMix" powered="true">
+              <parameter index="0" parameterValue="0"/>
+              <parameter index="1" parameterValue="0"/>
+            </component>
+            <component componentGuid="af726a80-f5a3-4162-ba16-3447d994b537" id="rackInput" powered="true">
+              <parameter index="0" parameterValue="1"/>
+              <parameter index="1" parameterValue="0"/>
+            </component>
+            <component componentGuid="f78f8089-cd82-4440-8fa7-04b3263b6d16" id="rackOutput" powered="true">
+              <parameter index="0" parameterValue="1"/>
+              <parameter index="1" parameterValue="0"/>
+            </component>
+            <slot powered="true" slotIndex="0">
+              <component componentGuid="4db41650-c4aa-48d8-9e49-91e98003288e" componentID="4f327230-f04c-4c34-9ea5-a998b4459221" name="Filtro de FFT" presetName="(Personalizado)">
+                <busConfig><![CDATA[{"in":[{"layout":[100,101],"name":"","type":0}],"out":[{"layout":[100,101],"name":"","type":0}]}]]></busConfig>
+                <presetChunkData><![CDATA[AEQsRwAAAAAQP3w9AADAPgAAAAAOdFo6AACAPwAAAAAAAIA/AADgQPv8bToAAAAAwyG0O3eQ+D6qFyk8XxcKPyfBVTweJD4/l+drPg00Pz+Lz+o+AAAAAAAAgD8AAAAA]]></presetChunkData>
+              </component>
+            </slot>
+            <slot powered="true" slotIndex="1">
+              <component componentGuid="00892cae-b1f4-4233-afc4-a06daba6e4d0" componentID="c23a8acb-affc-4ff4-9ca6-2b560b340a56" name="Conjunto de guitarras" presetName="(Personalizado)">
+                <busConfig><![CDATA[{"in":[{"layout":[100,101],"name":"","type":0}],"out":[{"layout":[100,101],"name":"","type":0}]}]]></busConfig>
+                <presetChunkData><![CDATA[EyBuYWZldFMNAAAAAQAAAOYSIUIAAHpEAACgQZ/noUEAAMhCAAEAAAAAAAABAAAAAAAAAAkAAAA=]]></presetChunkData>
+              </component>
+            </slot>
+            <slot powered="true" slotIndex="2">
+              <component componentGuid="9bca080c-0e58-423c-bf34-b73b39f379db" componentID="c5ca9e29-df07-42a6-8800-ba80324e5cbc" name="Misturador de canais" presetName="(Personalizado)">
+                <busConfig><![CDATA[{"in":[{"layout":[100,101],"name":"","type":0}],"out":[{"layout":[100,101],"name":"","type":0}]}]]></busConfig>
+                <parameter index="0" name="Número de canais" parameterValue="0.25"/>
+                <parameter index="1" name="E para E" parameterValue="0.75"/>
+                <parameter index="2" name="D para E" parameterValue="0.75"/>
+                <parameter index="3" name="3 para E" parameterValue="0.5"/>
+                <parameter index="4" name="4 para E" parameterValue="0.5"/>
+                <parameter index="5" name="5 para E" parameterValue="0.5"/>
+                <parameter index="6" name="6 para E" parameterValue="0.5"/>
+                <parameter index="7" name="7 para E" parameterValue="0.5"/>
+                <parameter index="8" name="8 para E" parameterValue="0.5"/>
+                <parameter index="9" name="E para D" parameterValue="0.75"/>
+                <parameter index="10" name="D para D" parameterValue="0.75"/>
+                <parameter index="11" name="3 para D" parameterValue="0.5"/>
+                <parameter index="12" name="4 para D" parameterValue="0.5"/>
+                <parameter index="13" name="5 para D" parameterValue="0.5"/>
+                <parameter index="14" name="6 para D" parameterValue="0.5"/>
+                <parameter index="15" name="7 para D" parameterValue="0.5"/>
+                <parameter index="16" name="8 para D" parameterValue="0.5"/>
+                <parameter index="17" name="E para 3" parameterValue="0.5"/>
+                <parameter index="18" name="D para 3" parameterValue="0.5"/>
+                <parameter index="19" name="3 para 3" parameterValue="1"/>
+                <parameter index="20" name="4 para 3" parameterValue="0.5"/>
+                <parameter index="21" name="5 para 3" parameterValue="0.5"/>
+                <parameter index="22" name="6 para 3" parameterValue="0.5"/>
+                <parameter index="23" name="7 para 3" parameterValue="0.5"/>
+                <parameter index="24" name="8 para 3" parameterValue="0.5"/>
+                <parameter index="25" name="E para 4" parameterValue="0.5"/>
+                <parameter index="26" name="D para 4" parameterValue="0.5"/>
+                <parameter index="27" name="3 para 4" parameterValue="0.5"/>
+                <parameter index="28" name="4 para 4" parameterValue="1"/>
+                <parameter index="29" name="5 para 4" parameterValue="0.5"/>
+                <parameter index="30" name="6 para 4" parameterValue="0.5"/>
+                <parameter index="31" name="7 para 4" parameterValue="0.5"/>
+                <parameter index="32" name="8 para 4" parameterValue="0.5"/>
+                <parameter index="33" name="E para 5" parameterValue="0.5"/>
+                <parameter index="34" name="D para 5" parameterValue="0.5"/>
+                <parameter index="35" name="3 para 5" parameterValue="0.5"/>
+                <parameter index="36" name="4 para 5" parameterValue="0.5"/>
+                <parameter index="37" name="5 para 5" parameterValue="1"/>
+                <parameter index="38" name="6 para 5" parameterValue="0.5"/>
+                <parameter index="39" name="7 para 5" parameterValue="0.5"/>
+                <parameter index="40" name="8 para 5" parameterValue="0.5"/>
+                <parameter index="41" name="E para 6" parameterValue="0.5"/>
+                <parameter index="42" name="D para 6" parameterValue="0.5"/>
+                <parameter index="43" name="3 para 6" parameterValue="0.5"/>
+                <parameter index="44" name="4 para 6" parameterValue="0.5"/>
+                <parameter index="45" name="5 para 6" parameterValue="0.5"/>
+                <parameter index="46" name="6 para 6" parameterValue="1"/>
+                <parameter index="47" name="7 para 6" parameterValue="0.5"/>
+                <parameter index="48" name="8 para 6" parameterValue="0.5"/>
+                <parameter index="49" name="E para 7" parameterValue="0.5"/>
+                <parameter index="50" name="D para 7" parameterValue="0.5"/>
+                <parameter index="51" name="3 para 7" parameterValue="0.5"/>
+                <parameter index="52" name="4 para 7" parameterValue="0.5"/>
+                <parameter index="53" name="5 para 7" parameterValue="0.5"/>
+                <parameter index="54" name="6 para 7" parameterValue="0.5"/>
+                <parameter index="55" name="7 para 7" parameterValue="1"/>
+                <parameter index="56" name="8 para 7" parameterValue="0.5"/>
+                <parameter index="57" name="E para 8" parameterValue="0.5"/>
+                <parameter index="58" name="D para 8" parameterValue="0.5"/>
+                <parameter index="59" name="3 para 8" parameterValue="0.5"/>
+                <parameter index="60" name="4 para 8" parameterValue="0.5"/>
+                <parameter index="61" name="5 para 8" parameterValue="0.5"/>
+                <parameter index="62" name="6 para 8" parameterValue="0.5"/>
+                <parameter index="63" name="7 para 8" parameterValue="0.5"/>
+                <parameter index="64" name="8 para 8" parameterValue="1"/>
+              </component>
+            </slot>
+          </effectsRack>
+          <component componentGuid="993594f4-a8d8-4db4-963a-4a4f16cf83ef" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="1d8ef880-99c9-4d81-9771-034019657e8f" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="eb9aa35f-a6a0-4092-9bef-1c5974a439b3" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Deslocar" parameterValue="0"/>
+          </component>
+          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="26259" shape="18" startPoint="0" type="log"/>
+          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="2088108" shape="19" startPoint="2088108" type="log"/>
+          <editParameter parameterIndex="0" slotIndex="4294967280"/>
+          <editParameter parameterIndex="0" slotIndex="4294967281"/>
+          <channelMap>
+            <channel index="0" sourceIndex="0"/>
+            <channel index="1" sourceIndex="1"/>
+          </channelMap>
+        </audioClip>
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="3" endPoint="6603354" fileID="4" hue="-1" id="2" lockedInTime="false" looped="false" name="Radio turning on sound effect 44100 2" offline="false" select="false" sourceInPoint="0" sourceOutPoint="131241" startPoint="6472113" zOrder="3">
+          <properties properties="{&quot;BasicAdjustmentsProperty&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;AdjustmentMode&quot;:{&quot;type&quot;:&quot;UTF8String&quot;,&quot;value&quot;:&quot;ambience&quot;},&quot;ClipType&quot;:{&quot;type&quot;:&quot;std::int32_t&quot;,&quot;value&quot;:5},&quot;PresetGuid&quot;:{&quot;type&quot;:&quot;UTF8String&quot;,&quot;value&quot;:&quot;b3526c89-21a6-48b6-bb5e-7f323a45a206&quot;},&quot;SoundEffectsSection&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Enabled&quot;:{&quot;type&quot;:&quot;bool&quot;,&quot;value&quot;:true},&quot;Reverb&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;3&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Value&quot;:{&quot;type&quot;:&quot;float&quot;,&quot;value&quot;:1}}}}}}},&quot;StereoWidthSection&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Enabled&quot;:{&quot;type&quot;:&quot;bool&quot;,&quot;value&quot;:true}}},&quot;VolumeSection&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Enabled&quot;:{&quot;type&quot;:&quot;bool&quot;,&quot;value&quot;:true},&quot;Gain&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;2&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Value&quot;:{&quot;type&quot;:&quot;float&quot;,&quot;value&quot;:-5}}},&quot;Enabled&quot;:{&quot;type&quot;:&quot;bool&quot;,&quot;value&quot;:true},&quot;UUID&quot;:{&quot;type&quot;:&quot;UTF8String&quot;,&quot;value&quot;:&quot;4062f5e4-88b2-41da-b872-a0d2fcadc115&quot;}}}}}}}}"/>
+          <effectsRack preFader="true">
+            <component componentGuid="b23cb7a3-25ab-4b25-9add-a8c3b5f9159a" componentID="Audition.ComponentGroup" id="rackMix" powered="true">
+              <parameter index="0" parameterValue="0"/>
+              <parameter index="1" parameterValue="0"/>
+            </component>
+            <component componentGuid="eebea835-a054-408c-95cd-7322b9e0bf86" id="rackInput" powered="true">
+              <parameter index="0" parameterValue="1"/>
+              <parameter index="1" parameterValue="0"/>
+            </component>
+            <component componentGuid="79f3ea83-d1fc-42bd-9317-76bd8ca6d585" id="rackOutput" powered="true">
+              <parameter index="0" parameterValue="1"/>
+              <parameter index="1" parameterValue="0"/>
+            </component>
+            <slot powered="true" slotIndex="0">
+              <component componentGuid="4062f5e4-88b2-41da-b872-a0d2fcadc115" componentID="e0b23f05-f1a7-4ef7-9b50-7ec3e3002058" name="Limitador pesado" presetName="(Padrão)">
+                <busConfig><![CDATA[{"in":[{"layout":[100,101],"name":"","type":0}],"out":[{"layout":[100,101],"name":"","type":0}]}]]></busConfig>
+                <parameter index="0" name="Amplitude máxima" parameterValue="0.99800002574920654296875"/>
+                <parameter index="1" name="Aumento de entrada" parameterValue="0.63333332538604736328125"/>
+                <parameter index="2" name="Período look-ahead" parameterValue="0.13333301246166229248046875"/>
+                <parameter index="3" name="Tempo de liberação" parameterValue="0.375"/>
+                <parameter index="4" name="Vincular canais" parameterValue="1"/>
+                <parameter index="5" name="Diminuir para o limite superior" parameterValue="1"/>
+                <parameter index="6" name="Limitar pico verdadeiro" parameterValue="1"/>
+              </component>
+            </slot>
+          </effectsRack>
+          <component componentGuid="2e52ae51-be2b-426c-8780-57ad82a0fbdb" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="7c592cc0-556d-48dd-b591-5186f2d967d5" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="9188df07-3c20-41cc-8012-9ffb0d5f4db2" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Deslocar" parameterValue="0"/>
+          </component>
+          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="19" startPoint="0" type="log"/>
+          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="131241" shape="18" startPoint="108715" type="log"/>
+          <editParameter parameterIndex="0" slotIndex="4294967280"/>
+          <editParameter parameterIndex="0" slotIndex="4294967281"/>
+          <channelMap>
+            <channel index="0" sourceIndex="0"/>
+            <channel index="1" sourceIndex="1"/>
+          </channelMap>
+        </audioClip>
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="2" crossFadeTailClipID="-1" endPoint="8666874" fileID="3" hue="-1" id="3" lockedInTime="false" looped="false" name="Ato1Perg3Esc2E 44100 1" offline="false" select="false" sourceInPoint="4740334" sourceOutPoint="6826380" startPoint="6580828" zOrder="2">
+          <effectsRack preFader="true">
+            <component componentGuid="953d19f5-aa55-4e61-a9e4-8a88112bb1b8" componentID="Audition.ComponentGroup" id="rackMix" powered="true">
+              <parameter index="0" parameterValue="0"/>
+              <parameter index="1" parameterValue="0"/>
+            </component>
+            <component componentGuid="c36b1e33-3c4a-4ff7-ad04-180676db9612" id="rackInput" powered="true">
+              <parameter index="0" parameterValue="1"/>
+              <parameter index="1" parameterValue="0"/>
+            </component>
+            <component componentGuid="962fe153-51f5-41f6-83d2-82b25e5a188c" id="rackOutput" powered="true">
+              <parameter index="0" parameterValue="1"/>
+              <parameter index="1" parameterValue="0"/>
+            </component>
+            <slot powered="true" slotIndex="0">
+              <component componentGuid="2a64c20c-eafe-436f-b337-c8d56ae4cf38" componentID="4f327230-f04c-4c34-9ea5-a998b4459221" name="Filtro de FFT" presetName="(Personalizado)">
+                <busConfig><![CDATA[{"in":[{"layout":[100,101],"name":"","type":0}],"out":[{"layout":[100,101],"name":"","type":0}]}]]></busConfig>
+                <presetChunkData><![CDATA[AEQsRwAAAAAQP3w9AADAPgAAAAAOdFo6AACAPwAAAAAAAIA/AADgQPv8bToAAAAAwyG0O3eQ+D6qFyk8XxcKPyfBVTweJD4/l+drPg00Pz+Lz+o+AAAAAAAAgD8AAAAA]]></presetChunkData>
+              </component>
+            </slot>
+            <slot powered="true" slotIndex="1">
+              <component componentGuid="ef8b8297-081d-4eb2-9cf3-46f2973da3d8" componentID="c23a8acb-affc-4ff4-9ca6-2b560b340a56" name="Conjunto de guitarras" presetName="(Personalizado)">
+                <busConfig><![CDATA[{"in":[{"layout":[100,101],"name":"","type":0}],"out":[{"layout":[100,101],"name":"","type":0}]}]]></busConfig>
+                <presetChunkData><![CDATA[EyBuYWZldFMNAAAAAQAAAOYSIUIAAHpEAACgQZ/noUEAAMhCAAEAAAAAAAABAAAAAAAAAAkAAAA=]]></presetChunkData>
+              </component>
+            </slot>
+            <slot powered="true" slotIndex="2">
+              <component componentGuid="0506fb79-8857-467d-8075-4686cd469b4d" componentID="c5ca9e29-df07-42a6-8800-ba80324e5cbc" name="Misturador de canais" presetName="(Personalizado)">
+                <busConfig><![CDATA[{"in":[{"layout":[100,101],"name":"","type":0}],"out":[{"layout":[100,101],"name":"","type":0}]}]]></busConfig>
+                <parameter index="0" name="Número de canais" parameterValue="0.25"/>
+                <parameter index="1" name="E para E" parameterValue="0.75"/>
+                <parameter index="2" name="D para E" parameterValue="0.75"/>
+                <parameter index="3" name="3 para E" parameterValue="0.5"/>
+                <parameter index="4" name="4 para E" parameterValue="0.5"/>
+                <parameter index="5" name="5 para E" parameterValue="0.5"/>
+                <parameter index="6" name="6 para E" parameterValue="0.5"/>
+                <parameter index="7" name="7 para E" parameterValue="0.5"/>
+                <parameter index="8" name="8 para E" parameterValue="0.5"/>
+                <parameter index="9" name="E para D" parameterValue="0.75"/>
+                <parameter index="10" name="D para D" parameterValue="0.75"/>
+                <parameter index="11" name="3 para D" parameterValue="0.5"/>
+                <parameter index="12" name="4 para D" parameterValue="0.5"/>
+                <parameter index="13" name="5 para D" parameterValue="0.5"/>
+                <parameter index="14" name="6 para D" parameterValue="0.5"/>
+                <parameter index="15" name="7 para D" parameterValue="0.5"/>
+                <parameter index="16" name="8 para D" parameterValue="0.5"/>
+                <parameter index="17" name="E para 3" parameterValue="0.5"/>
+                <parameter index="18" name="D para 3" parameterValue="0.5"/>
+                <parameter index="19" name="3 para 3" parameterValue="1"/>
+                <parameter index="20" name="4 para 3" parameterValue="0.5"/>
+                <parameter index="21" name="5 para 3" parameterValue="0.5"/>
+                <parameter index="22" name="6 para 3" parameterValue="0.5"/>
+                <parameter index="23" name="7 para 3" parameterValue="0.5"/>
+                <parameter index="24" name="8 para 3" parameterValue="0.5"/>
+                <parameter index="25" name="E para 4" parameterValue="0.5"/>
+                <parameter index="26" name="D para 4" parameterValue="0.5"/>
+                <parameter index="27" name="3 para 4" parameterValue="0.5"/>
+                <parameter index="28" name="4 para 4" parameterValue="1"/>
+                <parameter index="29" name="5 para 4" parameterValue="0.5"/>
+                <parameter index="30" name="6 para 4" parameterValue="0.5"/>
+                <parameter index="31" name="7 para 4" parameterValue="0.5"/>
+                <parameter index="32" name="8 para 4" parameterValue="0.5"/>
+                <parameter index="33" name="E para 5" parameterValue="0.5"/>
+                <parameter index="34" name="D para 5" parameterValue="0.5"/>
+                <parameter index="35" name="3 para 5" parameterValue="0.5"/>
+                <parameter index="36" name="4 para 5" parameterValue="0.5"/>
+                <parameter index="37" name="5 para 5" parameterValue="1"/>
+                <parameter index="38" name="6 para 5" parameterValue="0.5"/>
+                <parameter index="39" name="7 para 5" parameterValue="0.5"/>
+                <parameter index="40" name="8 para 5" parameterValue="0.5"/>
+                <parameter index="41" name="E para 6" parameterValue="0.5"/>
+                <parameter index="42" name="D para 6" parameterValue="0.5"/>
+                <parameter index="43" name="3 para 6" parameterValue="0.5"/>
+                <parameter index="44" name="4 para 6" parameterValue="0.5"/>
+                <parameter index="45" name="5 para 6" parameterValue="0.5"/>
+                <parameter index="46" name="6 para 6" parameterValue="1"/>
+                <parameter index="47" name="7 para 6" parameterValue="0.5"/>
+                <parameter index="48" name="8 para 6" parameterValue="0.5"/>
+                <parameter index="49" name="E para 7" parameterValue="0.5"/>
+                <parameter index="50" name="D para 7" parameterValue="0.5"/>
+                <parameter index="51" name="3 para 7" parameterValue="0.5"/>
+                <parameter index="52" name="4 para 7" parameterValue="0.5"/>
+                <parameter index="53" name="5 para 7" parameterValue="0.5"/>
+                <parameter index="54" name="6 para 7" parameterValue="0.5"/>
+                <parameter index="55" name="7 para 7" parameterValue="1"/>
+                <parameter index="56" name="8 para 7" parameterValue="0.5"/>
+                <parameter index="57" name="E para 8" parameterValue="0.5"/>
+                <parameter index="58" name="D para 8" parameterValue="0.5"/>
+                <parameter index="59" name="3 para 8" parameterValue="0.5"/>
+                <parameter index="60" name="4 para 8" parameterValue="0.5"/>
+                <parameter index="61" name="5 para 8" parameterValue="0.5"/>
+                <parameter index="62" name="6 para 8" parameterValue="0.5"/>
+                <parameter index="63" name="7 para 8" parameterValue="0.5"/>
+                <parameter index="64" name="8 para 8" parameterValue="1"/>
+              </component>
+            </slot>
+          </effectsRack>
+          <component componentGuid="f94c4fd0-5e43-4c1e-a98e-96a4ce0cf927" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="52026384-d9b9-438a-8fc1-43ba5041c1a9" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="75283eaa-5e12-405d-876d-33126efbba06" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Deslocar" parameterValue="0"/>
+          </component>
+          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="22526" shape="19" startPoint="0" type="log"/>
+          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="2086046" shape="18" startPoint="2086046" type="log"/>
+          <editParameter parameterIndex="0" slotIndex="4294967280"/>
+          <editParameter parameterIndex="0" slotIndex="4294967281"/>
+          <channelMap>
+            <channel index="0" sourceIndex="0"/>
+            <channel index="1" sourceIndex="1"/>
+          </channelMap>
+        </audioClip>
+      </audioTrack>
+      <audioTrack automationLaneOpenState="false" id="10002" index="2" select="false" visible="true">
+        <trackParameters trackHeight="134" trackHue="267" trackMinimized="false">
+          <name>Faixa 2</name>
+        </trackParameters>
+        <trackAudioParameters audioChannelType="stereo" automationMode="1" monitoring="false" recordArmed="false" solo="false" soloSafe="false">
+          <trackOutput outputID="10000" type="trackID"/>
+          <trackInput inputID="1"/>
+          <component componentGuid="4e450e1c-ce2d-4d42-8451-362c6f1e359e" componentID="Audition.Fader" id="trackFader" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="1407ee2f-d4a0-4b6b-bb62-d3177e0b6f0f" componentID="Audition.Mute" id="trackMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="0d571b02-cda0-4c5a-abd2-71be5558cc30" componentID="Audition.StereoTo51Panner" id="trackPan" name="StereoTo51Panner" powered="true">
+            <parameter index="0" name="Panorâmica: Ângulo" parameterValue="1.5707962512969970703125"/>
+            <parameter index="1" name="Panorâmica: Raio" parameterValue="1"/>
+            <parameter index="2" name="Panorâmica: Centro" parameterValue="1"/>
+            <parameter index="3" name="Panorâmica: LFE" parameterValue="0"/>
+            <parameter index="4" name="Panorâmica: difusão estéreo" parameterValue="0.523599147796630859375"/>
+            <parameter index="5" name="leftEnable" parameterValue="1"/>
+            <parameter index="6" name="rightEnable" parameterValue="1"/>
+            <parameter index="7" name="centerEnable" parameterValue="1"/>
+            <parameter index="8" name="lfeEnable" parameterValue="1"/>
+            <parameter index="9" name="leftSurroundEnable" parameterValue="1"/>
+            <parameter index="10" name="rightSurroundEnable" parameterValue="1"/>
+            <parameter index="11" name="leftSolo" parameterValue="0"/>
+            <parameter index="12" name="rightSolo" parameterValue="0"/>
+            <parameter index="13" name="centerSolo" parameterValue="0"/>
+            <parameter index="14" name="lfeSolo" parameterValue="0"/>
+            <parameter index="15" name="leftSurroundSolo" parameterValue="0"/>
+            <parameter index="16" name="rightSurroundSolo" parameterValue="0"/>
+          </component>
+          <component componentGuid="4bdf75bc-c5ee-4c9d-a2e8-6737396bd025" componentID="Audition.EQ" id="trackEQ" name="EQ" powered="false">
+            <parameter index="0" name="Frequência de estante inferior" parameterValue="0.0009078529546968638896942138671875"/>
+            <parameter index="1" name="Ganho de estante inferior" parameterValue="0.5"/>
+            <parameter index="2" name="Frequência de prateleira superior" parameterValue="0.816159784793853759765625"/>
+            <parameter index="3" name="Ganho de estante superior" parameterValue="0.5"/>
+            <parameter index="4" name="Frequência central de banda de EQ 1" parameterValue="0.0013617794029414653778076171875"/>
+            <parameter index="5" name="Banda de EQ 1 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="6" name="Ganho de banda de EQ 1" parameterValue="0.5"/>
+            <parameter index="7" name="Ativar Banda de EQ 1" parameterValue="1"/>
+            <parameter index="8" name="Frequências centrais de banda de EQ 2" parameterValue="0.008170676417648792266845703125"/>
+            <parameter index="9" name="Banda de EQ 2 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="10" name="Ganho de banda de EQ 2" parameterValue="0.5"/>
+            <parameter index="11" name="Ativar banda de EQ 2" parameterValue="1"/>
+            <parameter index="12" name="Frequências centrais de banda de EQ 3" parameterValue="0.0354062654078006744384765625"/>
+            <parameter index="13" name="Banda de EQ 3 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="14" name="Ganho de banda de EQ 3" parameterValue="0.5"/>
+            <parameter index="15" name="Ativar banda de EQ 3" parameterValue="1"/>
+            <parameter index="16" name="Frequência central de banda de EQ 4" parameterValue="0.144348621368408203125"/>
+            <parameter index="17" name="Banda de EQ 4 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="18" name="Ganho de banda de EQ 4" parameterValue="0.5"/>
+            <parameter index="19" name="Ativar banda de EQ 4" parameterValue="1"/>
+            <parameter index="20" name="Frequências centrais de banda de EQ 5" parameterValue="0.580118000507354736328125"/>
+            <parameter index="21" name="Banda de EQ 5 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="22" name="Ganho de banda de EQ 5" parameterValue="0.5"/>
+            <parameter index="23" name="Ativar banda de EQ 5" parameterValue="1"/>
+            <parameter index="24" name="Ganho" parameterValue="0.666666686534881591796875"/>
+            <parameter index="25" name="ConstantQ" parameterValue="1"/>
+            <parameter index="26" name="Ordem de filtro de estante inferior" parameterValue="0"/>
+            <parameter index="27" name="Ordem de filtro de estante superior" parameterValue="0"/>
+            <parameter index="28" name="Modo ultra silencioso" parameterValue="0"/>
+            <parameter index="29" name="Ativar estante inferior" parameterValue="1"/>
+            <parameter index="30" name="Ativar estante superior" parameterValue="1"/>
+            <parameter index="31" name="Taxa de amostragem original" parameterValue="0.22968749701976776123046875"/>
+            <parameter index="32" name="Largura de banda de banda de EQ 1" parameterValue="0.002499990165233612060546875"/>
+            <parameter index="33" name="Largura de banda de EQ 2" parameterValue="0.0099999904632568359375"/>
+            <parameter index="34" name="Largura de banda de EQ 3" parameterValue="0.0399999916553497314453125"/>
+            <parameter index="35" name="Largura de banda de EQ 4" parameterValue="0.15999998152256011962890625"/>
+            <parameter index="36" name="Largura de banda de EQ 5" parameterValue="0.63999998569488525390625"/>
+            <parameter index="37" name="Ativar filtro de alta frequência" parameterValue="0"/>
+            <parameter index="38" name="Frequência de corte de alta frequência" parameterValue="0"/>
+            <parameter index="39" name="Inclinação de alta frequência" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="40" name="Ativar filtro de passagem de baixa aprovação" parameterValue="0"/>
+            <parameter index="41" name="Frequência de corte de passe para baixo" parameterValue="0.906945049762725830078125"/>
+            <parameter index="42" name="Inclinação de passe para baixo" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="43" name="Desvio" parameterValue="0"/>
+            <parameter index="44" name="Faixa de gráfico baixa" parameterValue="1"/>
+          </component>
+        </trackAudioParameters>
+        <editParameter parameterIndex="0" slotIndex="4294967280"/>
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="131241" fileID="0" hue="-1" id="0" lockedInTime="false" looped="false" name="Radio turning on sound effect 44100 1" offline="false" select="false" sourceInPoint="0" sourceOutPoint="131241" startPoint="0" zOrder="0">
+          <properties properties="{&quot;BasicAdjustmentsProperty&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;AdjustmentMode&quot;:{&quot;type&quot;:&quot;UTF8String&quot;,&quot;value&quot;:&quot;ambience&quot;},&quot;ClipType&quot;:{&quot;type&quot;:&quot;std::int32_t&quot;,&quot;value&quot;:5},&quot;PresetGuid&quot;:{&quot;type&quot;:&quot;UTF8String&quot;,&quot;value&quot;:&quot;b3526c89-21a6-48b6-bb5e-7f323a45a206&quot;},&quot;SoundEffectsSection&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Enabled&quot;:{&quot;type&quot;:&quot;bool&quot;,&quot;value&quot;:true},&quot;Reverb&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;3&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Value&quot;:{&quot;type&quot;:&quot;float&quot;,&quot;value&quot;:1}}}}}}},&quot;StereoWidthSection&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Enabled&quot;:{&quot;type&quot;:&quot;bool&quot;,&quot;value&quot;:true}}},&quot;VolumeSection&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Enabled&quot;:{&quot;type&quot;:&quot;bool&quot;,&quot;value&quot;:true},&quot;Gain&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;2&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Value&quot;:{&quot;type&quot;:&quot;float&quot;,&quot;value&quot;:-5}}},&quot;Enabled&quot;:{&quot;type&quot;:&quot;bool&quot;,&quot;value&quot;:true},&quot;UUID&quot;:{&quot;type&quot;:&quot;UTF8String&quot;,&quot;value&quot;:&quot;c89c48ba-4a16-4274-9620-42fdf7f273fb&quot;}}}}}}}}"/>
+          <effectsRack preFader="true">
+            <component componentGuid="d5a05392-8760-49e2-8c88-4058f36edb94" componentID="Audition.ComponentGroup" id="rackMix" powered="true">
+              <parameter index="0" parameterValue="0"/>
+              <parameter index="1" parameterValue="0"/>
+            </component>
+            <component componentGuid="33d686bd-45be-4d1e-a686-95cb60f20f67" id="rackInput" powered="true">
+              <parameter index="0" parameterValue="1"/>
+              <parameter index="1" parameterValue="0"/>
+            </component>
+            <component componentGuid="801e1458-ed2c-43de-978c-90e11fc46ea0" id="rackOutput" powered="true">
+              <parameter index="0" parameterValue="1"/>
+              <parameter index="1" parameterValue="0"/>
+            </component>
+            <slot powered="true" slotIndex="0">
+              <component componentGuid="c89c48ba-4a16-4274-9620-42fdf7f273fb" componentID="e0b23f05-f1a7-4ef7-9b50-7ec3e3002058" name="Limitador pesado" presetName="(Padrão)">
+                <busConfig><![CDATA[{"in":[{"layout":[100,101],"name":"","type":0}],"out":[{"layout":[100,101],"name":"","type":0}]}]]></busConfig>
+                <parameter index="0" name="Amplitude máxima" parameterValue="0.99800002574920654296875"/>
+                <parameter index="1" name="Aumento de entrada" parameterValue="0.63333332538604736328125"/>
+                <parameter index="2" name="Período look-ahead" parameterValue="0.13333301246166229248046875"/>
+                <parameter index="3" name="Tempo de liberação" parameterValue="0.375"/>
+                <parameter index="4" name="Vincular canais" parameterValue="1"/>
+                <parameter index="5" name="Diminuir para o limite superior" parameterValue="1"/>
+                <parameter index="6" name="Limitar pico verdadeiro" parameterValue="1"/>
+              </component>
+            </slot>
+          </effectsRack>
+          <component componentGuid="e7e5dedb-490d-4ddb-bad7-0dece2204899" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="cef392f7-ab47-406f-899a-382570f8928c" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="ef579181-7bf6-4b06-b4de-2960c1fe21ef" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Deslocar" parameterValue="0"/>
+          </component>
+          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="19" startPoint="0" type="log"/>
+          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="131241" shape="19" startPoint="131241" type="log"/>
+          <editParameter parameterIndex="0" slotIndex="4294967280"/>
+          <editParameter parameterIndex="0" slotIndex="4294967281"/>
+          <channelMap>
+            <channel index="0" sourceIndex="0"/>
+            <channel index="1" sourceIndex="1"/>
+          </channelMap>
+        </audioClip>
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="4058361" fileID="4" hue="-1" id="1" lockedInTime="false" looped="false" name="Radio turning on sound effect 44100 2" offline="false" select="false" sourceInPoint="0" sourceOutPoint="131241" startPoint="3927120" zOrder="1">
+          <properties properties="{&quot;BasicAdjustmentsProperty&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;AdjustmentMode&quot;:{&quot;type&quot;:&quot;UTF8String&quot;,&quot;value&quot;:&quot;ambience&quot;},&quot;ClipType&quot;:{&quot;type&quot;:&quot;std::int32_t&quot;,&quot;value&quot;:5},&quot;PresetGuid&quot;:{&quot;type&quot;:&quot;UTF8String&quot;,&quot;value&quot;:&quot;b3526c89-21a6-48b6-bb5e-7f323a45a206&quot;},&quot;SoundEffectsSection&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Enabled&quot;:{&quot;type&quot;:&quot;bool&quot;,&quot;value&quot;:true},&quot;Reverb&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;3&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Value&quot;:{&quot;type&quot;:&quot;float&quot;,&quot;value&quot;:1}}}}}}},&quot;StereoWidthSection&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Enabled&quot;:{&quot;type&quot;:&quot;bool&quot;,&quot;value&quot;:true}}},&quot;VolumeSection&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Enabled&quot;:{&quot;type&quot;:&quot;bool&quot;,&quot;value&quot;:true},&quot;Gain&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;2&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Value&quot;:{&quot;type&quot;:&quot;float&quot;,&quot;value&quot;:-5}}},&quot;Enabled&quot;:{&quot;type&quot;:&quot;bool&quot;,&quot;value&quot;:true},&quot;UUID&quot;:{&quot;type&quot;:&quot;UTF8String&quot;,&quot;value&quot;:&quot;9e561e4e-9f37-4b40-a41f-e62aa8710ecd&quot;}}}}}}}}"/>
+          <effectsRack preFader="true">
+            <component componentGuid="4bf1aa01-2f96-41de-a9e2-49d6d935ef1f" componentID="Audition.ComponentGroup" id="rackMix" powered="true">
+              <parameter index="0" parameterValue="0"/>
+              <parameter index="1" parameterValue="0"/>
+            </component>
+            <component componentGuid="094cbe98-99bc-4531-9e46-389f676b5115" id="rackInput" powered="true">
+              <parameter index="0" parameterValue="1"/>
+              <parameter index="1" parameterValue="0"/>
+            </component>
+            <component componentGuid="183c07f6-feb4-4832-bbf9-d16dc17b0ccb" id="rackOutput" powered="true">
+              <parameter index="0" parameterValue="1"/>
+              <parameter index="1" parameterValue="0"/>
+            </component>
+            <slot powered="true" slotIndex="0">
+              <component componentGuid="9e561e4e-9f37-4b40-a41f-e62aa8710ecd" componentID="e0b23f05-f1a7-4ef7-9b50-7ec3e3002058" name="Limitador pesado" presetName="(Padrão)">
+                <busConfig><![CDATA[{"in":[{"layout":[100,101],"name":"","type":0}],"out":[{"layout":[100,101],"name":"","type":0}]}]]></busConfig>
+                <parameter index="0" name="Amplitude máxima" parameterValue="0.99800002574920654296875"/>
+                <parameter index="1" name="Aumento de entrada" parameterValue="0.63333332538604736328125"/>
+                <parameter index="2" name="Período look-ahead" parameterValue="0.13333301246166229248046875"/>
+                <parameter index="3" name="Tempo de liberação" parameterValue="0.375"/>
+                <parameter index="4" name="Vincular canais" parameterValue="1"/>
+                <parameter index="5" name="Diminuir para o limite superior" parameterValue="1"/>
+                <parameter index="6" name="Limitar pico verdadeiro" parameterValue="1"/>
+              </component>
+            </slot>
+          </effectsRack>
+          <component componentGuid="46af53b1-ed2a-4ac5-9107-527bbbc60f08" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="64db5acd-55a0-41fc-875d-a43e1b33d841" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="830dbeb9-cd6b-4d05-9d81-720aea95df1f" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Deslocar" parameterValue="0"/>
+          </component>
+          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="19" startPoint="0" type="log"/>
+          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="131241" shape="19" startPoint="131241" type="log"/>
+          <editParameter parameterIndex="0" slotIndex="4294967280"/>
+          <editParameter parameterIndex="0" slotIndex="4294967281"/>
+          <channelMap>
+            <channel index="0" sourceIndex="0"/>
+            <channel index="1" sourceIndex="1"/>
+          </channelMap>
+        </audioClip>
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="6655295" fileID="3" hue="-1" id="2" lockedInTime="false" looped="false" name="Ato1Perg3Esc2E 44100 1" offline="false" select="false" sourceInPoint="2154654" sourceOutPoint="4740334" startPoint="4069615" zOrder="2">
+          <effectsRack preFader="true">
+            <component componentGuid="7ebb7033-42c1-4273-bd54-4e8563bdbcac" componentID="Audition.ComponentGroup" id="rackMix" powered="true">
+              <parameter index="0" parameterValue="0"/>
+              <parameter index="1" parameterValue="0"/>
+            </component>
+            <component componentGuid="bacfc73d-16b6-4028-a828-273a9cf661d1" id="rackInput" powered="true">
+              <parameter index="0" parameterValue="1"/>
+              <parameter index="1" parameterValue="0"/>
+            </component>
+            <component componentGuid="4663cd3f-bb8d-4ef0-8410-48477412ff3e" id="rackOutput" powered="true">
+              <parameter index="0" parameterValue="1"/>
+              <parameter index="1" parameterValue="0"/>
+            </component>
+            <slot powered="true" slotIndex="0">
+              <component componentGuid="c76ae19d-2b82-43f8-8b32-609dbb20a92a" componentID="4f327230-f04c-4c34-9ea5-a998b4459221" name="Filtro de FFT" presetName="(Personalizado)">
+                <busConfig><![CDATA[{"in":[{"layout":[100,101],"name":"","type":0}],"out":[{"layout":[100,101],"name":"","type":0}]}]]></busConfig>
+                <presetChunkData><![CDATA[AEQsRwAAAAAQP3w9AADAPgAAAAD7/G06AACAPwAAAAAAAIA/AACAQPv8bToAAEA/bQs/PvxDQD9d16A+DxJfPwAAgD/uIHE/]]></presetChunkData>
+              </component>
+            </slot>
+            <slot powered="true" slotIndex="1">
+              <component componentGuid="fa57e14d-8604-4cb3-b17c-90d66f512f58" componentID="0a1016a3-74e6-4c93-8b6c-e058a1419bf1" name="Extrator de canal central" presetName="(Personalizado)">
+                <busConfig><![CDATA[{"in":[{"layout":[100,101],"name":"Stereo In","type":0}],"out":[{"layout":[100,101],"name":"Stereo Out","type":0}]}]]></busConfig>
+                <parameter index="0" name="Classificação de fase" parameterValue="0.5"/>
+                <parameter index="1" name="Deslocar" parameterValue="0.5"/>
+                <parameter index="2" name="Atraso" parameterValue="0.5"/>
+                <parameter index="3" name="Extrair" parameterValue="0"/>
+                <parameter index="4" name="Frequência central" parameterValue="0.00522015430033206939697265625"/>
+                <parameter index="5" name="Largura da frequência" parameterValue="0.0095324553549289703369140625"/>
+                <parameter index="6" name="Frequência inicial" parameterValue="0"/>
+                <parameter index="7" name="Frequência final" parameterValue="0.0104403086006641387939453125"/>
+                <parameter index="8" name="Sangria de crossover" parameterValue="0.5"/>
+                <parameter index="9" name="Discriminação de fase" parameterValue="0.25"/>
+                <parameter index="10" name="Discriminação de amplitude" parameterValue="0.02500000037252902984619140625"/>
+                <parameter index="11" name="Largura de banda de amplitude" parameterValue="0.100000001490116119384765625"/>
+                <parameter index="12" name="Taxa de decréscimo espectral" parameterValue="0.0546875"/>
+                <parameter index="13" name="Nível de canal central" parameterValue="0.552083313465118408203125"/>
+                <parameter index="14" name="Níveis de canais laterais" parameterValue="0.5"/>
+                <parameter index="15" name="Tamanho de FFT" parameterValue="4"/>
+                <parameter index="16" name="Intervalo" parameterValue="0.0509750545024871826171875"/>
+                <parameter index="17" name="Sobreposições" parameterValue="1"/>
+                <parameter index="18" name="Largura da janela" parameterValue="0.4986979067325592041015625"/>
+                <parameter index="19" name="Espectro" parameterValue="4"/>
+                <parameter index="20" name="Em processamento" parameterValue="0.251256287097930908203125"/>
+                <parameter index="21" name="Taxa de amostragem original" parameterValue="0.22968749701976776123046875"/>
+              </component>
+            </slot>
+            <slot powered="true" slotIndex="2">
+              <component componentGuid="eac149ea-1b50-40aa-9fe9-6bbb7f4d3d14" componentID="7354704a-d87c-11e0-b05b-763c4824019b" name="Deslocador gráfico de fase" presetName="(Personalizado)">
+                <busConfig><![CDATA[{"in":[{"layout":[100,101],"name":"Estéreo ligado","type":0}],"out":[{"layout":[100,101],"name":"Saída de estéreo","type":0}]}]]></busConfig>
+                <presetChunkData><![CDATA[AEQsRwAAgD+EH/w8ED54PQAAAAAAAAAAuMVtOgAAgD8AAAAAAAAAAAAAoEC5xW06AAAAPy7OCT8AAP4+wsYjPwAAUT+wvDQ/AABzPwAAgD8AAIA/]]></presetChunkData>
+              </component>
+            </slot>
+            <slot powered="true" slotIndex="3">
+              <component componentGuid="487815cb-b615-412d-be05-8486cc9639db" componentID="7354704a-d87c-11e0-b05b-763c4824019b" name="Deslocador gráfico de fase" presetName="(Personalizado)">
+                <busConfig><![CDATA[{"in":[{"layout":[100,101],"name":"Estéreo ligado","type":0}],"out":[{"layout":[100,101],"name":"Saída de estéreo","type":0}]}]]></busConfig>
+                <presetChunkData><![CDATA[AEQsRwAAgD+EH/w8ED74PAAAAAAAAAAAuMVtOgAAgD8AAAAAAAAAAAAAwEC5xW06AAAAPzjyHT8AAAM/6HkePwAAkD4m6C4/AACwPTEMQz8AAACAAACAPwAAAIA=]]></presetChunkData>
+              </component>
+            </slot>
+            <slot powered="true" slotIndex="4">
+              <component componentGuid="fb7c40ac-b22f-43c5-befa-67276d402aed" componentID="e0b23f05-f1a7-4ef7-9b50-7ec3e3002058" name="Limitador pesado" presetName="(Personalizado)">
+                <busConfig><![CDATA[{"in":[{"layout":[100,101],"name":"","type":0}],"out":[{"layout":[100,101],"name":"","type":0}]}]]></busConfig>
+                <parameter index="0" name="Amplitude máxima" parameterValue="0.999000012874603271484375"/>
+                <parameter index="1" name="Aumento de entrada" parameterValue="0.666666686534881591796875"/>
+                <parameter index="2" name="Período look-ahead" parameterValue="0.13333301246166229248046875"/>
+                <parameter index="3" name="Tempo de liberação" parameterValue="0.375"/>
+                <parameter index="4" name="Vincular canais" parameterValue="1"/>
+                <parameter index="5" name="Diminuir para o limite superior" parameterValue="0"/>
+                <parameter index="6" name="Limitar pico verdadeiro" parameterValue="0"/>
+              </component>
+            </slot>
+          </effectsRack>
+          <component componentGuid="924eae06-6d64-4ea2-99ed-b16c654bb724" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="2deb9b47-84cf-41a0-a981-e796d6a77cc3" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="2db5fd32-269d-4371-9345-8dd4059698f3" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Deslocar" parameterValue="0"/>
+          </component>
+          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="190131" shape="-15" startPoint="0" type="log"/>
+          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="2585680" shape="-7" startPoint="2379704" type="log"/>
+          <editParameter parameterIndex="0" slotIndex="4294967280"/>
+          <editParameter parameterIndex="0" slotIndex="4294967281"/>
+          <channelMap>
+            <channel index="0" sourceIndex="0"/>
+            <channel index="1" sourceIndex="1"/>
+          </channelMap>
+        </audioClip>
+      </audioTrack>
+      <audioTrack automationLaneOpenState="false" id="10003" index="3" select="true" visible="true">
+        <trackParameters trackHeight="134" trackHue="51" trackMinimized="false">
+          <name>Faixa 3</name>
+        </trackParameters>
+        <trackAudioParameters audioChannelType="stereo" automationMode="1" monitoring="false" recordArmed="false" solo="false" soloSafe="false">
+          <trackOutput outputID="10000" type="trackID"/>
+          <trackInput inputID="1"/>
+          <component componentGuid="3d255e35-985d-44d9-9133-b9226c70320f" componentID="Audition.Fader" id="trackFader" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="7a68feda-bda6-4f0b-8b88-3c78c208b65a" componentID="Audition.Mute" id="trackMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="336bd5fa-5b8b-4a75-9fc5-c6b7defe37b7" componentID="Audition.StereoTo51Panner" id="trackPan" name="StereoTo51Panner" powered="true">
+            <parameter index="0" name="Panorâmica: Ângulo" parameterValue="1.5707962512969970703125"/>
+            <parameter index="1" name="Panorâmica: Raio" parameterValue="1"/>
+            <parameter index="2" name="Panorâmica: Centro" parameterValue="1"/>
+            <parameter index="3" name="Panorâmica: LFE" parameterValue="0"/>
+            <parameter index="4" name="Panorâmica: difusão estéreo" parameterValue="0.523599147796630859375"/>
+            <parameter index="5" name="leftEnable" parameterValue="1"/>
+            <parameter index="6" name="rightEnable" parameterValue="1"/>
+            <parameter index="7" name="centerEnable" parameterValue="1"/>
+            <parameter index="8" name="lfeEnable" parameterValue="1"/>
+            <parameter index="9" name="leftSurroundEnable" parameterValue="1"/>
+            <parameter index="10" name="rightSurroundEnable" parameterValue="1"/>
+            <parameter index="11" name="leftSolo" parameterValue="0"/>
+            <parameter index="12" name="rightSolo" parameterValue="0"/>
+            <parameter index="13" name="centerSolo" parameterValue="0"/>
+            <parameter index="14" name="lfeSolo" parameterValue="0"/>
+            <parameter index="15" name="leftSurroundSolo" parameterValue="0"/>
+            <parameter index="16" name="rightSurroundSolo" parameterValue="0"/>
+          </component>
+          <component componentGuid="6ac06f4d-73b8-4f2c-8870-75cac899cb5d" componentID="Audition.EQ" id="trackEQ" name="EQ" powered="false">
+            <parameter index="0" name="Frequência de estante inferior" parameterValue="0.0009078529546968638896942138671875"/>
+            <parameter index="1" name="Ganho de estante inferior" parameterValue="0.5"/>
+            <parameter index="2" name="Frequência de prateleira superior" parameterValue="0.816159784793853759765625"/>
+            <parameter index="3" name="Ganho de estante superior" parameterValue="0.5"/>
+            <parameter index="4" name="Frequência central de banda de EQ 1" parameterValue="0.0013617794029414653778076171875"/>
+            <parameter index="5" name="Banda de EQ 1 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="6" name="Ganho de banda de EQ 1" parameterValue="0.5"/>
+            <parameter index="7" name="Ativar Banda de EQ 1" parameterValue="1"/>
+            <parameter index="8" name="Frequências centrais de banda de EQ 2" parameterValue="0.008170676417648792266845703125"/>
+            <parameter index="9" name="Banda de EQ 2 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="10" name="Ganho de banda de EQ 2" parameterValue="0.5"/>
+            <parameter index="11" name="Ativar banda de EQ 2" parameterValue="1"/>
+            <parameter index="12" name="Frequências centrais de banda de EQ 3" parameterValue="0.0354062654078006744384765625"/>
+            <parameter index="13" name="Banda de EQ 3 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="14" name="Ganho de banda de EQ 3" parameterValue="0.5"/>
+            <parameter index="15" name="Ativar banda de EQ 3" parameterValue="1"/>
+            <parameter index="16" name="Frequência central de banda de EQ 4" parameterValue="0.144348621368408203125"/>
+            <parameter index="17" name="Banda de EQ 4 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="18" name="Ganho de banda de EQ 4" parameterValue="0.5"/>
+            <parameter index="19" name="Ativar banda de EQ 4" parameterValue="1"/>
+            <parameter index="20" name="Frequências centrais de banda de EQ 5" parameterValue="0.580118000507354736328125"/>
+            <parameter index="21" name="Banda de EQ 5 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="22" name="Ganho de banda de EQ 5" parameterValue="0.5"/>
+            <parameter index="23" name="Ativar banda de EQ 5" parameterValue="1"/>
+            <parameter index="24" name="Ganho" parameterValue="0.666666686534881591796875"/>
+            <parameter index="25" name="ConstantQ" parameterValue="1"/>
+            <parameter index="26" name="Ordem de filtro de estante inferior" parameterValue="0"/>
+            <parameter index="27" name="Ordem de filtro de estante superior" parameterValue="0"/>
+            <parameter index="28" name="Modo ultra silencioso" parameterValue="0"/>
+            <parameter index="29" name="Ativar estante inferior" parameterValue="1"/>
+            <parameter index="30" name="Ativar estante superior" parameterValue="1"/>
+            <parameter index="31" name="Taxa de amostragem original" parameterValue="0.22968749701976776123046875"/>
+            <parameter index="32" name="Largura de banda de banda de EQ 1" parameterValue="0.002499990165233612060546875"/>
+            <parameter index="33" name="Largura de banda de EQ 2" parameterValue="0.0099999904632568359375"/>
+            <parameter index="34" name="Largura de banda de EQ 3" parameterValue="0.0399999916553497314453125"/>
+            <parameter index="35" name="Largura de banda de EQ 4" parameterValue="0.15999998152256011962890625"/>
+            <parameter index="36" name="Largura de banda de EQ 5" parameterValue="0.63999998569488525390625"/>
+            <parameter index="37" name="Ativar filtro de alta frequência" parameterValue="0"/>
+            <parameter index="38" name="Frequência de corte de alta frequência" parameterValue="0"/>
+            <parameter index="39" name="Inclinação de alta frequência" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="40" name="Ativar filtro de passagem de baixa aprovação" parameterValue="0"/>
+            <parameter index="41" name="Frequência de corte de passe para baixo" parameterValue="0.906945049762725830078125"/>
+            <parameter index="42" name="Inclinação de passe para baixo" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="43" name="Desvio" parameterValue="0"/>
+            <parameter index="44" name="Faixa de gráfico baixa" parameterValue="1"/>
+          </component>
+        </trackAudioParameters>
+        <editParameter parameterIndex="0" slotIndex="4294967280"/>
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="1" endPoint="3043046" fileID="1" hue="-1" id="0" lockedInTime="false" looped="false" name="Radio Static - Sound Effect (1)" offline="false" select="false" sourceInPoint="0" sourceOutPoint="2938473" startPoint="104573" zOrder="0">
+          <properties properties="{&quot;BasicAdjustmentsProperty&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;AdjustmentMode&quot;:{&quot;type&quot;:&quot;UTF8String&quot;,&quot;value&quot;:&quot;ambience&quot;},&quot;ClipType&quot;:{&quot;type&quot;:&quot;std::int32_t&quot;,&quot;value&quot;:5},&quot;PresetGuid&quot;:{&quot;type&quot;:&quot;UTF8String&quot;,&quot;value&quot;:&quot;b3526c89-21a6-48b6-bb5e-7f323a45a206&quot;},&quot;SoundEffectsSection&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Enabled&quot;:{&quot;type&quot;:&quot;bool&quot;,&quot;value&quot;:true},&quot;Reverb&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;3&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Value&quot;:{&quot;type&quot;:&quot;float&quot;,&quot;value&quot;:1}}}}}}},&quot;StereoWidthSection&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Enabled&quot;:{&quot;type&quot;:&quot;bool&quot;,&quot;value&quot;:true}}},&quot;VolumeSection&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Enabled&quot;:{&quot;type&quot;:&quot;bool&quot;,&quot;value&quot;:true},&quot;Gain&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;2&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Value&quot;:{&quot;type&quot;:&quot;float&quot;,&quot;value&quot;:-5}}},&quot;Enabled&quot;:{&quot;type&quot;:&quot;bool&quot;,&quot;value&quot;:true},&quot;UUID&quot;:{&quot;type&quot;:&quot;UTF8String&quot;,&quot;value&quot;:&quot;c54b1763-2f78-41ed-b2b7-d67b93a64b55&quot;}}}}}}}}"/>
+          <effectsRack preFader="true">
+            <component componentGuid="493746f5-252a-4f57-8f8a-40ca35837100" componentID="Audition.ComponentGroup" id="rackMix" powered="true">
+              <parameter index="0" parameterValue="0"/>
+              <parameter index="1" parameterValue="0"/>
+            </component>
+            <component componentGuid="59396f3d-4d06-4457-b3df-55980e4cf119" id="rackInput" powered="true">
+              <parameter index="0" parameterValue="1"/>
+              <parameter index="1" parameterValue="0"/>
+            </component>
+            <component componentGuid="1dc8f540-37d0-4492-be50-bafc2ee9a112" id="rackOutput" powered="true">
+              <parameter index="0" parameterValue="1"/>
+              <parameter index="1" parameterValue="0"/>
+            </component>
+            <slot powered="true" slotIndex="0">
+              <component componentGuid="c54b1763-2f78-41ed-b2b7-d67b93a64b55" componentID="e0b23f05-f1a7-4ef7-9b50-7ec3e3002058" name="Limitador pesado" presetName="(Padrão)">
+                <busConfig><![CDATA[{"in":[{"layout":[100,101],"name":"","type":0}],"out":[{"layout":[100,101],"name":"","type":0}]}]]></busConfig>
+                <parameter index="0" name="Amplitude máxima" parameterValue="0.99800002574920654296875"/>
+                <parameter index="1" name="Aumento de entrada" parameterValue="0.63333332538604736328125"/>
+                <parameter index="2" name="Período look-ahead" parameterValue="0.13333301246166229248046875"/>
+                <parameter index="3" name="Tempo de liberação" parameterValue="0.375"/>
+                <parameter index="4" name="Vincular canais" parameterValue="1"/>
+                <parameter index="5" name="Diminuir para o limite superior" parameterValue="1"/>
+                <parameter index="6" name="Limitar pico verdadeiro" parameterValue="1"/>
+              </component>
+            </slot>
+          </effectsRack>
+          <component componentGuid="065e8544-49b5-4e4b-9b22-bb0f8f1ae9fe" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="26cd8ed6-e418-480f-a7eb-8b99ba8e1e11" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="38bd5610-eee1-46c2-aa96-28987708e66a" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Deslocar" parameterValue="0"/>
+          </component>
+          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="19" startPoint="0" type="log"/>
+          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="2938473" shape="19" startPoint="2895234" type="log"/>
+          <editParameter parameterIndex="0" slotIndex="4294967280"/>
+          <editParameter parameterIndex="0" slotIndex="4294967281"/>
+          <channelMap>
+            <channel index="0" sourceIndex="0"/>
+            <channel index="1" sourceIndex="1"/>
+          </channelMap>
+        </audioClip>
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="0" crossFadeTailClipID="-1" endPoint="3917999" fileID="1" hue="-1" id="1" lockedInTime="false" looped="false" name="Radio Static - Sound Effect (1)" offline="false" select="false" sourceInPoint="0" sourceOutPoint="918192" startPoint="2999807" zOrder="1">
+          <properties properties="{&quot;BasicAdjustmentsProperty&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;AdjustmentMode&quot;:{&quot;type&quot;:&quot;UTF8String&quot;,&quot;value&quot;:&quot;ambience&quot;},&quot;ClipType&quot;:{&quot;type&quot;:&quot;std::int32_t&quot;,&quot;value&quot;:5},&quot;PresetGuid&quot;:{&quot;type&quot;:&quot;UTF8String&quot;,&quot;value&quot;:&quot;b3526c89-21a6-48b6-bb5e-7f323a45a206&quot;},&quot;SoundEffectsSection&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Enabled&quot;:{&quot;type&quot;:&quot;bool&quot;,&quot;value&quot;:true},&quot;Reverb&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;3&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Value&quot;:{&quot;type&quot;:&quot;float&quot;,&quot;value&quot;:1}}}}}}},&quot;StereoWidthSection&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Enabled&quot;:{&quot;type&quot;:&quot;bool&quot;,&quot;value&quot;:true}}},&quot;VolumeSection&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Enabled&quot;:{&quot;type&quot;:&quot;bool&quot;,&quot;value&quot;:true},&quot;Gain&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;2&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Value&quot;:{&quot;type&quot;:&quot;float&quot;,&quot;value&quot;:-5}}},&quot;Enabled&quot;:{&quot;type&quot;:&quot;bool&quot;,&quot;value&quot;:true},&quot;UUID&quot;:{&quot;type&quot;:&quot;UTF8String&quot;,&quot;value&quot;:&quot;58ac7ca3-f6d0-4e06-9042-470058989498&quot;}}}}}}}}"/>
+          <effectsRack preFader="true">
+            <component componentGuid="18707aa1-6881-4cf5-894b-5d03f5413774" componentID="Audition.ComponentGroup" id="rackMix" powered="true">
+              <parameter index="0" parameterValue="0"/>
+              <parameter index="1" parameterValue="0"/>
+            </component>
+            <component componentGuid="ce6b1be6-ee28-4644-b939-08a054afbd19" id="rackInput" powered="true">
+              <parameter index="0" parameterValue="1"/>
+              <parameter index="1" parameterValue="0"/>
+            </component>
+            <component componentGuid="41f05517-7573-4c07-9878-1a50b7c16807" id="rackOutput" powered="true">
+              <parameter index="0" parameterValue="1"/>
+              <parameter index="1" parameterValue="0"/>
+            </component>
+            <slot powered="true" slotIndex="0">
+              <component componentGuid="58ac7ca3-f6d0-4e06-9042-470058989498" componentID="e0b23f05-f1a7-4ef7-9b50-7ec3e3002058" name="Limitador pesado" presetName="(Padrão)">
+                <busConfig><![CDATA[{"in":[{"layout":[100,101],"name":"","type":0}],"out":[{"layout":[100,101],"name":"","type":0}]}]]></busConfig>
+                <parameter index="0" name="Amplitude máxima" parameterValue="0.99800002574920654296875"/>
+                <parameter index="1" name="Aumento de entrada" parameterValue="0.63333332538604736328125"/>
+                <parameter index="2" name="Período look-ahead" parameterValue="0.13333301246166229248046875"/>
+                <parameter index="3" name="Tempo de liberação" parameterValue="0.375"/>
+                <parameter index="4" name="Vincular canais" parameterValue="1"/>
+                <parameter index="5" name="Diminuir para o limite superior" parameterValue="1"/>
+                <parameter index="6" name="Limitar pico verdadeiro" parameterValue="1"/>
+              </component>
+            </slot>
+          </effectsRack>
+          <component componentGuid="b5c4a31e-bf1b-4478-8139-3f61857127e8" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="8f94e439-a840-41cd-80ee-2a3c91461c0e" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="16323279-13e7-4ecf-9b2b-aeee3421ace7" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Deslocar" parameterValue="0"/>
+          </component>
+          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="43239" shape="18" startPoint="0" type="log"/>
+          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="918192" shape="19" startPoint="918192" type="log"/>
+          <editParameter parameterIndex="0" slotIndex="4294967280"/>
+          <editParameter parameterIndex="0" slotIndex="4294967281"/>
+          <channelMap>
+            <channel index="0" sourceIndex="0"/>
+            <channel index="1" sourceIndex="1"/>
+          </channelMap>
+        </audioClip>
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="7326141" fileID="1" hue="-1" id="2" lockedInTime="false" looped="false" name="Radio Static - Sound Effect (1)" offline="false" select="false" sourceInPoint="560034" sourceOutPoint="1418667" startPoint="6467508" zOrder="4">
+          <properties properties="{&quot;BasicAdjustmentsProperty&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;AdjustmentMode&quot;:{&quot;type&quot;:&quot;UTF8String&quot;,&quot;value&quot;:&quot;ambience&quot;},&quot;ClipType&quot;:{&quot;type&quot;:&quot;std::int32_t&quot;,&quot;value&quot;:5},&quot;PresetGuid&quot;:{&quot;type&quot;:&quot;UTF8String&quot;,&quot;value&quot;:&quot;b3526c89-21a6-48b6-bb5e-7f323a45a206&quot;},&quot;SoundEffectsSection&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Enabled&quot;:{&quot;type&quot;:&quot;bool&quot;,&quot;value&quot;:true},&quot;Reverb&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;3&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Value&quot;:{&quot;type&quot;:&quot;float&quot;,&quot;value&quot;:1}}}}}}},&quot;StereoWidthSection&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Enabled&quot;:{&quot;type&quot;:&quot;bool&quot;,&quot;value&quot;:true}}},&quot;VolumeSection&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Enabled&quot;:{&quot;type&quot;:&quot;bool&quot;,&quot;value&quot;:true},&quot;Gain&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;2&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Value&quot;:{&quot;type&quot;:&quot;float&quot;,&quot;value&quot;:-5}}},&quot;Enabled&quot;:{&quot;type&quot;:&quot;bool&quot;,&quot;value&quot;:true},&quot;UUID&quot;:{&quot;type&quot;:&quot;UTF8String&quot;,&quot;value&quot;:&quot;96f5f791-3a88-482c-a9d9-53903acf7559&quot;}}}}}}}}"/>
+          <effectsRack preFader="true">
+            <component componentGuid="741fd4e7-52c7-4a1a-be62-4c7a67bf2a49" componentID="Audition.ComponentGroup" id="rackMix" powered="true">
+              <parameter index="0" parameterValue="0"/>
+              <parameter index="1" parameterValue="0"/>
+            </component>
+            <component componentGuid="0b31d182-9cb6-437d-bf45-b4fd09d5b701" id="rackInput" powered="true">
+              <parameter index="0" parameterValue="1"/>
+              <parameter index="1" parameterValue="0"/>
+            </component>
+            <component componentGuid="4fad54e0-48e4-4be1-9a25-400c2ba31b96" id="rackOutput" powered="true">
+              <parameter index="0" parameterValue="1"/>
+              <parameter index="1" parameterValue="0"/>
+            </component>
+            <slot powered="true" slotIndex="0">
+              <component componentGuid="96f5f791-3a88-482c-a9d9-53903acf7559" componentID="e0b23f05-f1a7-4ef7-9b50-7ec3e3002058" name="Limitador pesado" presetName="(Padrão)">
+                <busConfig><![CDATA[{"in":[{"layout":[100,101],"name":"","type":0}],"out":[{"layout":[100,101],"name":"","type":0}]}]]></busConfig>
+                <parameter index="0" name="Amplitude máxima" parameterValue="0.99800002574920654296875"/>
+                <parameter index="1" name="Aumento de entrada" parameterValue="0.63333332538604736328125"/>
+                <parameter index="2" name="Período look-ahead" parameterValue="0.13333301246166229248046875"/>
+                <parameter index="3" name="Tempo de liberação" parameterValue="0.375"/>
+                <parameter index="4" name="Vincular canais" parameterValue="1"/>
+                <parameter index="5" name="Diminuir para o limite superior" parameterValue="1"/>
+                <parameter index="6" name="Limitar pico verdadeiro" parameterValue="1"/>
+              </component>
+            </slot>
+          </effectsRack>
+          <component componentGuid="0f472009-e4c8-4ad8-9e2a-fa3849e87b3d" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="8550f623-dda4-4500-8505-3381d9f20b98" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="143856eb-d2ea-4946-9100-85611e89119b" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Deslocar" parameterValue="0"/>
+          </component>
+          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="19" startPoint="0" type="log"/>
+          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="858633" shape="19" startPoint="858633" type="log"/>
+          <editParameter parameterIndex="0" slotIndex="4294967280"/>
+          <editParameter parameterIndex="0" slotIndex="4294967281"/>
+          <channelMap>
+            <channel index="0" sourceIndex="0"/>
+            <channel index="1" sourceIndex="1"/>
+          </channelMap>
+        </audioClip>
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="8668491" fileID="1" hue="-1" id="3" lockedInTime="false" looped="false" name="Radio Static - Sound Effect (1)" offline="false" select="false" sourceInPoint="1941768" sourceOutPoint="2761017" startPoint="7849242" zOrder="4">
+          <properties properties="{&quot;BasicAdjustmentsProperty&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;AdjustmentMode&quot;:{&quot;type&quot;:&quot;UTF8String&quot;,&quot;value&quot;:&quot;ambience&quot;},&quot;ClipType&quot;:{&quot;type&quot;:&quot;std::int32_t&quot;,&quot;value&quot;:5},&quot;PresetGuid&quot;:{&quot;type&quot;:&quot;UTF8String&quot;,&quot;value&quot;:&quot;b3526c89-21a6-48b6-bb5e-7f323a45a206&quot;},&quot;SoundEffectsSection&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Enabled&quot;:{&quot;type&quot;:&quot;bool&quot;,&quot;value&quot;:true},&quot;Reverb&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;3&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Value&quot;:{&quot;type&quot;:&quot;float&quot;,&quot;value&quot;:1}}}}}}},&quot;StereoWidthSection&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Enabled&quot;:{&quot;type&quot;:&quot;bool&quot;,&quot;value&quot;:true}}},&quot;VolumeSection&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Enabled&quot;:{&quot;type&quot;:&quot;bool&quot;,&quot;value&quot;:true},&quot;Gain&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;2&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Value&quot;:{&quot;type&quot;:&quot;float&quot;,&quot;value&quot;:-5}}},&quot;Enabled&quot;:{&quot;type&quot;:&quot;bool&quot;,&quot;value&quot;:true},&quot;UUID&quot;:{&quot;type&quot;:&quot;UTF8String&quot;,&quot;value&quot;:&quot;ccf9677c-1733-4be2-9b4a-003b7e8eda44&quot;}}}}}}}}"/>
+          <effectsRack preFader="true">
+            <component componentGuid="8141988f-4ec2-49d1-9daa-c98a30fb2d06" componentID="Audition.ComponentGroup" id="rackMix" powered="true">
+              <parameter index="0" parameterValue="0"/>
+              <parameter index="1" parameterValue="0"/>
+            </component>
+            <component componentGuid="7254b496-cda2-48e5-b4be-afd6a7ec798d" id="rackInput" powered="true">
+              <parameter index="0" parameterValue="1"/>
+              <parameter index="1" parameterValue="0"/>
+            </component>
+            <component componentGuid="187bc867-74c1-46b1-865e-3e3da409ff09" id="rackOutput" powered="true">
+              <parameter index="0" parameterValue="1"/>
+              <parameter index="1" parameterValue="0"/>
+            </component>
+            <slot powered="true" slotIndex="0">
+              <component componentGuid="ccf9677c-1733-4be2-9b4a-003b7e8eda44" componentID="e0b23f05-f1a7-4ef7-9b50-7ec3e3002058" name="Limitador pesado" presetName="(Padrão)">
+                <busConfig><![CDATA[{"in":[{"layout":[100,101],"name":"","type":0}],"out":[{"layout":[100,101],"name":"","type":0}]}]]></busConfig>
+                <parameter index="0" name="Amplitude máxima" parameterValue="0.99800002574920654296875"/>
+                <parameter index="1" name="Aumento de entrada" parameterValue="0.63333332538604736328125"/>
+                <parameter index="2" name="Período look-ahead" parameterValue="0.13333301246166229248046875"/>
+                <parameter index="3" name="Tempo de liberação" parameterValue="0.375"/>
+                <parameter index="4" name="Vincular canais" parameterValue="1"/>
+                <parameter index="5" name="Diminuir para o limite superior" parameterValue="1"/>
+                <parameter index="6" name="Limitar pico verdadeiro" parameterValue="1"/>
+              </component>
+            </slot>
+          </effectsRack>
+          <component componentGuid="7ecddb69-29c6-4e4c-b515-6b9a1609d849" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="7c29d5ff-c66e-46a1-a0d6-7aa8e9258a51" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="4e78f2e8-4e84-4626-a9b6-aa67b385dbc5" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Deslocar" parameterValue="0"/>
+          </component>
+          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="19" startPoint="0" type="log"/>
+          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="819249" shape="19" startPoint="819249" type="log"/>
+          <editParameter parameterIndex="0" slotIndex="4294967280"/>
+          <editParameter parameterIndex="0" slotIndex="4294967281"/>
+          <channelMap>
+            <channel index="0" sourceIndex="0"/>
+            <channel index="1" sourceIndex="1"/>
+          </channelMap>
+        </audioClip>
+      </audioTrack>
+      <audioTrack automationLaneOpenState="false" id="10004" index="4" select="false" visible="true">
+        <trackParameters trackHeight="134" trackHue="182" trackMinimized="false">
+          <name>Faixa 4</name>
+        </trackParameters>
+        <trackAudioParameters audioChannelType="stereo" automationMode="1" monitoring="false" recordArmed="false" solo="false" soloSafe="false">
+          <trackOutput outputID="10000" type="trackID"/>
+          <trackInput inputID="1"/>
+          <component componentGuid="aa5cf3ac-97e1-40fd-9c78-29d1c4fe12ce" componentID="Audition.Fader" id="trackFader" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="e9901edd-1a68-4958-b917-5e0277a766d5" componentID="Audition.Mute" id="trackMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="f30fda6a-37c0-494e-b61f-8c743c838c24" componentID="Audition.StereoTo51Panner" id="trackPan" name="StereoTo51Panner" powered="true">
+            <parameter index="0" name="Panorâmica: Ângulo" parameterValue="1.5707962512969970703125"/>
+            <parameter index="1" name="Panorâmica: Raio" parameterValue="1"/>
+            <parameter index="2" name="Panorâmica: Centro" parameterValue="1"/>
+            <parameter index="3" name="Panorâmica: LFE" parameterValue="0"/>
+            <parameter index="4" name="Panorâmica: difusão estéreo" parameterValue="0.523599147796630859375"/>
+            <parameter index="5" name="leftEnable" parameterValue="1"/>
+            <parameter index="6" name="rightEnable" parameterValue="1"/>
+            <parameter index="7" name="centerEnable" parameterValue="1"/>
+            <parameter index="8" name="lfeEnable" parameterValue="1"/>
+            <parameter index="9" name="leftSurroundEnable" parameterValue="1"/>
+            <parameter index="10" name="rightSurroundEnable" parameterValue="1"/>
+            <parameter index="11" name="leftSolo" parameterValue="0"/>
+            <parameter index="12" name="rightSolo" parameterValue="0"/>
+            <parameter index="13" name="centerSolo" parameterValue="0"/>
+            <parameter index="14" name="lfeSolo" parameterValue="0"/>
+            <parameter index="15" name="leftSurroundSolo" parameterValue="0"/>
+            <parameter index="16" name="rightSurroundSolo" parameterValue="0"/>
+          </component>
+          <component componentGuid="55486af9-9181-4455-9780-1090ad72e6cc" componentID="Audition.EQ" id="trackEQ" name="EQ" powered="false">
+            <parameter index="0" name="Frequência de estante inferior" parameterValue="0.0009078529546968638896942138671875"/>
+            <parameter index="1" name="Ganho de estante inferior" parameterValue="0.5"/>
+            <parameter index="2" name="Frequência de prateleira superior" parameterValue="0.816159784793853759765625"/>
+            <parameter index="3" name="Ganho de estante superior" parameterValue="0.5"/>
+            <parameter index="4" name="Frequência central de banda de EQ 1" parameterValue="0.0013617794029414653778076171875"/>
+            <parameter index="5" name="Banda de EQ 1 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="6" name="Ganho de banda de EQ 1" parameterValue="0.5"/>
+            <parameter index="7" name="Ativar Banda de EQ 1" parameterValue="1"/>
+            <parameter index="8" name="Frequências centrais de banda de EQ 2" parameterValue="0.008170676417648792266845703125"/>
+            <parameter index="9" name="Banda de EQ 2 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="10" name="Ganho de banda de EQ 2" parameterValue="0.5"/>
+            <parameter index="11" name="Ativar banda de EQ 2" parameterValue="1"/>
+            <parameter index="12" name="Frequências centrais de banda de EQ 3" parameterValue="0.0354062654078006744384765625"/>
+            <parameter index="13" name="Banda de EQ 3 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="14" name="Ganho de banda de EQ 3" parameterValue="0.5"/>
+            <parameter index="15" name="Ativar banda de EQ 3" parameterValue="1"/>
+            <parameter index="16" name="Frequência central de banda de EQ 4" parameterValue="0.144348621368408203125"/>
+            <parameter index="17" name="Banda de EQ 4 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="18" name="Ganho de banda de EQ 4" parameterValue="0.5"/>
+            <parameter index="19" name="Ativar banda de EQ 4" parameterValue="1"/>
+            <parameter index="20" name="Frequências centrais de banda de EQ 5" parameterValue="0.580118000507354736328125"/>
+            <parameter index="21" name="Banda de EQ 5 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="22" name="Ganho de banda de EQ 5" parameterValue="0.5"/>
+            <parameter index="23" name="Ativar banda de EQ 5" parameterValue="1"/>
+            <parameter index="24" name="Ganho" parameterValue="0.666666686534881591796875"/>
+            <parameter index="25" name="ConstantQ" parameterValue="1"/>
+            <parameter index="26" name="Ordem de filtro de estante inferior" parameterValue="0"/>
+            <parameter index="27" name="Ordem de filtro de estante superior" parameterValue="0"/>
+            <parameter index="28" name="Modo ultra silencioso" parameterValue="0"/>
+            <parameter index="29" name="Ativar estante inferior" parameterValue="1"/>
+            <parameter index="30" name="Ativar estante superior" parameterValue="1"/>
+            <parameter index="31" name="Taxa de amostragem original" parameterValue="0.22968749701976776123046875"/>
+            <parameter index="32" name="Largura de banda de banda de EQ 1" parameterValue="0.002499990165233612060546875"/>
+            <parameter index="33" name="Largura de banda de EQ 2" parameterValue="0.0099999904632568359375"/>
+            <parameter index="34" name="Largura de banda de EQ 3" parameterValue="0.0399999916553497314453125"/>
+            <parameter index="35" name="Largura de banda de EQ 4" parameterValue="0.15999998152256011962890625"/>
+            <parameter index="36" name="Largura de banda de EQ 5" parameterValue="0.63999998569488525390625"/>
+            <parameter index="37" name="Ativar filtro de alta frequência" parameterValue="0"/>
+            <parameter index="38" name="Frequência de corte de alta frequência" parameterValue="0"/>
+            <parameter index="39" name="Inclinação de alta frequência" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="40" name="Ativar filtro de passagem de baixa aprovação" parameterValue="0"/>
+            <parameter index="41" name="Frequência de corte de passe para baixo" parameterValue="0.906945049762725830078125"/>
+            <parameter index="42" name="Inclinação de passe para baixo" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="43" name="Desvio" parameterValue="0"/>
+            <parameter index="44" name="Faixa de gráfico baixa" parameterValue="1"/>
+          </component>
+        </trackAudioParameters>
+        <editParameter parameterIndex="0" slotIndex="4294967280"/>
+      </audioTrack>
+      <audioTrack automationLaneOpenState="false" id="10005" index="5" select="false" visible="true">
+        <trackParameters trackHeight="134" trackHue="294" trackMinimized="false">
+          <name>Faixa 5</name>
+        </trackParameters>
+        <trackAudioParameters audioChannelType="stereo" automationMode="1" monitoring="false" recordArmed="false" solo="false" soloSafe="false">
+          <trackOutput outputID="10000" type="trackID"/>
+          <trackInput inputID="1"/>
+          <component componentGuid="a849bd4a-004a-408c-a635-02f587983206" componentID="Audition.Fader" id="trackFader" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="4cecbaa7-bce9-43dc-a591-cb192b5bad65" componentID="Audition.Mute" id="trackMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="494cc3f2-c319-4ccd-a308-1adb3b5d9c41" componentID="Audition.StereoTo51Panner" id="trackPan" name="StereoTo51Panner" powered="true">
+            <parameter index="0" name="Panorâmica: Ângulo" parameterValue="1.5707962512969970703125"/>
+            <parameter index="1" name="Panorâmica: Raio" parameterValue="1"/>
+            <parameter index="2" name="Panorâmica: Centro" parameterValue="1"/>
+            <parameter index="3" name="Panorâmica: LFE" parameterValue="0"/>
+            <parameter index="4" name="Panorâmica: difusão estéreo" parameterValue="0.523599147796630859375"/>
+            <parameter index="5" name="leftEnable" parameterValue="1"/>
+            <parameter index="6" name="rightEnable" parameterValue="1"/>
+            <parameter index="7" name="centerEnable" parameterValue="1"/>
+            <parameter index="8" name="lfeEnable" parameterValue="1"/>
+            <parameter index="9" name="leftSurroundEnable" parameterValue="1"/>
+            <parameter index="10" name="rightSurroundEnable" parameterValue="1"/>
+            <parameter index="11" name="leftSolo" parameterValue="0"/>
+            <parameter index="12" name="rightSolo" parameterValue="0"/>
+            <parameter index="13" name="centerSolo" parameterValue="0"/>
+            <parameter index="14" name="lfeSolo" parameterValue="0"/>
+            <parameter index="15" name="leftSurroundSolo" parameterValue="0"/>
+            <parameter index="16" name="rightSurroundSolo" parameterValue="0"/>
+          </component>
+          <component componentGuid="ebb649f6-fa6f-4e45-9dc6-cc36916d3f55" componentID="Audition.EQ" id="trackEQ" name="EQ" powered="false">
+            <parameter index="0" name="Frequência de estante inferior" parameterValue="0.0009078529546968638896942138671875"/>
+            <parameter index="1" name="Ganho de estante inferior" parameterValue="0.5"/>
+            <parameter index="2" name="Frequência de prateleira superior" parameterValue="0.816159784793853759765625"/>
+            <parameter index="3" name="Ganho de estante superior" parameterValue="0.5"/>
+            <parameter index="4" name="Frequência central de banda de EQ 1" parameterValue="0.0013617794029414653778076171875"/>
+            <parameter index="5" name="Banda de EQ 1 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="6" name="Ganho de banda de EQ 1" parameterValue="0.5"/>
+            <parameter index="7" name="Ativar Banda de EQ 1" parameterValue="1"/>
+            <parameter index="8" name="Frequências centrais de banda de EQ 2" parameterValue="0.008170676417648792266845703125"/>
+            <parameter index="9" name="Banda de EQ 2 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="10" name="Ganho de banda de EQ 2" parameterValue="0.5"/>
+            <parameter index="11" name="Ativar banda de EQ 2" parameterValue="1"/>
+            <parameter index="12" name="Frequências centrais de banda de EQ 3" parameterValue="0.0354062654078006744384765625"/>
+            <parameter index="13" name="Banda de EQ 3 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="14" name="Ganho de banda de EQ 3" parameterValue="0.5"/>
+            <parameter index="15" name="Ativar banda de EQ 3" parameterValue="1"/>
+            <parameter index="16" name="Frequência central de banda de EQ 4" parameterValue="0.144348621368408203125"/>
+            <parameter index="17" name="Banda de EQ 4 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="18" name="Ganho de banda de EQ 4" parameterValue="0.5"/>
+            <parameter index="19" name="Ativar banda de EQ 4" parameterValue="1"/>
+            <parameter index="20" name="Frequências centrais de banda de EQ 5" parameterValue="0.580118000507354736328125"/>
+            <parameter index="21" name="Banda de EQ 5 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="22" name="Ganho de banda de EQ 5" parameterValue="0.5"/>
+            <parameter index="23" name="Ativar banda de EQ 5" parameterValue="1"/>
+            <parameter index="24" name="Ganho" parameterValue="0.666666686534881591796875"/>
+            <parameter index="25" name="ConstantQ" parameterValue="1"/>
+            <parameter index="26" name="Ordem de filtro de estante inferior" parameterValue="0"/>
+            <parameter index="27" name="Ordem de filtro de estante superior" parameterValue="0"/>
+            <parameter index="28" name="Modo ultra silencioso" parameterValue="0"/>
+            <parameter index="29" name="Ativar estante inferior" parameterValue="1"/>
+            <parameter index="30" name="Ativar estante superior" parameterValue="1"/>
+            <parameter index="31" name="Taxa de amostragem original" parameterValue="0.22968749701976776123046875"/>
+            <parameter index="32" name="Largura de banda de banda de EQ 1" parameterValue="0.002499990165233612060546875"/>
+            <parameter index="33" name="Largura de banda de EQ 2" parameterValue="0.0099999904632568359375"/>
+            <parameter index="34" name="Largura de banda de EQ 3" parameterValue="0.0399999916553497314453125"/>
+            <parameter index="35" name="Largura de banda de EQ 4" parameterValue="0.15999998152256011962890625"/>
+            <parameter index="36" name="Largura de banda de EQ 5" parameterValue="0.63999998569488525390625"/>
+            <parameter index="37" name="Ativar filtro de alta frequência" parameterValue="0"/>
+            <parameter index="38" name="Frequência de corte de alta frequência" parameterValue="0"/>
+            <parameter index="39" name="Inclinação de alta frequência" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="40" name="Ativar filtro de passagem de baixa aprovação" parameterValue="0"/>
+            <parameter index="41" name="Frequência de corte de passe para baixo" parameterValue="0.906945049762725830078125"/>
+            <parameter index="42" name="Inclinação de passe para baixo" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="43" name="Desvio" parameterValue="0"/>
+            <parameter index="44" name="Faixa de gráfico baixa" parameterValue="1"/>
+          </component>
+        </trackAudioParameters>
+        <editParameter parameterIndex="0" slotIndex="4294967280"/>
+      </audioTrack>
+      <audioTrack automationLaneOpenState="false" id="10006" index="6" select="false" visible="true">
+        <trackParameters trackHeight="134" trackHue="92" trackMinimized="false">
+          <name>Faixa 6</name>
+        </trackParameters>
+        <trackAudioParameters audioChannelType="stereo" automationMode="1" monitoring="false" recordArmed="false" solo="false" soloSafe="false">
+          <trackOutput outputID="10000" type="trackID"/>
+          <trackInput inputID="1"/>
+          <component componentGuid="03a64f29-818a-448f-a855-8d067fe4c9d1" componentID="Audition.Fader" id="trackFader" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="98c7fe0d-8762-4da2-ae66-b06152ad47a3" componentID="Audition.Mute" id="trackMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="518dc897-b1ef-47da-8761-130a29f3626d" componentID="Audition.StereoTo51Panner" id="trackPan" name="StereoTo51Panner" powered="true">
+            <parameter index="0" name="Panorâmica: Ângulo" parameterValue="1.5707962512969970703125"/>
+            <parameter index="1" name="Panorâmica: Raio" parameterValue="1"/>
+            <parameter index="2" name="Panorâmica: Centro" parameterValue="1"/>
+            <parameter index="3" name="Panorâmica: LFE" parameterValue="0"/>
+            <parameter index="4" name="Panorâmica: difusão estéreo" parameterValue="0.523599147796630859375"/>
+            <parameter index="5" name="leftEnable" parameterValue="1"/>
+            <parameter index="6" name="rightEnable" parameterValue="1"/>
+            <parameter index="7" name="centerEnable" parameterValue="1"/>
+            <parameter index="8" name="lfeEnable" parameterValue="1"/>
+            <parameter index="9" name="leftSurroundEnable" parameterValue="1"/>
+            <parameter index="10" name="rightSurroundEnable" parameterValue="1"/>
+            <parameter index="11" name="leftSolo" parameterValue="0"/>
+            <parameter index="12" name="rightSolo" parameterValue="0"/>
+            <parameter index="13" name="centerSolo" parameterValue="0"/>
+            <parameter index="14" name="lfeSolo" parameterValue="0"/>
+            <parameter index="15" name="leftSurroundSolo" parameterValue="0"/>
+            <parameter index="16" name="rightSurroundSolo" parameterValue="0"/>
+          </component>
+          <component componentGuid="ab17208b-df43-45ef-bb06-a6b95fdba70b" componentID="Audition.EQ" id="trackEQ" name="EQ" powered="false">
+            <parameter index="0" name="Frequência de estante inferior" parameterValue="0.0009078529546968638896942138671875"/>
+            <parameter index="1" name="Ganho de estante inferior" parameterValue="0.5"/>
+            <parameter index="2" name="Frequência de prateleira superior" parameterValue="0.816159784793853759765625"/>
+            <parameter index="3" name="Ganho de estante superior" parameterValue="0.5"/>
+            <parameter index="4" name="Frequência central de banda de EQ 1" parameterValue="0.0013617794029414653778076171875"/>
+            <parameter index="5" name="Banda de EQ 1 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="6" name="Ganho de banda de EQ 1" parameterValue="0.5"/>
+            <parameter index="7" name="Ativar Banda de EQ 1" parameterValue="1"/>
+            <parameter index="8" name="Frequências centrais de banda de EQ 2" parameterValue="0.008170676417648792266845703125"/>
+            <parameter index="9" name="Banda de EQ 2 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="10" name="Ganho de banda de EQ 2" parameterValue="0.5"/>
+            <parameter index="11" name="Ativar banda de EQ 2" parameterValue="1"/>
+            <parameter index="12" name="Frequências centrais de banda de EQ 3" parameterValue="0.0354062654078006744384765625"/>
+            <parameter index="13" name="Banda de EQ 3 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="14" name="Ganho de banda de EQ 3" parameterValue="0.5"/>
+            <parameter index="15" name="Ativar banda de EQ 3" parameterValue="1"/>
+            <parameter index="16" name="Frequência central de banda de EQ 4" parameterValue="0.144348621368408203125"/>
+            <parameter index="17" name="Banda de EQ 4 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="18" name="Ganho de banda de EQ 4" parameterValue="0.5"/>
+            <parameter index="19" name="Ativar banda de EQ 4" parameterValue="1"/>
+            <parameter index="20" name="Frequências centrais de banda de EQ 5" parameterValue="0.580118000507354736328125"/>
+            <parameter index="21" name="Banda de EQ 5 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="22" name="Ganho de banda de EQ 5" parameterValue="0.5"/>
+            <parameter index="23" name="Ativar banda de EQ 5" parameterValue="1"/>
+            <parameter index="24" name="Ganho" parameterValue="0.666666686534881591796875"/>
+            <parameter index="25" name="ConstantQ" parameterValue="1"/>
+            <parameter index="26" name="Ordem de filtro de estante inferior" parameterValue="0"/>
+            <parameter index="27" name="Ordem de filtro de estante superior" parameterValue="0"/>
+            <parameter index="28" name="Modo ultra silencioso" parameterValue="0"/>
+            <parameter index="29" name="Ativar estante inferior" parameterValue="1"/>
+            <parameter index="30" name="Ativar estante superior" parameterValue="1"/>
+            <parameter index="31" name="Taxa de amostragem original" parameterValue="0.22968749701976776123046875"/>
+            <parameter index="32" name="Largura de banda de banda de EQ 1" parameterValue="0.002499990165233612060546875"/>
+            <parameter index="33" name="Largura de banda de EQ 2" parameterValue="0.0099999904632568359375"/>
+            <parameter index="34" name="Largura de banda de EQ 3" parameterValue="0.0399999916553497314453125"/>
+            <parameter index="35" name="Largura de banda de EQ 4" parameterValue="0.15999998152256011962890625"/>
+            <parameter index="36" name="Largura de banda de EQ 5" parameterValue="0.63999998569488525390625"/>
+            <parameter index="37" name="Ativar filtro de alta frequência" parameterValue="0"/>
+            <parameter index="38" name="Frequência de corte de alta frequência" parameterValue="0"/>
+            <parameter index="39" name="Inclinação de alta frequência" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="40" name="Ativar filtro de passagem de baixa aprovação" parameterValue="0"/>
+            <parameter index="41" name="Frequência de corte de passe para baixo" parameterValue="0.906945049762725830078125"/>
+            <parameter index="42" name="Inclinação de passe para baixo" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="43" name="Desvio" parameterValue="0"/>
+            <parameter index="44" name="Faixa de gráfico baixa" parameterValue="1"/>
+          </component>
+        </trackAudioParameters>
+        <editParameter parameterIndex="0" slotIndex="4294967280"/>
+      </audioTrack>
+      <masterTrack automationLaneOpenState="false" id="10000" index="7" select="false" visible="true">
+        <trackParameters trackHeight="134" trackHue="-1" trackMinimized="false">
+          <name>Mixagem</name>
+        </trackParameters>
+        <trackAudioParameters audioChannelType="fivePointOne" automationMode="1" monitoring="false" recordArmed="false" solo="false" soloSafe="true">
+          <trackOutput outputID="1" type="hardwareOutput"/>
+          <trackInput inputID="-1"/>
+          <component componentGuid="e8e603c1-ea5b-4021-89a9-138422bdf254" componentID="Audition.Fader" id="trackFader" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="45a16a91-fe93-4d5f-b706-64f9c71e52c0" componentID="Audition.Mute" id="trackMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="ee3b8535-f40a-4fd8-a9c4-dc70f5f26af1" componentID="Audition.StereoPanner" id="trackPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Deslocar" parameterValue="0"/>
+          </component>
+          <component componentGuid="64a55a7d-ebcb-4bca-a117-bab3fc79fd4a" componentID="Audition.EQ" id="trackEQ" name="EQ" powered="false">
+            <parameter index="0" name="Frequência de estante inferior" parameterValue="0.0009078529546968638896942138671875"/>
+            <parameter index="1" name="Ganho de estante inferior" parameterValue="0.5"/>
+            <parameter index="2" name="Frequência de prateleira superior" parameterValue="0.816159784793853759765625"/>
+            <parameter index="3" name="Ganho de estante superior" parameterValue="0.5"/>
+            <parameter index="4" name="Frequência central de banda de EQ 1" parameterValue="0.0013617794029414653778076171875"/>
+            <parameter index="5" name="Banda de EQ 1 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="6" name="Ganho de banda de EQ 1" parameterValue="0.5"/>
+            <parameter index="7" name="Ativar Banda de EQ 1" parameterValue="1"/>
+            <parameter index="8" name="Frequências centrais de banda de EQ 2" parameterValue="0.008170676417648792266845703125"/>
+            <parameter index="9" name="Banda de EQ 2 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="10" name="Ganho de banda de EQ 2" parameterValue="0.5"/>
+            <parameter index="11" name="Ativar banda de EQ 2" parameterValue="1"/>
+            <parameter index="12" name="Frequências centrais de banda de EQ 3" parameterValue="0.0354062654078006744384765625"/>
+            <parameter index="13" name="Banda de EQ 3 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="14" name="Ganho de banda de EQ 3" parameterValue="0.5"/>
+            <parameter index="15" name="Ativar banda de EQ 3" parameterValue="1"/>
+            <parameter index="16" name="Frequência central de banda de EQ 4" parameterValue="0.144348621368408203125"/>
+            <parameter index="17" name="Banda de EQ 4 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="18" name="Ganho de banda de EQ 4" parameterValue="0.5"/>
+            <parameter index="19" name="Ativar banda de EQ 4" parameterValue="1"/>
+            <parameter index="20" name="Frequências centrais de banda de EQ 5" parameterValue="0.580118000507354736328125"/>
+            <parameter index="21" name="Banda de EQ 5 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="22" name="Ganho de banda de EQ 5" parameterValue="0.5"/>
+            <parameter index="23" name="Ativar banda de EQ 5" parameterValue="1"/>
+            <parameter index="24" name="Ganho" parameterValue="0.666666686534881591796875"/>
+            <parameter index="25" name="ConstantQ" parameterValue="1"/>
+            <parameter index="26" name="Ordem de filtro de estante inferior" parameterValue="0"/>
+            <parameter index="27" name="Ordem de filtro de estante superior" parameterValue="0"/>
+            <parameter index="28" name="Modo ultra silencioso" parameterValue="0"/>
+            <parameter index="29" name="Ativar estante inferior" parameterValue="1"/>
+            <parameter index="30" name="Ativar estante superior" parameterValue="1"/>
+            <parameter index="31" name="Taxa de amostragem original" parameterValue="0.22968749701976776123046875"/>
+            <parameter index="32" name="Largura de banda de banda de EQ 1" parameterValue="0.002499990165233612060546875"/>
+            <parameter index="33" name="Largura de banda de EQ 2" parameterValue="0.0099999904632568359375"/>
+            <parameter index="34" name="Largura de banda de EQ 3" parameterValue="0.0399999916553497314453125"/>
+            <parameter index="35" name="Largura de banda de EQ 4" parameterValue="0.15999998152256011962890625"/>
+            <parameter index="36" name="Largura de banda de EQ 5" parameterValue="0.63999998569488525390625"/>
+            <parameter index="37" name="Ativar filtro de alta frequência" parameterValue="0"/>
+            <parameter index="38" name="Frequência de corte de alta frequência" parameterValue="0"/>
+            <parameter index="39" name="Inclinação de alta frequência" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="40" name="Ativar filtro de passagem de baixa aprovação" parameterValue="0"/>
+            <parameter index="41" name="Frequência de corte de passe para baixo" parameterValue="0.906945049762725830078125"/>
+            <parameter index="42" name="Inclinação de passe para baixo" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="43" name="Desvio" parameterValue="0"/>
+            <parameter index="44" name="Faixa de gráfico baixa" parameterValue="1"/>
+          </component>
+        </trackAudioParameters>
+        <editParameter parameterIndex="0" slotIndex="4294967280"/>
+      </masterTrack>
+    </tracks>
+    <sessionState ctiPosition="7396671" smpteStart="0">
+      <selectionState selectionDuration="0" selectionStart="7396671"/>
+      <viewState horizontalViewDuration="1635914" horizontalViewStart="6061594" trackControlsWidth="224" verticalScrollOffset="0"/>
+      <timeFormatState beatsPerBar="4" beatsPerMinute="120" customFrameRate="12" linkToDefaultTimeSettings="true" noteLength="4" subdivisions="16" timeCodeDropFrame="false" timeCodeFrameRate="30" timeCodeNTSC="false" timeFormat="timeFormatDecimal"/>
+      <mixingOptionState defaultPanModeLogarithmic="false" panPower="-3" playOverlappingClips="false"/>
+    </sessionState>
+    <xmpMetadata><![CDATA[<?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 7.1-c000 79.4d2f597, 2021/09/01-20:51:22        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""
+            xmlns:xmp="http://ns.adobe.com/xap/1.0/"
+            xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"
+            xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#"
+            xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#"
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:xmpDM="http://ns.adobe.com/xmp/1.0/DynamicMedia/">
+         <xmp:CreatorTool>Adobe Audition 22.0 (Windows)</xmp:CreatorTool>
+         <xmp:CreateDate>2022-06-16T20:15:33-03:00</xmp:CreateDate>
+         <xmp:MetadataDate>2022-06-16T20:24:33-03:00</xmp:MetadataDate>
+         <xmp:ModifyDate>2022-06-16T20:24:33-03:00</xmp:ModifyDate>
+         <xmpMM:InstanceID>xmp.iid:7bbd1d07-2b94-ca45-9af0-c36b37a9a750</xmpMM:InstanceID>
+         <xmpMM:DocumentID>xmp.did:7bbd1d07-2b94-ca45-9af0-c36b37a9a750</xmpMM:DocumentID>
+         <xmpMM:OriginalDocumentID>xmp.did:4bc39c62-b3f1-4542-bbfe-f276fc930b20</xmpMM:OriginalDocumentID>
+         <xmpMM:History>
+            <rdf:Seq>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:4bc39c62-b3f1-4542-bbfe-f276fc930b20</stEvt:instanceID>
+                  <stEvt:when>2022-06-16T20:15:33-03:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.0 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:85c961e5-e726-a249-b8f1-b3a24f770e34</stEvt:instanceID>
+                  <stEvt:when>2022-06-16T20:24:33-03:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.0 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:7bbd1d07-2b94-ca45-9af0-c36b37a9a750</stEvt:instanceID>
+                  <stEvt:when>2022-06-16T20:24:33-03:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.0 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+            </rdf:Seq>
+         </xmpMM:History>
+         <xmpMM:DerivedFrom rdf:parseType="Resource">
+            <stRef:instanceID>xmp.iid:85c961e5-e726-a249-b8f1-b3a24f770e34</stRef:instanceID>
+            <stRef:documentID>xmp.did:4bc39c62-b3f1-4542-bbfe-f276fc930b20</stRef:documentID>
+            <stRef:originalDocumentID>xmp.did:4bc39c62-b3f1-4542-bbfe-f276fc930b20</stRef:originalDocumentID>
+         </xmpMM:DerivedFrom>
+         <dc:format>application/xml</dc:format>
+         <xmpDM:Tracks>
+            <rdf:Bag>
+               <rdf:li rdf:parseType="Resource">
+                  <xmpDM:trackName>CuePoint Markers</xmpDM:trackName>
+                  <xmpDM:trackType>Cue</xmpDM:trackType>
+                  <xmpDM:frameRate>f44100</xmpDM:frameRate>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <xmpDM:trackName>CD Track Markers</xmpDM:trackName>
+                  <xmpDM:trackType>Track</xmpDM:trackType>
+                  <xmpDM:frameRate>f44100</xmpDM:frameRate>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <xmpDM:trackName>Subclip Markers</xmpDM:trackName>
+                  <xmpDM:trackType>InOut</xmpDM:trackType>
+                  <xmpDM:frameRate>f44100</xmpDM:frameRate>
+               </rdf:li>
+            </rdf:Bag>
+         </xmpDM:Tracks>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?>]]></xmpMetadata>
+    <clipGroups/>
+    <metronome enabled="false" pattern="downBeat subdivision subdivision subdivision " soundSet="sticks">
+      <metronomeTrack automationLaneOpenState="false" id="40000" index="0" select="false" visible="false">
+        <trackParameters trackHeight="77" trackHue="-1" trackMinimized="false">
+          <name>Metrônomo</name>
+        </trackParameters>
+        <trackAudioParameters audioChannelType="mono" automationMode="1" monitoring="false" recordArmed="false" solo="false" soloSafe="true">
+          <trackOutput outputID="10000" type="trackID"/>
+          <trackInput inputID="-1"/>
+          <component componentGuid="b9f2068a-1632-4be7-81c8-1333e89907b8" componentID="Audition.Fader" id="trackFader" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="0.50118720531463623046875"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="cd67eb65-6e17-48fb-8e8e-00c0cde6de53" componentID="Audition.Mute" id="trackMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="de214192-4418-4ad8-9e95-43a5d98f61a2" componentID="Audition.MonoTo51Panner" id="trackPan" name="MonoTo51Panner" powered="true">
+            <parameter index="0" name="Panorâmica: ângulo" parameterValue="1.5707962512969970703125"/>
+            <parameter index="1" name="Panorâmica: Raio" parameterValue="1"/>
+            <parameter index="2" name="Panorâmica: Centro" parameterValue="1"/>
+            <parameter index="3" name="Panorâmica: LFE" parameterValue="0"/>
+            <parameter index="4" name="leftEnable" parameterValue="1"/>
+            <parameter index="5" name="rightEnable" parameterValue="1"/>
+            <parameter index="6" name="centerEnable" parameterValue="1"/>
+            <parameter index="7" name="lfeEnable" parameterValue="1"/>
+            <parameter index="8" name="leftSurroundEnable" parameterValue="1"/>
+            <parameter index="9" name="rightSurroundEnable" parameterValue="1"/>
+            <parameter index="10" name="leftSolo" parameterValue="0"/>
+            <parameter index="11" name="rightSolo" parameterValue="0"/>
+            <parameter index="12" name="centerSolo" parameterValue="0"/>
+            <parameter index="13" name="lfeSolo" parameterValue="0"/>
+            <parameter index="14" name="leftSurroundSolo" parameterValue="0"/>
+            <parameter index="15" name="rightSurroundSolo" parameterValue="0"/>
+          </component>
+          <component componentGuid="4020004b-cf26-4a88-82e4-609c22faa078" componentID="Audition.EQ" id="trackEQ" name="EQ" powered="false">
+            <parameter index="0" name="Frequência de estante inferior" parameterValue="0.0009078529546968638896942138671875"/>
+            <parameter index="1" name="Ganho de estante inferior" parameterValue="0.5"/>
+            <parameter index="2" name="Frequência de prateleira superior" parameterValue="0.816159784793853759765625"/>
+            <parameter index="3" name="Ganho de estante superior" parameterValue="0.5"/>
+            <parameter index="4" name="Frequência central de banda de EQ 1" parameterValue="0.0013617794029414653778076171875"/>
+            <parameter index="5" name="Banda de EQ 1 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="6" name="Ganho de banda de EQ 1" parameterValue="0.5"/>
+            <parameter index="7" name="Ativar Banda de EQ 1" parameterValue="1"/>
+            <parameter index="8" name="Frequências centrais de banda de EQ 2" parameterValue="0.008170676417648792266845703125"/>
+            <parameter index="9" name="Banda de EQ 2 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="10" name="Ganho de banda de EQ 2" parameterValue="0.5"/>
+            <parameter index="11" name="Ativar banda de EQ 2" parameterValue="1"/>
+            <parameter index="12" name="Frequências centrais de banda de EQ 3" parameterValue="0.0354062654078006744384765625"/>
+            <parameter index="13" name="Banda de EQ 3 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="14" name="Ganho de banda de EQ 3" parameterValue="0.5"/>
+            <parameter index="15" name="Ativar banda de EQ 3" parameterValue="1"/>
+            <parameter index="16" name="Frequência central de banda de EQ 4" parameterValue="0.144348621368408203125"/>
+            <parameter index="17" name="Banda de EQ 4 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="18" name="Ganho de banda de EQ 4" parameterValue="0.5"/>
+            <parameter index="19" name="Ativar banda de EQ 4" parameterValue="1"/>
+            <parameter index="20" name="Frequências centrais de banda de EQ 5" parameterValue="0.580118000507354736328125"/>
+            <parameter index="21" name="Banda de EQ 5 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="22" name="Ganho de banda de EQ 5" parameterValue="0.5"/>
+            <parameter index="23" name="Ativar banda de EQ 5" parameterValue="1"/>
+            <parameter index="24" name="Ganho" parameterValue="0.666666686534881591796875"/>
+            <parameter index="25" name="ConstantQ" parameterValue="1"/>
+            <parameter index="26" name="Ordem de filtro de estante inferior" parameterValue="0"/>
+            <parameter index="27" name="Ordem de filtro de estante superior" parameterValue="0"/>
+            <parameter index="28" name="Modo ultra silencioso" parameterValue="0"/>
+            <parameter index="29" name="Ativar estante inferior" parameterValue="1"/>
+            <parameter index="30" name="Ativar estante superior" parameterValue="1"/>
+            <parameter index="31" name="Taxa de amostragem original" parameterValue="0.22968749701976776123046875"/>
+            <parameter index="32" name="Largura de banda de banda de EQ 1" parameterValue="0.002499990165233612060546875"/>
+            <parameter index="33" name="Largura de banda de EQ 2" parameterValue="0.0099999904632568359375"/>
+            <parameter index="34" name="Largura de banda de EQ 3" parameterValue="0.0399999916553497314453125"/>
+            <parameter index="35" name="Largura de banda de EQ 4" parameterValue="0.15999998152256011962890625"/>
+            <parameter index="36" name="Largura de banda de EQ 5" parameterValue="0.63999998569488525390625"/>
+            <parameter index="37" name="Ativar filtro de alta frequência" parameterValue="0"/>
+            <parameter index="38" name="Frequência de corte de alta frequência" parameterValue="0"/>
+            <parameter index="39" name="Inclinação de alta frequência" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="40" name="Ativar filtro de passagem de baixa aprovação" parameterValue="0"/>
+            <parameter index="41" name="Frequência de corte de passe para baixo" parameterValue="0.906945049762725830078125"/>
+            <parameter index="42" name="Inclinação de passe para baixo" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="43" name="Desvio" parameterValue="0"/>
+            <parameter index="44" name="Faixa de gráfico baixa" parameterValue="1"/>
+          </component>
+        </trackAudioParameters>
+        <editParameter parameterIndex="0" slotIndex="4294967280"/>
+      </metronomeTrack>
+    </metronome>
+    <properties>
+      <property key="EssentialSoundConfigurations">[{"Guid":"a8b40e3e-13e7-4c1f-b382-96058f1f691d","Name":"$$$/app/Presets/DefaultPresetName=(Default)","PresetData":{"ModeID":"ambience","Models":{"model_ducking":{},"model_loudness":{"DefaultLoudness":{"type":"float","value":-30},"LoudnessStandard":{"type":"std::uint32_t","value":0},"MaxLoudness":{"type":"float","value":-12},"MinLoudness":{"type":"float","value":-42}},"model_soundeffects":{"ReverbPresets":{"type":"tree::any","value":{"$$$/app/Presets/EssentialSound/ReverbPreset/LargeRoomAmbience=Large Room Ambience":{"type":"array::float","value":[0.051507499068975449,0.32432401180267334,0.29292899370193481,0.30000001192092896,0.20000000298023224,0,0.14285700023174286,0.40000000596046448,0.5,0.69999998807907104,0.30000001192092896,0.25125628709793091,0.03125]},"$$$/app/Presets/EssentialSound/ReverbPreset/OutsideAmbience=Outside Ambience":{"type":"array::float","value":[0.091708503663539886,0.043893899768590927,1,0.5,0.20000000298023224,0.80000001192092896,0.18367299437522888,1,0.5,0,0.80000001192092896,0.25125628709793091,0.03125]},"$$$/app/Presets/EssentialSound/ReverbPreset/RoomAmbience=Room Ambience":{"type":"array::float","value":[0.057788901031017303,0.44944900274276733,0.49494898319244385,0.89999997615814209,0.10000000149011612,0.15000000596046448,0.081632703542709351,0.40000000596046448,0.5,0.80000001192092896,0.20000000298023224,0.25125628709793091,0.03125]},"$$$/app/Presets/EssentialSound/ReverbPreset/WindEffect=Wind Effect":{"type":"array::float","value":[0.19597999751567841,0.6896899938583374,0.69696998596191406,0.25,0.5,0.5,0.23469400405883789,0.51999998092651367,0.5,0.75,0.25,0.25125628709793091,0.03125]}}}},"model_stereowidth":{},"model_volume":{"MaxGain":{"type":"float","value":15},"MinGain":{"type":"float","value":-60}}},"Version":1},"Type":"1c19ca71-c24c-49cd-8dd5-2cc46018507a","Version":1},{"Guid":"58dc27a8-6a2a-480c-bd0c-4b45fff346a6","Name":"$$$/app/Presets/DefaultPresetName=(Default)","PresetData":{"ModeID":"dialog","Models":{"model_clarity":{"EQPresets":{"type":"tree::any","value":{"$$$/app/Presets/EssentialSound/EQPreset/BackgroundVoice=Background Voice":{"type":"array::float","value":[0.12099699676036835,0.5,0.39240506291389465,0,0.5,0.5,0.5,0.5,0.5,0.47827938199043274,0.45772689580917358,0.45778733491897583,0.47946760058403015,0.5,0]},"$$$/app/Presets/EssentialSound/EQPreset/Intercom=Intercom":{"type":"array::float","value":[0.19432899355888367,0.5,1,0,0.071499988436698914,0.071499988436698914,0.071499988436698914,0.40238627791404724,0.48571401834487915,0.5,0.55155748128890991,0.59602576494216919,0.22246670722961426,0.071499988436698914,0]},"$$$/app/Presets/EssentialSound/EQPreset/LockedInTheTrunk=Locked in the Trunk":{"type":"array::float","value":[0.12099699676036835,0.5,0.79746836423873901,0,0.5,0.5,0.5,0.5,0.5,0.32846158742904663,0.15721426904201508,0.15721426904201508,0.15721426904201508,0.15721426904201508,0]},"$$$/app/Presets/EssentialSound/EQPreset/OldRadio=Old Radio":{"type":"array::float","value":[0.12099699676036835,0.5,0.79746836423873901,0,0.15721426904201508,0.15721426904201508,0.15721426904201508,0.28442040085792542,0.48315632343292236,0.36498492956161499,0.52853888273239136,0.43511500954627991,0.27154684066772461,0.15721426904201508,0]},"$$$/app/Presets/EssentialSound/EQPreset/OnTheTelephone=On the Telephone":{"type":"array::float","value":[0.12099699676036835,0.5,0.39240506291389465,0,0.32864287495613098,0.32864287495613098,0.32864287495613098,0.32864287495613098,0.48571401834487915,0.53071397542953491,0.53071397542953491,0.48357096314430237,0.32864287495613098,0.32864287495613098,0]},"$$$/app/Presets/EssentialSound/EQPreset/OutsideOfTheRoom=Outside of the Room":{"type":"array::float","value":[0.12099699676036835,0.5,0.79746836423873901,0,0.42539370059967041,0.47865453362464905,0.5,0.5,0.48571401834487915,0.40073278546333313,0.25656309723854065,0.15721426904201508,0.15721426904201508,0.15721426904201508,0]},"$$$/app/Presets/EssentialSound/EQPreset/PodcastVoice=Podcast Voice":{"type":"array::float","value":[0.12099699676036835,0.5,0.39240506291389465,0,0.5,0.5,0.5,0.51789408922195435,0.50770342350006104,0.5,0.51789408922195435,0.528114914894104,0.5102812647819519,0.5,0]},"$$$/app/Presets/EssentialSound/EQPreset/SubtleBoostFemale=Subtle Boost (Female)":{"type":"array::float","value":[0.096553400158882141,0.5,0.29113924503326416,0,0.5,0.5,0.5,0.5,0.5,0.51933407783508301,0.54642897844314575,0.52706766128540039,0.5,0.5,0]},"$$$/app/Presets/EssentialSound/EQPreset/SubtleBoostMale=Subtle Boost (Male)":{"type":"array::float","value":[0.096553400158882141,0.5,0.29113924503326416,0,0.5,0.5,0.5,0.5,0.5,0.5135338306427002,0.54642897844314575,0.51933407783508301,0.5,0.5,0]},"$$$/app/Presets/EssentialSound/EQPreset/ThatPublicRadioSound=That Public Radio Sound":{"type":"array::float","value":[0.12099699676036835,0.5,0.79746836423873901,0,0.15721426904201508,0.15721426904201508,0.15721426904201508,0.36334344744682312,0.49468311667442322,0.5,0.5,0.5,0.5,0.5,0]},"$$$/app/Presets/EssentialSound/EQPreset/VocalPresence=Vocal Presence":{"type":"array::float","value":[0.096553400158882141,0.5,0.32489451766014099,0,0.3572143018245697,0.3572143018245697,0.46428570151329041,0.47857141494750977,0.4763694703578949,0.49570354819297791,0.55924957990646362,0.56523394584655762,0.50859290361404419,0.46992480754852295,0]}}}},"model_loudness":{"DefaultLoudness":{"type":"float","value":-23},"LoudnessStandard":{"type":"std::uint32_t","value":0},"MaxLoudness":{"type":"float","value":-12},"MinLoudness":{"type":"float","value":-42}},"model_restoration":{"ReduceNoiseMaxSetting":{"type":"array::float","value":[1,0,0,0,0]},"ReduceNoiseMinSetting":{"type":"array::float","value":[0,0,0,0,0]},"ReduceReverbMaxSetting":{"type":"array::float","value":[1,0,1,0,0]},"ReduceReverbMinSetting":{"type":"array::float","value":[0,0,1,0,0]},"ReduceRumbleMaxSetting":{"type":"array::float","value":[1,0.061583578586578369,0.375,0,0,0.00083333335351198912,1,0,1,0.0390625,0.00083408987848088145,0,0.0041666668839752674,0.00022554649331141263,0.0046875001862645149,0.75,0.0052083334885537624,0.75,1,0.75,0.0040520834736526012,0.75,0.0042629167437553406,0.00022554649331141263,0.0064883334562182426,0.00022554649331141263,0.006866666954010725,0.75,0.0071704164147377014,0.00022554649331141263,0.01041458360850811,0.00022554649331141263,0.010900000110268593,0.75,0.011407917365431786,0.00022554649331141263,0.015606249682605267,0.00022554649331141263,0.016333334147930145,0.75,0.017094582319259644,0.00022554649331141263,0.026243748143315315,0.00022554649331141263,0.0274666678160429,0.75,0.028746666386723518,0.00022554649331141263,0.041658751666545868,0.00022554649331141263,0.043600000441074371,0.75,0.045631669461727142,0.00022554649331141263,0.062424581497907639,0.00022554649331141263,0.065333336591720581,0.75,0.068377502262592316,0.00022554649331141263,0.10497540980577469,0.00022554649331141263,0.1098666712641716,0.75,0.11498583108186722,0.00022554649331141263,0.16663584113121033,0.00022554649331141263,0.17440000176429749,0.75,0.18252624571323395,0.00022554649331141263,0.91874998807907104,0.00022554649331141263,1,0.00022554649331141263,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]},"ReduceRumbleMinSetting":{"type":"array::float","value":[1,0.061583578586578369,0.375,0,0,0.00083333335351198912,1,0,1,0.0390625,0.00083408987848088145,0.75,0.0041666668839752674,0.75,0.0046875001862645149,0.75,0.0052083334885537624,0.75,1,0.75,0.91874998807907104,0.61237245798110962,1,0.61237245798110962,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]},"ReduceSibilanceMaxSetting":{"type":"array::float","value":[0.5,0.19983997941017151,0.18367347121238708,0.26086956262588501,0.52702701091766357,0,1,0,0,0,0,0.75,1,1,0.40000000596046448]},"ReduceSibilanceMinSetting":{"type":"array::float","value":[0.875,0.19983997941017151,0.18367347121238708,0.19130434095859528,0.25675675272941589,0,1,0,0,0,0,0.75,1,1,0.40000000596046448]}},"model_soundeffects":{"ReverbPresets":{"type":"tree::any","value":{"$$$/app/Presets/EssentialSound/ReverbPreset/Auditorium=Auditorium":{"type":"array::float","value":[0.013047545216977596,0.15895412862300873,1,0.89999997615814209,0,0.52007436752319336,0.41663265228271484,0.46000000834465027,0.5,0.73000001907348633,0.15999999642372131,0.75376886129379272,0.03125]},"$$$/app/Presets/EssentialSound/ReverbPreset/Church=Church":{"type":"array::float","value":[0.032663315534591675,0.39939939975738525,0.79797977209091187,0.25,0.5,0.5,0.2297959178686142,0.72000002861022949,0.5,0.62999999523162842,0.87999999523162842,0.25125628709793091,0.03125]},"$$$/app/Presets/EssentialSound/ReverbPreset/LargeReflectiveRoom=Large Reflective Room":{"type":"array::float","value":[0.0074449013918638229,0.098988421261310577,0.79890537261962891,0.89999997615814209,0.10000000149011612,0.40110713243484497,0.060284845530986786,0.27522978186607361,0.5,0.73000001907348633,0.31999999284744263,0.25125628709793091,0.03125]},"$$$/app/Presets/EssentialSound/ReverbPreset/OutsideTheClub=Outside the Club":{"type":"array::float","value":[0.020615793764591217,0.050136558711528778,0.69696998596191406,0.25,0.094355784356594086,0.22242647409439087,0.1071428582072258,0.2800000011920929,0.5,0.73000001907348633,0.46000000834465027,0.25125628709793091,0.03125]},"$$$/app/Presets/EssentialSound/ReverbPreset/SmallDryRoom=Small Dry Room":{"type":"array::float","value":[0.24623115360736847,0.69975000619888306,0.29292899370193481,0.40000000596046448,0.20000000298023224,0.40000000596046448,0.039285715669393539,0.10000000149011612,0.5,1,0.5,0.75376886129379272,0.03125]},"$$$/app/Presets/EssentialSound/ReverbPreset/ThickenVoice=Thicken Voice":{"type":"array::float","value":[0.19597999751567841,0.23931467533111572,0.69696998596191406,0.25,0.5,0.53999996185302734,0.020408162847161293,0.20945435762405396,0.5,1,0.34999999403953552,0.25125628709793091,0.03125]},"$$$/app/Presets/EssentialSound/ReverbPreset/WarmRoom=Warm Room":{"type":"array::float","value":[0.020100502297282219,0.074074074625968933,0.49494948983192444,0.40000000596046448,0.74960309267044067,0.40000000596046448,0.1239795908331871,0.67000001668930054,0.5,0.85000002384185791,0.56000000238418579,0.25125628709793091,0.03125]},"$$$/app/Presets/EssentialSound/ReverbPreset/WarmVoice=Warm Voice":{"type":"array::float","value":[0.19597989320755005,0.89989989995956421,0,0.40000000596046448,0.20000000298023224,0.40000000596046448,0.10204081982374191,0.090000003576278687,0.5,1,0.30000001192092896,0.25125628709793091,0.03125]}}}},"model_volume":{"MaxGain":{"type":"float","value":15},"MinGain":{"type":"float","value":-60}}},"Version":2},"Type":"1c19ca71-c24c-49cd-8dd5-2cc46018507a","Version":1},{"Guid":"353811fa-4179-435e-8e5e-23028ba15a7a","Name":"$$$/app/Presets/DefaultPresetName=(Default)","PresetData":{"ModeID":"generic","Models":{"model_loudness":{"DefaultLoudness":{"type":"float","value":-24},"LoudnessStandard":{"type":"std::uint32_t","value":0},"MaxLoudness":{"type":"float","value":-12},"MinLoudness":{"type":"float","value":-42}},"model_volume":{"MaxGain":{"type":"float","value":15},"MinGain":{"type":"float","value":-60}}},"Version":1},"Type":"1c19ca71-c24c-49cd-8dd5-2cc46018507a","Version":1},{"Guid":"31ba96a6-5d3e-4d89-b1e1-1dbe3c055d0c","Name":"$$$/app/Presets/DefaultPresetName=(Default)","PresetData":{"ModeID":"music","Models":{"model_ducking":{},"model_duration":{},"model_loudness":{"DefaultLoudness":{"type":"float","value":-25},"LoudnessStandard":{"type":"std::uint32_t","value":0},"MaxLoudness":{"type":"float","value":-12},"MinLoudness":{"type":"float","value":-42}},"model_volume":{"MaxGain":{"type":"float","value":15},"MinGain":{"type":"float","value":-60}}},"Version":1},"Type":"1c19ca71-c24c-49cd-8dd5-2cc46018507a","Version":1},{"Guid":"cea63332-1adc-44a9-a6eb-5490f965859b","Name":"$$$/app/Presets/DefaultPresetName=(Default)","PresetData":{"ModeID":"sfx","Models":{"model_loudness":{"DefaultLoudness":{"type":"float","value":-21},"LoudnessStandard":{"type":"std::uint32_t","value":0},"MaxLoudness":{"type":"float","value":-12},"MinLoudness":{"type":"float","value":-42}},"model_pan":{},"model_soundeffects":{"ReverbPresets":{"type":"tree::any","value":{"$$$/app/Presets/EssentialSound/ReverbPreset/HeavyReverb=Heavy Reverb":{"type":"array::float","value":[0.13316600024700165,0.29929900169372559,1,0.95999997854232788,0.85000002384185791,0.5,0.51530599594116211,0.30000001192092896,0.5,0.5,0.5,0.25125628709793091,0.0625]},"$$$/app/Presets/EssentialSound/ReverbPreset/LightReverb=Light Reverb":{"type":"array::float","value":[0.095477402210235596,0.29929900169372559,0.090909101068973541,1,1,0.80000001192092896,0.22449000179767609,0.60000002384185791,0.5,0.69999998807907104,0.30000001192092896,0.25125628709793091,0.0625]},"$$$/app/Presets/EssentialSound/ReverbPreset/OutsideReverb=Outside Reverb":{"type":"array::float","value":[0.091708503663539886,0.043893899768590927,1,0.5,0.20000000298023224,0.80000001192092896,0.18367299437522888,1,0.5,0,0.80000001192092896,0.25125628709793091,0.0625]},"$$$/app/Presets/EssentialSound/ReverbPreset/RoomReverb=Room Reverb":{"type":"array::float","value":[0.057788901031017303,0.44944900274276733,0.49494898319244385,0.89999997615814209,0.10000000149011612,0.15000000596046448,0.081632703542709351,0.40000000596046448,0.5,0.80000001192092896,0.20000000298023224,0.25125628709793091,0.0625]}}}},"model_volume":{"MaxGain":{"type":"float","value":15},"MinGain":{"type":"float","value":-60}}},"Version":1},"Type":"1c19ca71-c24c-49cd-8dd5-2cc46018507a","Version":1}]</property>
+    </properties>
+  </session>
+
+  <files>
+    <file absolutePath="C:\Users\samue\Downloads\VersãoFinal\Segmento3\Lutar\Lutar\Conformed Files\Radio turning on sound effect 44100 1.wav" id="0" mediaHandler="AmioWav" recoveryID="1f61b058-2546-40ea-a3fe-ffbe1a7bdd9b" relativePath="../Conformed Files/Radio turning on sound effect 44100 1.wav"/>
+    <file absolutePath="C:\Users\samue\Downloads\EfeitosSonoros\Radio Static - Sound Effect (1).mp3" id="1" importerPrivateSettings="BitsPerSecond:0:192000;CompressionQuality:0:4;CompressionType:0:0;Encoder:0:1181239072;" mediaHandler="AmioMP3" recoveryID="eb66c379-e8a4-4ced-a3af-86f71addff1d" relativePath="../../../../../EfeitosSonoros/Radio Static - Sound Effect (1).mp3"/>
+    <file absolutePath="C:\Users\samue\Downloads\VersãoFinal\Segmento3\Lutar\Lutar\Conformed Files\Ato1Perg3Esc1D - NORMAL 44100 1.wav" id="2" mediaHandler="AmioWav" recoveryID="d43fb383-c21f-4ab2-a1cf-2663e66f24c8" relativePath="../Conformed Files/Ato1Perg3Esc1D - NORMAL 44100 1.wav"/>
+    <file absolutePath="C:\Users\samue\Downloads\VersãoFinal\Segmento3\Lutar\Lutar\Conformed Files\Ato1Perg3Esc2E 44100 1.wav" id="3" mediaHandler="AmioWav" recoveryID="ddfa7aff-3040-45c9-9947-2766d963ab59" relativePath="../Conformed Files/Ato1Perg3Esc2E 44100 1.wav"/>
+    <file absolutePath="C:\Users\samue\Downloads\VersãoFinal\Segmento3\Lutar\Lutar\Conformed Files\Radio turning on sound effect 44100 2.wav" id="4" mediaHandler="AmioWav" recoveryID="9cf9be82-e140-43d6-8dcd-67383de0ec6b" relativePath="../Conformed Files/Radio turning on sound effect 44100 2.wav"/>
+  </files>
+
+  <audioDevice inputID="22222222-2222-2222-2222-22222222" outputID="11111111-1111-1111-1111-11111111">
+    <inputPort id="1" name="Entrada estéreo padrão"/>
+    <inputPort id="2" name="[01M] Sistema padrão - Microfone (Realtek(R) Audio) 1"/>
+    <inputPort id="3" name="[02M] Sistema padrão - Microfone (Realtek(R) Audio) 2"/>
+    <inputPort id="4" name="[01S] Sistema padrão - Microfone (Realtek(R) Audio) 1"/>
+    <outputPort id="1" name="Saída padrão"/>
+    <outputPort id="2" name="[01M] Sistema padrão - Realtek HD Audio 2nd output (Realtek(R) Audio) 1"/>
+    <outputPort id="3" name="[02M] Sistema padrão - Realtek HD Audio 2nd output (Realtek(R) Audio) 2"/>
+    <outputPort id="4" name="Saída estéreo padrão"/>
+    <outputPort id="5" name="[01S] Sistema padrão - Realtek HD Audio 2nd output (Realtek(R) Audio) 1"/>
+    <outputPort id="6" name="Saída surround padrão"/>
+  </audioDevice>
+
+</sesx>

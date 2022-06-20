@@ -15,7 +15,7 @@ public class GameLogic : MonoBehaviour
     public Sound som;
 
     [HideInInspector]
-    public int estoria, direita, esquerda = 0;
+    public int estoria, direita, esquerda;
 
     public static GameLogic instance;
 
@@ -47,9 +47,18 @@ public class GameLogic : MonoBehaviour
             som2.source.volume = Sound.volume;
             som2.source.outputAudioMixerGroup = mixer;
         }
-        Play(1, "historia", historia);
-        Play(0, "instancia", escolha);
-        Update();
+
+        if (estoria == 0)
+        {
+            Play(1, "NarracaoInicial", historia);
+            estoria++;
+            Play(0, "instancia", escolha);
+            Update();
+        }
+        else
+        {
+            Play(estoria, "Escolha" + estoria, historia);
+        }
     }
     void Update()
     {
@@ -78,30 +87,42 @@ public class GameLogic : MonoBehaviour
             som.source = GetComponent<AudioSource>();
             som.source.Pause();
         }
+        if(Input.GetKey(KeyCode.Space))
+        {
+            saveController.Delete();
+        }
     }
 
     public void pHistoria()
     {
-        if (estoria == 0)
+        if (estoria == 2)
         {
-            Play(1, "historia", historia);
+            Play(2, "Escolha2", historia);
         }
-        else if (estoria == 1)
+        else if (estoria == 3)
         {
-            Play(2, "historia2", historia);
+            Play(3, "Escolha3", historia);
         }
-        else if (estoria == 2)
+        else if (estoria == 4)
         {
-            Play(2, "historia2", historia);
+            Play(4, "Escolha4", historia);
+        }
+        else if (estoria == 5)
+        {
+            Play(5, "Escolha5", historia);
+        }
+        else if (estoria == 6)
+        {
+            Play(6, "Escolha6", historia);
         }
         estoria++;
-        saveController.Save(estoria, direita, esquerda);
+        saveController.Save(estoria-1, direita-1, esquerda-1);
     }
     public void eDireita()
     {
         if (direita == 0)
         {
-            Play(2, "direita", escolha);
+            Play(2, "não", escolha);
         }
         else if (direita == 1)
         {
@@ -109,13 +130,13 @@ public class GameLogic : MonoBehaviour
         }
         direita++;
         esquerda++;
-        saveController.Save(estoria, direita, esquerda);
+        saveController.Save(estoria-1, direita-1, esquerda-1);
     }
     public void eEsquerda()
     {
         if (esquerda == 0)
         {
-            Play(1, "esquerda", escolha);
+            Play(1, "sim", escolha);
         }
         else if (esquerda == 1)
         {
@@ -123,7 +144,7 @@ public class GameLogic : MonoBehaviour
         }
         esquerda++;
         direita++;
-        saveController.Save(estoria, direita, esquerda);
+        saveController.Save(estoria-1, direita-1, esquerda-1);
     }
 
     // Funções que buscam os aúdios no vetores por nome
