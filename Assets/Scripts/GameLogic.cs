@@ -48,37 +48,37 @@ public class GameLogic : MonoBehaviour
             som2.source.outputAudioMixerGroup = mixer;
         }
 
-        if (estoria == 0)
-        {
             Play(1, "NarracaoInicial", historia);
             estoria++;
             Play(0, "instancia", escolha);
             Update();
-        }
-        else
-        {
-            Play(estoria, "Escolha" + estoria, historia);
-        }
+
     }
     void Update()
     {
-        StartCoroutine(Escolhas());
+        StartCoroutine(escolhas());
     }
 
-    IEnumerator Escolhas()
+    IEnumerator escolhas()
     {
         if (!som.source.isPlaying)
         {
             if (Input.GetKey(KeyCode.LeftArrow))
             {
                 eEsquerda();
-                yield return new WaitUntil(() => som.source.isPlaying == false);
+                while (som.source.isPlaying)
+                {
+                    yield return null;
+                }
                 pHistoria();
             }
             else if (Input.GetKey(KeyCode.RightArrow))
             {
                 eDireita();
-                yield return new WaitUntil(() => som.source.isPlaying == false);
+                while (som.source.isPlaying)
+                {
+                    yield return null;
+                }
                 pHistoria();
             }
         }
@@ -87,7 +87,7 @@ public class GameLogic : MonoBehaviour
             som.source = GetComponent<AudioSource>();
             som.source.Pause();
         }
-        if(Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space))
         {
             saveController.Delete();
         }
@@ -150,12 +150,13 @@ public class GameLogic : MonoBehaviour
     // Funções que buscam os aúdios no vetores por nome
     public void Play(int id, string name, Sound[] vetor)
     {
-        som = Array.Find(vetor, som => som.name == name && som.id == id);
+        Sound som2 = Array.Find(vetor, som => som.name == name && som.id == id);
         if (som == null)
         {
             Debug.LogWarning("O som: " + name + " não foi encontrado!");
             return;
         }
+        som = som2;
         som.source.Play();
     }
 }

@@ -1293,7 +1293,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8583007797984513363, guid: a9bdaad60cdf96d45868e7a5f8223f7e, type: 3}
       propertyPath: escolha.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8583007797984513363, guid: a9bdaad60cdf96d45868e7a5f8223f7e, type: 3}
       propertyPath: historia.Array.size
@@ -1314,6 +1314,10 @@ PrefabInstance:
     - target: {fileID: 8583007797984513363, guid: a9bdaad60cdf96d45868e7a5f8223f7e, type: 3}
       propertyPath: escolha.Array.data[3].id
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8583007797984513363, guid: a9bdaad60cdf96d45868e7a5f8223f7e, type: 3}
+      propertyPath: escolha.Array.data[4].id
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8583007797984513363, guid: a9bdaad60cdf96d45868e7a5f8223f7e, type: 3}
       propertyPath: historia.Array.data[2].id
@@ -1370,6 +1374,18 @@ PrefabInstance:
     - target: {fileID: 8583007797984513363, guid: a9bdaad60cdf96d45868e7a5f8223f7e, type: 3}
       propertyPath: escolha.Array.data[2].name
       value: "n\xE3o"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8583007797984513363, guid: a9bdaad60cdf96d45868e7a5f8223f7e, type: 3}
+      propertyPath: escolha.Array.data[3].name
+      value: esquerda2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8583007797984513363, guid: a9bdaad60cdf96d45868e7a5f8223f7e, type: 3}
+      propertyPath: escolha.Array.data[4].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: f1e0733b76b7a764d8708b3c44260d99, type: 3}
+    - target: {fileID: 8583007797984513363, guid: a9bdaad60cdf96d45868e7a5f8223f7e, type: 3}
+      propertyPath: escolha.Array.data[4].name
+      value: direita2
       objectReference: {fileID: 0}
     - target: {fileID: 8583007797984513363, guid: a9bdaad60cdf96d45868e7a5f8223f7e, type: 3}
       propertyPath: escolha.Array.data[5].clip
@@ -1474,7 +1490,7 @@ PrefabInstance:
     - target: {fileID: 8583007797984513363, guid: a9bdaad60cdf96d45868e7a5f8223f7e, type: 3}
       propertyPath: historia.Array.data[0].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 9e87130e1459f764796d58caa6a98919, type: 3}
+      objectReference: {fileID: 8300000, guid: 6cfc525cc03737349b7155562c09f7f5, type: 3}
     - target: {fileID: 8583007797984513363, guid: a9bdaad60cdf96d45868e7a5f8223f7e, type: 3}
       propertyPath: historia.Array.data[0].name
       value: NarracaoInicial
