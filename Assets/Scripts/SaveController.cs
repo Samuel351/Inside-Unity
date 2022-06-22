@@ -6,6 +6,7 @@ public class SaveController
     public const string direita_key = "direita";
     public const string esquerda_key = "esquerda";
 
+
     public void Save(int historia, int direita, int esquerda)
     {
         PlayerPrefs.SetInt(historia_key, historia);
@@ -17,8 +18,10 @@ public class SaveController
     }
     public void Load()
     {
-        GameLogic gameLogic = new GameLogic();
-
+        GameLogic id = new GameLogic();
+        id.id_historia = PlayerPrefs.GetInt(historia_key);
+        id.id_direita = PlayerPrefs.GetInt(direita_key);
+        id.id_esquerda = PlayerPrefs.GetInt(esquerda_key);
         Debug.Log("Jogo carregado!");
     }
     public void Delete()

@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     private GameObject pauseMenu;
+    private AudioSource source;
     private GameObject LogicaJogo;
     private static bool isPaused = false;
 

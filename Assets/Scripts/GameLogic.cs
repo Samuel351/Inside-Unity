@@ -5,27 +5,27 @@ using UnityEngine.Audio;
 
 public class GameLogic : MonoBehaviour
 {
-
+    SaveController saveManager;
     public AudioMixerGroup mixer;
     public Sound[] historia;
     public Sound[] esquerda;
     public Sound[] direita;
     private Sound somSource;
-    private int input = 1;
-    private SaveController saveController = new SaveController();
+    private bool temArma = false;
     [HideInInspector]
     public Sound som;
 
-    private int id_historia = 1;
-    private int id_direita = 1;
-    private int id_esquerda = 1;
+    public int id_historia = 1;
+    public int id_direita = 1;
+    public int id_esquerda = 1;
 
     public static GameLogic instance;
 
     void Awake()
     {
+        saveManager = new SaveController();
+        saveManager.Save(1, 1, 1);
         Debug.Log(id_historia);
-        GameLogic instancia = GameObject.Find("AudioController").GetComponent<GameLogic>();
         if (instance == null)
             instance = this;
         else
@@ -76,6 +76,11 @@ public class GameLogic : MonoBehaviour
                 StartCoroutine(eDireita());
             }
         }
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            somSource = GetComponent<GetComponent<AudioSource>()>
+            som.source.Pause();
+        }
     }
 
     IEnumerator Historia()
@@ -111,6 +116,7 @@ public class GameLogic : MonoBehaviour
         {
             yield return null;
         }
+        saveManager.Save(id_historia, id_direita, id_esquerda);
         Update();
     }
 
@@ -131,6 +137,7 @@ public class GameLogic : MonoBehaviour
         else if (id_esquerda == 4)
         {
             Play(4, "sim_arma", esquerda);
+            temArma = true;
         }
         else if (id_esquerda == 5)
         {
@@ -147,6 +154,7 @@ public class GameLogic : MonoBehaviour
         {
             yield return null;
         }
+        saveManager.Save(id_historia, id_direita, id_esquerda);
         StartCoroutine(Historia());
         StopCoroutine(eDireita());
     }
@@ -155,7 +163,10 @@ public class GameLogic : MonoBehaviour
     {
         if (id_direita == 1)
         {
-            Play(1, "não", direita);
+            Play(1, "nï¿½o", direita);
+            id_direita--;
+            id_esquerda--;
+            id_historia--;
         }
         else if (id_direita == 2)
         {
@@ -167,9 +178,14 @@ public class GameLogic : MonoBehaviour
         }
         else if (id_esquerda == 4)
         {
-            Play(4, "não_arma", direita);
+            Play(4, "nï¿½o_arma", direita);
+            temArma = false;
         }
-        else if (id_esquerda == 5)
+        else if (id_esquerda == 5 && temArma == true)
+        {
+            Play(5, "Bater com arma", direita);
+        }
+        else if (id_esquerda == 5 && temArma == false)
         {
             Play(5, "Bater com arma", direita);
         }
@@ -184,17 +200,20 @@ public class GameLogic : MonoBehaviour
         {
             yield return null;
         }
+        saveManager.Save(id_historia, id_direita, id_esquerda);
         StartCoroutine(Historia());
         StopCoroutine(eDireita());
     }
 
-    // Funções que buscam os aúdios no vetores por nome
+
+
+    // Funï¿½ï¿½es que buscam os aï¿½dios no vetores por nome
     public void Play(int id, string name, Sound[] vetor)
     {
         somSource = Array.Find(vetor, som => som.name == name && som.id == id);
         if (som == null)
         {
-            Debug.LogWarning("O som: " + name + " não foi encontrado!");
+            Debug.LogWarning("O som: " + name + " nï¿½o foi encontrado!");
         }
         somSource.source.Play();
     }
