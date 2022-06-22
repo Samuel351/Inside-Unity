@@ -18,9 +18,7 @@ public class SaveController
     public void Load()
     {
         GameLogic gameLogic = new GameLogic();
-        gameLogic.estoria = PlayerPrefs.GetInt(historia_key);
-        gameLogic.direita = PlayerPrefs.GetInt(direita_key);
-        gameLogic.esquerda = PlayerPrefs.GetInt(esquerda_key);
+
         Debug.Log("Jogo carregado!");
     }
     public void Delete()

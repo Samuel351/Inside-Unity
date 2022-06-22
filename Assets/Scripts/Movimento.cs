@@ -23,15 +23,11 @@ public class Movimento : MonoBehaviour
                 mainMenu.SetActive(menu);
                 optionsMenu.SetActive(options);
                 slotsMenu.SetActive(slots);
+                buttonPress -= 1;
             }
-            else if (Input.GetKey(KeyCode.LeftArrow))
+            else if (Input.GetKey(KeyCode.DownArrow))
             {
-                buttonPress++;
-                if (Input.GetKey(KeyCode.LeftArrow) && buttonPress == 2)
-                {
-                    Application.Quit();
-                    buttonPress = 0;
-                }
+                Application.Quit();
             }
             else if (Input.GetKey(KeyCode.UpArrow))
             {
@@ -42,6 +38,7 @@ public class Movimento : MonoBehaviour
                 slotsMenu.SetActive(slots);
                 optionsMenu.SetActive(options);
                 EventSystem.current.SetSelectedGameObject(Button.gameObject);
+                buttonPress -= 1;
             }
         }
 

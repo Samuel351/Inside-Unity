@@ -8,21 +8,23 @@ public class GameLogic : MonoBehaviour
 
     public AudioMixerGroup mixer;
     public Sound[] historia;
-    public Sound[] escolha;
+    public Sound[] esquerda;
+    public Sound[] direita;
+    private Sound somSource;
     private int input = 1;
     private SaveController saveController = new SaveController();
     [HideInInspector]
     public Sound som;
 
-    [HideInInspector]
-    public int estoria, direita, esquerda;
+    private int id_historia = 1;
+    private int id_direita = 1;
+    private int id_esquerda = 1;
 
     public static GameLogic instance;
 
     void Awake()
     {
-        saveController.Save(estoria, direita, esquerda);
-        saveController.Load();
+        Debug.Log(id_historia);
         GameLogic instancia = GameObject.Find("AudioController").GetComponent<GameLogic>();
         if (instance == null)
             instance = this;
@@ -40,7 +42,7 @@ public class GameLogic : MonoBehaviour
             som.source.outputAudioMixerGroup = mixer;
         }
 
-        foreach (Sound som2 in escolha)
+        foreach (Sound som2 in esquerda)
         {
             som2.source = gameObject.AddComponent<AudioSource>();
             som2.source.clip = som2.clip;
@@ -48,116 +50,153 @@ public class GameLogic : MonoBehaviour
             som2.source.outputAudioMixerGroup = mixer;
         }
 
-            Play(1, "NarracaoInicial", historia);
-            estoria++;
-            Play(0, "instancia", escolha);
-            Update();
-
+        foreach (Sound som3 in direita)
+        {
+            som3.source = gameObject.AddComponent<AudioSource>();
+            som3.source.clip = som3.clip;
+            som3.source.volume = Sound.volume;
+            som3.source.outputAudioMixerGroup = mixer;
+        }
+        Play(0, "instancia", esquerda);
+        Play(0, "instancia", direita);
+        Play(0, "instancia", historia);
+        StartCoroutine(Historia());
     }
+
     void Update()
     {
-        StartCoroutine(escolhas());
-    }
-
-    IEnumerator escolhas()
-    {
-        if (!som.source.isPlaying)
+        if (!somSource.source.isPlaying)
         {
             if (Input.GetKey(KeyCode.LeftArrow))
             {
-                eEsquerda();
-                while (som.source.isPlaying)
-                {
-                    yield return null;
-                }
-                pHistoria();
+                StartCoroutine(eEsquerda());
             }
             else if (Input.GetKey(KeyCode.RightArrow))
             {
-                eDireita();
-                while (som.source.isPlaying)
-                {
-                    yield return null;
-                }
-                pHistoria();
+                StartCoroutine(eDireita());
             }
-        }
-        if (Input.GetKey(KeyCode.Escape))
-        {
-            som.source = GetComponent<AudioSource>();
-            som.source.Pause();
-        }
-        if (Input.GetKey(KeyCode.Space))
-        {
-            saveController.Delete();
         }
     }
 
-    public void pHistoria()
+    IEnumerator Historia()
     {
-        if (estoria == 2)
+       yield return null;
+        if (id_historia == 1)
         {
-            Play(2, "Escolha2", historia);
+           Play(1, "NarracaoInicial", historia);
         }
-        else if (estoria == 3)
+        else if (id_historia == 2)
+        {
+           Play(2, "Escolha2", historia);
+        }
+        else if (id_historia == 3)
         {
             Play(3, "Escolha3", historia);
         }
-        else if (estoria == 4)
+        else if (id_historia == 4)
         {
             Play(4, "Escolha4", historia);
         }
-        else if (estoria == 5)
+        else if (id_historia == 5)
         {
             Play(5, "Escolha5", historia);
         }
-        else if (estoria == 6)
+        else if (id_historia == 6)
         {
             Play(6, "Escolha6", historia);
         }
-        estoria++;
-        saveController.Save(estoria-1, direita-1, esquerda-1);
+        Debug.Log("Historia: " + id_historia);
+        id_historia++;
+        while (somSource.source.isPlaying)
+        {
+            yield return null;
+        }
+        Update();
     }
-    public void eDireita()
+
+    IEnumerator eEsquerda()
     {
-        if (direita == 0)
+        if(id_esquerda == 1)
         {
-            Play(2, "não", escolha);
+            Play(1, "sim", esquerda);
         }
-        else if (direita == 1)
+        else if (id_esquerda == 2)
         {
-            Play(4, "direita2", escolha);
+            Play(2, "LadoEsquerdo", esquerda);
         }
-        direita++;
-        esquerda++;
-        saveController.Save(estoria-1, direita-1, esquerda-1);
+        else if (id_esquerda == 3)
+        {
+            Play(3, "Fugir", esquerda);
+        }
+        else if (id_esquerda == 4)
+        {
+            Play(4, "sim_arma", esquerda);
+        }
+        else if (id_esquerda == 5)
+        {
+            Play(5, "Ajudar", esquerda);
+        }
+        else if (id_esquerda == 6)
+        {
+            Play(6, "Confortar", esquerda);
+        }
+        Debug.Log("Esquerda: " + id_esquerda);
+        id_esquerda++;
+        id_direita++;
+        while (somSource.source.isPlaying)
+        {
+            yield return null;
+        }
+        StartCoroutine(Historia());
+        StopCoroutine(eDireita());
     }
-    public void eEsquerda()
+
+    IEnumerator eDireita()
     {
-        if (esquerda == 0)
+        if (id_direita == 1)
         {
-            Play(1, "sim", escolha);
+            Play(1, "não", direita);
         }
-        else if (esquerda == 1)
+        else if (id_direita == 2)
         {
-            Play(3, "esquerda2", escolha);
+            Play(2, "LadoDireito", direita);
         }
-        esquerda++;
-        direita++;
-        saveController.Save(estoria-1, direita-1, esquerda-1);
+        else if (id_esquerda == 3)
+        {
+            Play(3, "Lutar", direita);
+        }
+        else if (id_esquerda == 4)
+        {
+            Play(4, "não_arma", direita);
+        }
+        else if (id_esquerda == 5)
+        {
+            Play(5, "Bater com arma", direita);
+        }
+        else if (id_esquerda == 6)
+        {
+            Play(6, "Fugir", direita);
+        }
+        Debug.Log("Direita: " + id_direita);
+        id_direita++;
+        id_esquerda++;
+        while (somSource.source.isPlaying)
+        {
+            yield return null;
+        }
+        StartCoroutine(Historia());
+        StopCoroutine(eDireita());
     }
 
     // Funções que buscam os aúdios no vetores por nome
     public void Play(int id, string name, Sound[] vetor)
     {
-        Sound som2 = Array.Find(vetor, som => som.name == name && som.id == id);
+        somSource = Array.Find(vetor, som => som.name == name && som.id == id);
         if (som == null)
         {
             Debug.LogWarning("O som: " + name + " não foi encontrado!");
-            return;
         }
-        som = som2;
-        som.source.Play();
+        somSource.source.Play();
     }
-}
 
+}

@@ -4,7 +4,7 @@
 
   <session appBuild="22.0.0.96" appVersion="22.0" audioChannelType="fivePointOne" bitDepth="32" duration="1323000" sampleRate="44100">
     <tracks>
-      <audioTrack automationLaneOpenState="false" id="10001" index="1" select="true" visible="true">
+      <audioTrack automationLaneOpenState="false" id="10001" index="1" select="false" visible="true">
         <trackParameters trackHeight="134" trackHue="160" trackMinimized="false">
           <name>Faixa 1</name>
         </trackParameters>
@@ -87,7 +87,7 @@
           </component>
         </trackAudioParameters>
         <editParameter parameterIndex="0" slotIndex="4294967280"/>
-        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="426683" fileID="0" hue="-1" id="0" lockedInTime="false" looped="false" name="Ato1Per6Esc1Sub1D 44100 1" offline="false" select="true" sourceInPoint="0" sourceOutPoint="426683" startPoint="0" zOrder="0">
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="426683" fileID="0" hue="-1" id="0" lockedInTime="false" looped="false" name="Ato1Per6Esc1Sub1D 44100 1" offline="false" select="false" sourceInPoint="0" sourceOutPoint="426683" startPoint="0" zOrder="0">
           <effectsRack preFader="true">
             <component componentGuid="ab213e66-e783-4f41-97e9-9107f39b4ccb" componentID="Audition.ComponentGroup" id="rackMix" powered="true">
               <parameter index="0" parameterValue="0"/>
@@ -102,85 +102,9 @@
               <parameter index="1" parameterValue="0"/>
             </component>
             <slot powered="true" slotIndex="0">
-              <component componentGuid="455721f3-f0a8-4682-8f72-6e4bd9b20c6c" componentID="31d33f85-3288-489e-8390-d03c60d9ce6c" name="Coro" presetName="(Personalizado)">
+              <component componentGuid="69af3ec8-0cee-40e7-ab26-53e1730a3d4c" componentID="6e496ba0-3dbc-4c41-a272-7071daff0d95" editorHeight="476" editorLeft="308" editorTop="282" editorWidth="1304" name="Reverberação de surround" presetName="Perdido no espaço">
                 <busConfig><![CDATA[{"in":[{"layout":[100,101],"name":"","type":0}],"out":[{"layout":[100,101],"name":"","type":0}]}]]></busConfig>
-                <parameter index="0" name="Tempo de atraso" parameterValue="0.19839699566364288330078125"/>
-                <parameter index="1" name="Taxa de atraso" parameterValue="0"/>
-                <parameter index="2" name="Comentários" parameterValue="0"/>
-                <parameter index="3" name="Nível de saída original" parameterValue="0.25"/>
-                <parameter index="4" name="Nível de saída úmido" parameterValue="0.25"/>
-                <parameter index="5" name="Expansão" parameterValue="0.0500000007450580596923828125"/>
-                <parameter index="6" name="Campo estéreo" parameterValue="0.517977535724639892578125"/>
-                <parameter index="7" name="Taxa de modulação" parameterValue="0"/>
-                <parameter index="8" name="Profundidade de modulação" parameterValue="0"/>
-                <parameter index="9" name="Vozes" parameterValue="2"/>
-                <parameter index="10" name="Média de entrada de canal à esquerda e à direita" parameterValue="1"/>
-                <parameter index="11" name="Adicionar sinais biauriculares" parameterValue="1"/>
-                <parameter index="12" name="Maior qualidade" parameterValue="1"/>
-              </component>
-            </slot>
-            <slot powered="true" slotIndex="1">
-              <component componentGuid="cda3d190-36b2-4a8b-a3e1-1f31ecc76d0a" componentID="8edcd326-33de-4a4d-985b-f1bf48ed1427" name="Equalizador paramétrico" presetName="(Personalizado)">
-                <busConfig><![CDATA[{"in":[{"layout":[100,101],"name":"","type":0}],"out":[{"layout":[100,101],"name":"","type":0}]}]]></busConfig>
-                <parameter index="0" name="Frequência de estante inferior" parameterValue="0.037946648895740509033203125"/>
-                <parameter index="1" name="Ganho de estante inferior" parameterValue="0.552631556987762451171875"/>
-                <parameter index="2" name="Frequência de prateleira superior" parameterValue="0.8884027004241943359375"/>
-                <parameter index="3" name="Ganho de estante superior" parameterValue="0.5"/>
-                <parameter index="4" name="Frequência central de banda de EQ 1" parameterValue="0.001482318155467510223388671875"/>
-                <parameter index="5" name="Banda de EQ 1 Q" parameterValue="0.000199989997781813144683837890625"/>
-                <parameter index="6" name="Ganho de banda de EQ 1" parameterValue="0.5"/>
-                <parameter index="7" name="Ativar Banda de EQ 1" parameterValue="1"/>
-                <parameter index="8" name="Frequências centrais de banda de EQ 2" parameterValue="0.00889390893280506134033203125"/>
-                <parameter index="9" name="Banda de EQ 2 Q" parameterValue="0.000199989997781813144683837890625"/>
-                <parameter index="10" name="Ganho de banda de EQ 2" parameterValue="0.5"/>
-                <parameter index="11" name="Ativar banda de EQ 2" parameterValue="1"/>
-                <parameter index="12" name="Frequências centrais de banda de EQ 3" parameterValue="0.0385402776300907135009765625"/>
-                <parameter index="13" name="Banda de EQ 3 Q" parameterValue="0.000199989997781813144683837890625"/>
-                <parameter index="14" name="Ganho de banda de EQ 3" parameterValue="0.5"/>
-                <parameter index="15" name="Ativar banda de EQ 3" parameterValue="1"/>
-                <parameter index="16" name="Frequência central de banda de EQ 4" parameterValue="0.1571257412433624267578125"/>
-                <parameter index="17" name="Banda de EQ 4 Q" parameterValue="0.000199989997781813144683837890625"/>
-                <parameter index="18" name="Ganho de banda de EQ 4" parameterValue="0.5"/>
-                <parameter index="19" name="Ativar banda de EQ 4" parameterValue="1"/>
-                <parameter index="20" name="Frequências centrais de banda de EQ 5" parameterValue="0.6314675807952880859375"/>
-                <parameter index="21" name="Banda de EQ 5 Q" parameterValue="0.000199989997781813144683837890625"/>
-                <parameter index="22" name="Ganho de banda de EQ 5" parameterValue="0.5"/>
-                <parameter index="23" name="Ativar banda de EQ 5" parameterValue="1"/>
-                <parameter index="24" name="Ganho" parameterValue="0.666666686534881591796875"/>
-                <parameter index="25" name="ConstantQ" parameterValue="1"/>
-                <parameter index="26" name="Ordem de filtro de estante inferior" parameterValue="0"/>
-                <parameter index="27" name="Ordem de filtro de estante superior" parameterValue="0"/>
-                <parameter index="28" name="Modo ultra silencioso" parameterValue="0"/>
-                <parameter index="29" name="Ativar estante inferior" parameterValue="1"/>
-                <parameter index="30" name="Ativar estante superior" parameterValue="1"/>
-                <parameter index="31" name="Taxa de amostragem original" parameterValue="0.22968749701976776123046875"/>
-                <parameter index="32" name="Largura de banda de banda de EQ 1" parameterValue="0.002499990165233612060546875"/>
-                <parameter index="33" name="Largura de banda de EQ 2" parameterValue="0.0099999904632568359375"/>
-                <parameter index="34" name="Largura de banda de EQ 3" parameterValue="0.0399999953806400299072265625"/>
-                <parameter index="35" name="Largura de banda de EQ 4" parameterValue="0.174073994159698486328125"/>
-                <parameter index="36" name="Largura de banda de EQ 5" parameterValue="0.640000045299530029296875"/>
-                <parameter index="37" name="Ativar filtro de alta frequência" parameterValue="1"/>
-                <parameter index="38" name="Frequência de corte de alta frequência" parameterValue="0.0007045685197226703166961669921875"/>
-                <parameter index="39" name="Inclinação de alta frequência" parameterValue="0.4000000059604644775390625"/>
-                <parameter index="40" name="Ativar filtro de passagem de baixa aprovação" parameterValue="1"/>
-                <parameter index="41" name="Frequência de corte de passe para baixo" parameterValue="0.0490240566432476043701171875"/>
-                <parameter index="42" name="Inclinação de passe para baixo" parameterValue="0.4000000059604644775390625"/>
-                <parameter index="43" name="Desvio" parameterValue="0"/>
-                <parameter index="44" name="Faixa de gráfico baixa" parameterValue="0"/>
-              </component>
-            </slot>
-            <slot powered="true" slotIndex="2">
-              <component componentGuid="9356a0a2-6f04-4730-ab9c-a3d2ff684117" componentID="db912dc1-cfd7-4c26-8bbc-ffe2a16ded2d" name="Reverberação" presetName="(Personalizado)">
-                <busConfig><![CDATA[{"in":[{"layout":[100,101],"name":"","type":0}],"out":[{"layout":[100,101],"name":"","type":0}]}]]></busConfig>
-                <parameter index="0" name="Tempo de decréscimo" parameterValue="0.01434147916734218597412109375"/>
-                <parameter index="1" name="Tempo de pré-atraso" parameterValue="0.0319148935377597808837890625"/>
-                <parameter index="2" name="Percepção" parameterValue="0.510638296604156494140625"/>
-                <parameter index="3" name="Nível de saída original" parameterValue="0.4000000059604644775390625"/>
-                <parameter index="4" name="Nível de saída úmido" parameterValue="0.039999999105930328369140625"/>
-                <parameter index="5" name="Difusão" parameterValue="0.010125483386218547821044921875"/>
-                <parameter index="6" name="Somar entradas" parameterValue="0.753768861293792724609375"/>
-                <parameter index="7" name="Cálculo de impulso" parameterValue="1"/>
-                <parameter index="8" name="Em processamento" parameterValue="0.753768861293792724609375"/>
+                <presetChunkData><![CDATA[ESBuYWZldFMOAAAAAQAAAM3MpEKamaNCAACIQgAAeEIAAMZCAABgQQCAhEMAgIRDZmaiQgAAAAAAAAAAzcyeQgAAAEEPAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></presetChunkData>
               </component>
             </slot>
           </effectsRack>
@@ -188,7 +112,7 @@
             <parameter index="0" name="volume" parameterValue="1"/>
             <parameter index="1" name="static gain" parameterValue="1"/>
           </component>
-          <component componentGuid="22b03f36-3361-4dc4-973e-a7413bbf454f" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+          <component componentGuid="001b8946-79a8-472c-878a-6825eb9e8f93" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
             <parameter index="0" parameterValue="0"/>
             <parameter index="1" name="mute" parameterValue="0"/>
           </component>
@@ -205,7 +129,7 @@
           </channelMap>
         </audioClip>
       </audioTrack>
-      <audioTrack automationLaneOpenState="false" id="10002" index="2" select="false" visible="true">
+      <audioTrack automationLaneOpenState="false" id="10002" index="2" select="true" visible="true">
         <trackParameters trackHeight="134" trackHue="267" trackMinimized="false">
           <name>Faixa 2</name>
         </trackParameters>
@@ -288,6 +212,75 @@
           </component>
         </trackAudioParameters>
         <editParameter parameterIndex="0" slotIndex="4294967280"/>
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="413206" fileID="1" hue="-1" id="0" lockedInTime="false" looped="false" name="Efeito sonoro revirando coisas - Sound effect looking for things" offline="false" select="true" sourceInPoint="0" sourceOutPoint="378390" startPoint="34816" zOrder="1">
+          <effectsRack preFader="true">
+            <component componentGuid="e22ceef3-0a52-4843-a04e-d403b465e0b3" componentID="Audition.ComponentGroup" id="rackMix" powered="true">
+              <parameter index="0" parameterValue="0"/>
+              <parameter index="1" parameterValue="0"/>
+            </component>
+            <component componentGuid="5e936c1e-6e32-4489-9122-5902bcc886c7" id="rackInput" powered="true">
+              <parameter index="0" parameterValue="1"/>
+              <parameter index="1" parameterValue="0"/>
+            </component>
+            <component componentGuid="90a9c4dc-115b-4348-9ab3-60c5b5e97e2c" id="rackOutput" powered="true">
+              <parameter index="0" parameterValue="1"/>
+              <parameter index="1" parameterValue="0"/>
+            </component>
+            <slot powered="true" slotIndex="0">
+              <component componentGuid="b1dc2c97-bb68-423f-b242-6f470a2f47f0" componentID="7dc63abb-812a-410a-aaf0-53bcbe298c84" editorHeight="615" editorLeft="509" editorTop="213" editorWidth="902" name="Reverberação completa" presetName="Clube pequeno">
+                <busConfig><![CDATA[{"in":[{"layout":[100,101],"name":"","type":0}],"out":[{"layout":[100,101],"name":"","type":0}]}]]></busConfig>
+                <parameter index="0" name="Tempo de decréscimo de reverberação" parameterValue="0.2056860029697418212890625"/>
+                <parameter index="1" name="Tempo de atraso de reverberação" parameterValue="0.36000001430511474609375"/>
+                <parameter index="2" name="Difusão" parameterValue="0.83131301403045654296875"/>
+                <parameter index="3" name="Percepção" parameterValue="0.314999997615814208984375"/>
+                <parameter index="4" name="Nível de saída (Seco)" parameterValue="0.3655000030994415283203125"/>
+                <parameter index="5" name="Nível de saída (Reflexos anteriores)" parameterValue="0.138999998569488525390625"/>
+                <parameter index="6" name="Nível de saída (reverberação)" parameterValue="0.09260000288486480712890625"/>
+                <parameter index="7" name="Tamanho da sala" parameterValue="0.0450317002832889556884765625"/>
+                <parameter index="8" name="Dimensão" parameterValue="0.0320801995694637298583984375"/>
+                <parameter index="9" name="Local esquerdo/direito" parameterValue="0.545499980449676513671875"/>
+                <parameter index="10" name="Corte de alta frequência de reflexão mais recente" parameterValue="0.002269630320370197296142578125"/>
+                <parameter index="11" name="Ganho de estante inferior" parameterValue="0.2572000026702880859375"/>
+                <parameter index="12" name="Ganho médio de coloração" parameterValue="0.7386000156402587890625"/>
+                <parameter index="13" name="Ganho de estante superior" parameterValue="0.12860000133514404296875"/>
+                <parameter index="14" name="Frequência de estante inferior" parameterValue="0.00146255013532936573028564453125"/>
+                <parameter index="15" name="Frequência de prateleira superior" parameterValue="0.305496990680694580078125"/>
+                <parameter index="16" name="Frequência central de coloração média" parameterValue="0.001134819933213293552398681640625"/>
+                <parameter index="17" name="Q de coloração média" parameterValue="0.19597999751567840576171875"/>
+                <parameter index="18" name="Decréscimo da coloração" parameterValue="1"/>
+                <parameter index="19" name="Somar entradas" parameterValue="0.753768861293792724609375"/>
+                <parameter index="20" name="Incluir direto" parameterValue="0.753768861293792724609375"/>
+                <parameter index="21" name="Definir reverberação com base no tamanho da sala" parameterValue="0.251256287097930908203125"/>
+                <parameter index="22" name="Cálculo de impulso" parameterValue="1"/>
+                <parameter index="23" name="Em processamento" parameterValue="0.251256287097930908203125"/>
+                <parameter index="24" name="Número de canais" parameterValue="0.0625"/>
+                <parameter index="25" name="Largura da sala" parameterValue="0.0141158998012542724609375"/>
+                <parameter index="26" name="Altura da sala" parameterValue="0.02045789919793605804443359375"/>
+                <parameter index="27" name="Profundidade da sala" parameterValue="0.009422340430319309234619140625"/>
+                <parameter index="28" name="Taxa de amostragem original" parameterValue="0.22968749701976776123046875"/>
+              </component>
+            </slot>
+          </effectsRack>
+          <component componentGuid="57db4eac-9b18-44f9-b012-95cba4883b4b" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="6363fd99-8728-4ee9-8a7d-3b582dd770a6" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="d84cdf39-ea11-4a50-ab01-4b287bc8ecf2" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Deslocar" parameterValue="0"/>
+          </component>
+          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="19" startPoint="0" type="log"/>
+          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="378390" shape="-10" startPoint="316219" type="log"/>
+          <editParameter parameterIndex="0" slotIndex="4294967280"/>
+          <editParameter parameterIndex="0" slotIndex="4294967281"/>
+          <channelMap>
+            <channel index="0" sourceIndex="0"/>
+            <channel index="1" sourceIndex="1"/>
+          </channelMap>
+        </audioClip>
       </audioTrack>
       <audioTrack automationLaneOpenState="false" id="10003" index="3" select="false" visible="true">
         <trackParameters trackHeight="134" trackHue="51" trackMinimized="false">
@@ -694,8 +687,8 @@
         <editParameter parameterIndex="0" slotIndex="4294967280"/>
       </masterTrack>
     </tracks>
-    <sessionState ctiPosition="263487" smpteStart="0">
-      <selectionState selectionDuration="0" selectionStart="263487"/>
+    <sessionState ctiPosition="372270" smpteStart="0">
+      <selectionState selectionDuration="0" selectionStart="372270"/>
       <viewState horizontalViewDuration="1323000" horizontalViewStart="0" trackControlsWidth="224" verticalScrollOffset="0"/>
       <timeFormatState beatsPerBar="4" beatsPerMinute="120" customFrameRate="12" linkToDefaultTimeSettings="true" noteLength="4" subdivisions="16" timeCodeDropFrame="false" timeCodeFrameRate="30" timeCodeNTSC="false" timeFormat="timeFormatDecimal"/>
       <mixingOptionState defaultPanModeLogarithmic="false" panPower="-3" playOverlappingClips="false"/>
@@ -711,9 +704,9 @@
             xmlns:xmpDM="http://ns.adobe.com/xmp/1.0/DynamicMedia/">
          <xmp:CreatorTool>Adobe Audition 22.0 (Windows)</xmp:CreatorTool>
          <xmp:CreateDate>2022-06-18T09:03:31-03:00</xmp:CreateDate>
-         <xmp:MetadataDate>2022-06-18T09:04:04-03:00</xmp:MetadataDate>
-         <xmp:ModifyDate>2022-06-18T09:04:04-03:00</xmp:ModifyDate>
-         <xmpMM:InstanceID>xmp.iid:8ca0fb9d-e43c-8e49-9f2f-317f63b26b54</xmpMM:InstanceID>
+         <xmp:MetadataDate>2022-06-21T13:50:25-03:00</xmp:MetadataDate>
+         <xmp:ModifyDate>2022-06-21T13:50:25-03:00</xmp:ModifyDate>
+         <xmpMM:InstanceID>xmp.iid:0f968050-0330-4242-87ce-185ceafa42ec</xmpMM:InstanceID>
          <xmpMM:DocumentID>xmp.did:054468e2-25e6-6b40-8f26-9ad541e91dfc</xmpMM:DocumentID>
          <xmpMM:OriginalDocumentID>xmp.did:054468e2-25e6-6b40-8f26-9ad541e91dfc</xmpMM:OriginalDocumentID>
          <xmpMM:History>
@@ -736,6 +729,20 @@
                   <stEvt:action>saved</stEvt:action>
                   <stEvt:instanceID>xmp.iid:8ca0fb9d-e43c-8e49-9f2f-317f63b26b54</stEvt:instanceID>
                   <stEvt:when>2022-06-18T09:04:04-03:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.0 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:149ad88b-d5f3-2141-ab01-8404c270bfe9</stEvt:instanceID>
+                  <stEvt:when>2022-06-21T13:50:25-03:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.0 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:0f968050-0330-4242-87ce-185ceafa42ec</stEvt:instanceID>
+                  <stEvt:when>2022-06-21T13:50:25-03:00</stEvt:when>
                   <stEvt:softwareAgent>Adobe Audition 22.0 (Windows)</stEvt:softwareAgent>
                   <stEvt:changed>/</stEvt:changed>
                </rdf:li>
@@ -878,7 +885,8 @@
   </session>
 
   <files>
-    <file absolutePath="C:\Users\samue\OneDrive\Área de Trabalho\VersãoFinal\Segmento6\CONFORTAR\Vasculhar\VASCULHAR\Conformed Files\Ato1Per6Esc1Sub1D 44100 1.wav" id="0" mediaHandler="AmioWav" relativePath="Conformed Files/Ato1Per6Esc1Sub1D 44100 1.wav"/>
+    <file absolutePath="C:\Users\samue\OneDrive\Área de Trabalho\VersãoFinal\Segmento6\CONFORTAR\Vasculhar\VASCULHAR\Conformed Files\Ato1Per6Esc1Sub1D 44100 1.wav" id="0" importerPrivateSettings="Compression:0:0;LargeFileSupport:0:0;SampleType:0:1;" mediaHandler="AmioWav" relativePath="Conformed Files/Ato1Per6Esc1Sub1D 44100 1.wav"/>
+    <file absolutePath="C:\Users\samue\OneDrive\Área de Trabalho\VersãoFinal\Segmento6\CONFORTAR\Vasculhar\VASCULHAR\Arquivos importados\Efeito sonoro revirando coisas - Sound effect looking for things.mp3" id="1" importerPrivateSettings="BitsPerSecond:0:192000;CompressionQuality:0:4;CompressionType:0:0;Encoder:0:1181239072;" mediaHandler="AmioMP3" relativePath="Arquivos importados/Efeito sonoro revirando coisas - Sound effect looking for things.mp3"/>
   </files>
 
   <audioDevice inputID="22222222-2222-2222-2222-22222222" outputID="11111111-1111-1111-1111-11111111">
