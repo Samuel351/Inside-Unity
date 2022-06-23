@@ -14,7 +14,7 @@ public class SaveController
         PlayerPrefs.SetInt(esquerda_key, esquerda);
         PlayerPrefs.Save();
         Debug.Log("Jogo salvo!");
-        Debug.Log("Valores salvos: \nhistoria: " + historia + "\ndireita: " + direita + "\nesquerda: " + esquerda);
+        Debug.Log("Valores salvos: | historia: " + historia + " | direita: " + direita + " | esquerda: " + esquerda);
     }
     public void Load()
     {
@@ -23,6 +23,7 @@ public class SaveController
         id.id_direita = PlayerPrefs.GetInt(direita_key);
         id.id_esquerda = PlayerPrefs.GetInt(esquerda_key);
         Debug.Log("Jogo carregado!");
+        Debug.Log("Valores carregados: | historia: " + id.historia + " | direita: " + id.direita + " | esquerda: " + id.esquerda);
     }
     public void Delete()
     {                                

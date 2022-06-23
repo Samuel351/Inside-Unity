@@ -5,14 +5,16 @@ using UnityEngine.UI;
 
 public class SlotsMenu : MonoBehaviour
 {
-  
-    SaveController saveManager;
+    [HideInInspector]
+    public SaveController saveManager;
+
+    void Awake()
+    {
+        saveManager = new SaveController();
+    }
 
     [SerializeField]
     private Text _title;
-
-    [SerializeField]
-    private Text _title2;
 
     void Start()
     {
@@ -36,5 +38,6 @@ public class SlotsMenu : MonoBehaviour
         _title.text = "Novo jogo";
         PlayerPrefs.SetString("save1", _title.text);
         saveManager.Delete();
+        saveManager.Save(1, 1, 1);
     }
 }

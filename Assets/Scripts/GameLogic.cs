@@ -2,30 +2,34 @@ using UnityEngine;
 using System;
 using System.Collections;
 using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 
 public class GameLogic : MonoBehaviour
 {
-    SaveController saveManager;
+    SaveController saveManager = new SaveController();
     public AudioMixerGroup mixer;
     public Sound[] historia;
     public Sound[] esquerda;
     public Sound[] direita;
     private Sound somSource;
     private bool temArma = false;
+    private int primeira = 0;
     [HideInInspector]
     public Sound som;
 
+    [HideInInspector]
     public int id_historia = 1;
+
+    [HideInInspector]
     public int id_direita = 1;
+
+    [HideInInspector]
     public int id_esquerda = 1;
 
     public static GameLogic instance;
 
     void Awake()
     {
-        saveManager = new SaveController();
-        saveManager.Save(1, 1, 1);
-        Debug.Log(id_historia);
         if (instance == null)
             instance = this;
         else
@@ -57,10 +61,22 @@ public class GameLogic : MonoBehaviour
             som3.source.volume = Sound.volume;
             som3.source.outputAudioMixerGroup = mixer;
         }
-        Play(0, "instancia", esquerda);
-        Play(0, "instancia", direita);
-        Play(0, "instancia", historia);
-        StartCoroutine(Historia());
+
+        if(primeira == 0)
+        {
+            saveManager.Save(1, 1, 1);
+            Play(0, "instancia", esquerda);
+            Play(0, "instancia", direita);
+            Play(0, "instancia", historia);
+            StartCoroutine(Historia());
+            primeira = 1;
+            PlayerPrefs.SetInt("primeiravez", primeira);
+        }
+        else
+        {
+            saveManager.Load();
+            StartCoroutine(Historia());
+        }
     }
 
     void Update()
@@ -76,16 +92,21 @@ public class GameLogic : MonoBehaviour
                 StartCoroutine(eDireita());
             }
         }
-        if (Input.GetKey(KeyCode.Escape))
+
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            somSource = GetComponent<GetComponent<AudioSource>()>
-            som.source.Pause();
+            saveManager.Save(id_historia, id_direita, id_esquerda);
+            SceneManager.LoadScene(3);
+        }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            saveManager.Delete();
         }
     }
 
     IEnumerator Historia()
     {
-       yield return null;
+        yield return null;
         if (id_historia == 1)
         {
            Play(1, "NarracaoInicial", historia);
@@ -110,7 +131,6 @@ public class GameLogic : MonoBehaviour
         {
             Play(6, "Escolha6", historia);
         }
-        Debug.Log("Historia: " + id_historia);
         id_historia++;
         while (somSource.source.isPlaying)
         {
@@ -146,8 +166,8 @@ public class GameLogic : MonoBehaviour
         else if (id_esquerda == 6)
         {
             Play(6, "Confortar", esquerda);
+            Debug.Log("Final do jogo");
         }
-        Debug.Log("Esquerda: " + id_esquerda);
         id_esquerda++;
         id_direita++;
         while (somSource.source.isPlaying)
@@ -163,7 +183,7 @@ public class GameLogic : MonoBehaviour
     {
         if (id_direita == 1)
         {
-            Play(1, "n�o", direita);
+            Play(1, "não", direita);
             id_direita--;
             id_esquerda--;
             id_historia--;
@@ -178,22 +198,24 @@ public class GameLogic : MonoBehaviour
         }
         else if (id_esquerda == 4)
         {
-            Play(4, "n�o_arma", direita);
+            Play(4, "não_arma", direita);
             temArma = false;
         }
         else if (id_esquerda == 5 && temArma == true)
         {
+            Debug.Log("Tocando variação 1");
             Play(5, "Bater com arma", direita);
         }
         else if (id_esquerda == 5 && temArma == false)
         {
+            Debug.Log("Tocando variação 2");
             Play(5, "Bater com arma", direita);
         }
         else if (id_esquerda == 6)
         {
             Play(6, "Fugir", direita);
+            Debug.Log("Final do jogo");
         }
-        Debug.Log("Direita: " + id_direita);
         id_direita++;
         id_esquerda++;
         while (somSource.source.isPlaying)
@@ -204,8 +226,6 @@ public class GameLogic : MonoBehaviour
         StartCoroutine(Historia());
         StopCoroutine(eDireita());
     }
-
-
 
     // Fun��es que buscam os a�dios no vetores por nome
     public void Play(int id, string name, Sound[] vetor)

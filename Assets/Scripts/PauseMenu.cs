@@ -1,53 +1,23 @@
-using System;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
-    private GameObject pauseMenu;
-    private AudioSource source;
-    private GameObject LogicaJogo;
-    private static bool isPaused = false;
+    public GameObject Button;
 
     void Awake()
     {
-        LogicaJogo = GameObject.Find("LogicaJogo");
-        pauseMenu = GameObject.Find("menudePause");
-        pauseMenu.SetActive(false);
-        DontDestroyOnLoad(pauseMenu);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            if (isPaused)
-            {
-                ResumeGame();
-            }
-            else
-            {
-                PauseGame();
-            }
-        }
-    }
-
-    public void PauseGame()
-    {
-        pauseMenu.SetActive(true);
-        isPaused = true;
+        EventSystem.current.SetSelectedGameObject(Button.gameObject); 
     }
 
     public void ResumeGame()
     {
-        pauseMenu.SetActive(false);
-        isPaused = false;
+        SceneManager.LoadScene(2);
     }
+
     public void goMainMenu()
     {
-        isPaused = false;
-        Destroy(LogicaJogo);
         SceneManager.LoadScene(1);
     }
 
