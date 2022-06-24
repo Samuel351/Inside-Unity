@@ -30,14 +30,6 @@ public class SlotsMenu : MonoBehaviour
     {
         _title.text = "Save 1: dia " + DateTime.Now;
         SceneManager.LoadScene(2);
-        saveManager.Load();
     }
 
-    public void delete()
-    {
-        _title.text = "Novo jogo";
-        PlayerPrefs.SetString("save1", _title.text);
-        saveManager.Delete();
-        saveManager.Save(1, 1, 1);
-    }
 }

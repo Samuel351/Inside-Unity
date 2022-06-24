@@ -6,30 +6,32 @@ using UnityEngine.SceneManagement;
 
 public class GameLogic : MonoBehaviour
 {
-    SaveController saveManager = new SaveController();
+    SaveController saveManager;
     public AudioMixerGroup mixer;
     public Sound[] historia;
     public Sound[] esquerda;
     public Sound[] direita;
     private Sound somSource;
     private bool temArma = false;
-    private int primeira = 0;
+
     [HideInInspector]
     public Sound som;
 
     [HideInInspector]
-    public int id_historia = 1;
+    public int id_historia;
 
     [HideInInspector]
-    public int id_direita = 1;
+    public int id_direita;
 
     [HideInInspector]
-    public int id_esquerda = 1;
+    public int id_esquerda;
 
     public static GameLogic instance;
 
     void Awake()
     {
+        saveManager = GameObject.Find("LogicaJogo").GetComponent<SaveController>();
+        saveManager.Load();
         if (instance == null)
             instance = this;
         else
@@ -62,22 +64,12 @@ public class GameLogic : MonoBehaviour
             som3.source.outputAudioMixerGroup = mixer;
         }
 
-        if(primeira == 0)
-        {
-            saveManager.Save(1, 1, 1);
-            Play(0, "instancia", esquerda);
-            Play(0, "instancia", direita);
-            Play(0, "instancia", historia);
-            StartCoroutine(Historia());
-            primeira = 1;
-            PlayerPrefs.SetInt("primeiravez", primeira);
-        }
-        else
-        {
-            saveManager.Load();
-            StartCoroutine(Historia());
-        }
+        Play(0, "instancia", esquerda);
+        Play(0, "instancia", direita);
+        Play(0, "instancia", historia);
+        StartCoroutine(Historia());
     }
+     
 
     void Update()
     {
@@ -95,12 +87,7 @@ public class GameLogic : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            saveManager.Save(id_historia, id_direita, id_esquerda);
             SceneManager.LoadScene(3);
-        }
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            saveManager.Delete();
         }
     }
 
@@ -131,12 +118,16 @@ public class GameLogic : MonoBehaviour
         {
             Play(6, "Escolha6", historia);
         }
+        else if (id_historia == 7)
+        {
+            Play(7, "Final", historia);
+        }
+        saveManager.Save(id_historia, id_direita, id_esquerda);
         id_historia++;
         while (somSource.source.isPlaying)
         {
             yield return null;
         }
-        saveManager.Save(id_historia, id_direita, id_esquerda);
         Update();
     }
 
@@ -174,7 +165,6 @@ public class GameLogic : MonoBehaviour
         {
             yield return null;
         }
-        saveManager.Save(id_historia, id_direita, id_esquerda);
         StartCoroutine(Historia());
         StopCoroutine(eDireita());
     }
@@ -222,7 +212,6 @@ public class GameLogic : MonoBehaviour
         {
             yield return null;
         }
-        saveManager.Save(id_historia, id_direita, id_esquerda);
         StartCoroutine(Historia());
         StopCoroutine(eDireita());
     }

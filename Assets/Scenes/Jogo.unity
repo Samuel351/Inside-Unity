@@ -461,6 +461,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2007033374 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8583007797984513361, guid: a9bdaad60cdf96d45868e7a5f8223f7e, type: 3}
+  m_PrefabInstance: {fileID: 8583007799097414085}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2007033375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007033374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff27b08da44f859498f09c34433395e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  saveHistoria: 1
+  saveDireita: 1
+  saveEsquerda: 1
 --- !u!1001 &5536434423400012283
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -587,7 +607,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8583007797984513363, guid: a9bdaad60cdf96d45868e7a5f8223f7e, type: 3}
       propertyPath: historia.Array.size
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8583007797984513363, guid: a9bdaad60cdf96d45868e7a5f8223f7e, type: 3}
       propertyPath: direita.Array.data[0].id
@@ -715,7 +735,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8583007797984513363, guid: a9bdaad60cdf96d45868e7a5f8223f7e, type: 3}
       propertyPath: historia.Array.data[7].id
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8583007797984513363, guid: a9bdaad60cdf96d45868e7a5f8223f7e, type: 3}
       propertyPath: historia.Array.data[8].id
@@ -784,7 +804,7 @@ PrefabInstance:
     - target: {fileID: 8583007797984513363, guid: a9bdaad60cdf96d45868e7a5f8223f7e, type: 3}
       propertyPath: direita.Array.data[7].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 4de67f5abf1b806499410885a80e1690, type: 3}
+      objectReference: {fileID: 8300000, guid: 155dcb7bc7c2bf3488e72c92ff3ad47c, type: 3}
     - target: {fileID: 8583007797984513363, guid: a9bdaad60cdf96d45868e7a5f8223f7e, type: 3}
       propertyPath: direita.Array.data[7].name
       value: Fugir
@@ -980,7 +1000,7 @@ PrefabInstance:
     - target: {fileID: 8583007797984513363, guid: a9bdaad60cdf96d45868e7a5f8223f7e, type: 3}
       propertyPath: esquerda.Array.data[6].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 986f5415df8d0c9469c775e037021244, type: 3}
+      objectReference: {fileID: 8300000, guid: 8d95d679e51a6fb40b01d59e0ef263f2, type: 3}
     - target: {fileID: 8583007797984513363, guid: a9bdaad60cdf96d45868e7a5f8223f7e, type: 3}
       propertyPath: esquerda.Array.data[6].name
       value: Confortar
@@ -996,7 +1016,7 @@ PrefabInstance:
     - target: {fileID: 8583007797984513363, guid: a9bdaad60cdf96d45868e7a5f8223f7e, type: 3}
       propertyPath: historia.Array.data[1].clip
       value: 
-      objectReference: {fileID: 8300000, guid: f1e0733b76b7a764d8708b3c44260d99, type: 3}
+      objectReference: {fileID: 8300000, guid: 1a58059f2215c4c408fdc4f59bdb354e, type: 3}
     - target: {fileID: 8583007797984513363, guid: a9bdaad60cdf96d45868e7a5f8223f7e, type: 3}
       propertyPath: historia.Array.data[1].name
       value: NarracaoInicial
@@ -1044,10 +1064,10 @@ PrefabInstance:
     - target: {fileID: 8583007797984513363, guid: a9bdaad60cdf96d45868e7a5f8223f7e, type: 3}
       propertyPath: historia.Array.data[7].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 61155a8fede2e7f4581eac3de289ce35, type: 3}
+      objectReference: {fileID: 8300000, guid: 642ed6c2748cb4041bbecc2c9e5e2fc2, type: 3}
     - target: {fileID: 8583007797984513363, guid: a9bdaad60cdf96d45868e7a5f8223f7e, type: 3}
       propertyPath: historia.Array.data[7].name
-      value: Escolha6
+      value: Final
       objectReference: {fileID: 0}
     - target: {fileID: 8583007797984513363, guid: a9bdaad60cdf96d45868e7a5f8223f7e, type: 3}
       propertyPath: historia.Array.data[8].clip

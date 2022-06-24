@@ -3,77 +3,73 @@ using UnityEngine.EventSystems;
 
 public class Movimento : MonoBehaviour
 {
-    public GameObject mainMenu;
-    public GameObject optionsMenu;
-    public GameObject slotsMenu;
+    public GameObject menuPrincipal;
+    public GameObject menuOpcoes;
+    public GameObject menuJogar;
     public GameObject Button;
-    private bool menu = true, options = false, slots = false;
-    private int buttonPress = 0;
+    public GameObject Button2;
+    public GameObject Button3;
+    private bool menu = true, opcoes = false, jogar = false, input = false;
 
-    private void Update()
+    void Update()
     {
-        if (menu == true)
+        // Navegação menu incial
+        if(Input.GetKey(KeyCode.DownArrow) && !input)
         {
-            if (Input.GetKey(KeyCode.RightArrow))
+            if (menu == true)
             {
-                options = true;
-                menu = false;
-                slots = false;
-                mainMenu.SetActive(menu);
-                optionsMenu.SetActive(options);
-                slotsMenu.SetActive(slots);
-                buttonPress -= 1;
-            }
-            else if (Input.GetKey(KeyCode.DownArrow))
-            {
-                Application.Quit();
-            }
-            else if (Input.GetKey(KeyCode.UpArrow))
-            {
-                slots = true;
-                options = false;
-                menu = false;
-                mainMenu.SetActive(menu);
-                slotsMenu.SetActive(slots);
-                optionsMenu.SetActive(options);
                 EventSystem.current.SetSelectedGameObject(Button.gameObject);
-                buttonPress -= 1;
+                input = true;
+            }
+            else if(jogar == true)
+            {
+                EventSystem.current.SetSelectedGameObject(Button2.gameObject);
+                input = true;
+            }
+            else if (opcoes == true)
+            {
+                EventSystem.current.SetSelectedGameObject(Button3.gameObject);
+                input = true;
             }
         }
-
-        if (options == true)
-        {
-            if (Input.GetKey(KeyCode.LeftArrow))
-            {
-                slots = false;
-                options = false;
-                menu = true;
-                mainMenu.SetActive(menu);
-                optionsMenu.SetActive(options);
-                slotsMenu.SetActive(slots);
-            }
-        }
-
-        if (slots == true)
-        {
-            if (Input.GetKey(KeyCode.Escape))
-            {
-                menu = true;
-                slots = false;
-                mainMenu.SetActive(menu);
-                slotsMenu.SetActive(options);
-            }
-            if(Input.GetKey(KeyCode.LeftArrow))
-            {
-                slots = false;
-                options = false;
-                menu = true;
-                mainMenu.SetActive(menu);
-                optionsMenu.SetActive(options);
-                slotsMenu.SetActive(slots);
-            }
-        }
-        
     }
-
+    public void Jogar()
+    {
+        jogar = true;
+        menu = false;
+        input = false;
+        menuPrincipal.SetActive(menu);
+        menuJogar.SetActive(jogar);
+    }
+    public void Opcoes()
+    {
+        opcoes = true;
+        menu = false;
+        input = false;
+        menuPrincipal.SetActive(menu);
+        menuOpcoes.SetActive(opcoes); 
+    }
+    public void Sair()
+    {
+        Application.Quit();
+    }
+    public void Voltar()
+    {
+        if (opcoes == true)
+        {
+            opcoes = false;
+            menu = true;
+            input = false;
+            menuPrincipal.SetActive(menu);
+            menuOpcoes.SetActive(opcoes);
+        }
+        if (jogar == true)
+        {
+            jogar = false;
+            menu = true;
+            input = false;
+            menuPrincipal.SetActive(menu);
+            menuJogar.SetActive(jogar);
+        }
+    }
 }

@@ -10,6 +10,7 @@ public class OptionsMenu : MonoBehaviour
     [SerializeField] public Slider Geral;
 
     public const string MIXER_MUSICA = "Musica";
+
     void Update()
     {
         if (Input.GetKey(KeyCode.Space))
@@ -24,6 +25,7 @@ public class OptionsMenu : MonoBehaviour
     }
     void Awake()
     {
+        EventSystem.current.SetSelectedGameObject(Geral.gameObject);
         Geral.onValueChanged.AddListener(SetVolume);
         Geral.value = PlayerPrefs.GetFloat("sliderMusica");
     }
