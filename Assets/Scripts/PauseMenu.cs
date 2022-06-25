@@ -4,20 +4,53 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
-    public GameObject Button;
+    public GameObject pauseMenu;
+    public GameObject button;
+    public static bool estaPausado = false;
 
-    void Awake()
+    private void Update()
     {
-        EventSystem.current.SetSelectedGameObject(Button.gameObject); 
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            if(estaPausado)
+            {
+                ResumeGame();
+            }
+            else
+            {
+                PauseGame();
+            }
+        }
+    }
+
+    void Start()
+    {
+        pauseMenu.SetActive(false);
+    }
+
+    private void Awake()
+    {
+        pauseMenu.SetActive(false);
     }
 
     public void ResumeGame()
     {
-        SceneManager.LoadScene(2);
+        pauseMenu.SetActive(false);
+        Time.timeScale = 1f;
+        estaPausado = false;
+    }
+
+    public void PauseGame()
+    {
+        EventSystem.current.SetSelectedGameObject(button.gameObject);
+        pauseMenu.SetActive(true);
+        Time.timeScale = 0f;
+        estaPausado = true;
     }
 
     public void goMainMenu()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(1);
     }
 

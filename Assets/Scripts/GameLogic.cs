@@ -73,7 +73,7 @@ public class GameLogic : MonoBehaviour
 
     void Update()
     {
-        if (!somSource.source.isPlaying)
+        if (!somSource.source.isPlaying && !PauseMenu.estaPausado)
         {
             if (Input.GetKey(KeyCode.LeftArrow))
             {
@@ -85,9 +85,17 @@ public class GameLogic : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if(PauseMenu.estaPausado)
         {
-            SceneManager.LoadScene(3);
+            somSource.source.Pause();
+        }
+        if(!PauseMenu.estaPausado)
+        {
+            somSource.source.UnPause();
+        }
+        if(Input.GetKey(KeyCode.Space))
+        {
+            saveManager.Delete();
         }
     }
 
@@ -159,6 +167,7 @@ public class GameLogic : MonoBehaviour
             Play(6, "Confortar", esquerda);
             Debug.Log("Final do jogo");
         }
+        saveManager.Save(id_historia, id_direita, id_esquerda);
         id_esquerda++;
         id_direita++;
         while (somSource.source.isPlaying)
@@ -206,6 +215,7 @@ public class GameLogic : MonoBehaviour
             Play(6, "Fugir", direita);
             Debug.Log("Final do jogo");
         }
+        saveManager.Save(id_historia, id_direita, id_esquerda);
         id_direita++;
         id_esquerda++;
         while (somSource.source.isPlaying)

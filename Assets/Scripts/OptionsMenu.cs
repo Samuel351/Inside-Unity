@@ -15,13 +15,15 @@ public class OptionsMenu : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            EventSystem.current.SetSelectedGameObject(Geral.gameObject);
+            EventSystem.current.SetSelectedGameObject(Geral.gameObject); 
             mixer.SetFloat(MIXER_MUSICA, Mathf.Log10(Geral.value) * 20);
-            if(Geral.maxValue == Geral.value)
+            if(Geral.value == Geral.maxValue)
             {
+                mixer.ClearFloat(MIXER_MUSICA);
                 Geral.value = Geral.minValue;
             }
         }
+        
     }
     void Awake()
     {
