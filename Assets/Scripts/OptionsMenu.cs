@@ -8,6 +8,9 @@ public class OptionsMenu : MonoBehaviour
     
     [SerializeField] AudioMixer mixer;
     [SerializeField] public Slider Geral;
+    public GameObject Button;
+    public AudioSource max;
+    public AudioSource min;
 
     public const string MIXER_MUSICA = "Musica";
 
@@ -15,7 +18,6 @@ public class OptionsMenu : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            EventSystem.current.SetSelectedGameObject(Geral.gameObject); 
             mixer.SetFloat(MIXER_MUSICA, Mathf.Log10(Geral.value) * 20);
             if(Geral.value == Geral.maxValue)
             {
@@ -23,7 +25,10 @@ public class OptionsMenu : MonoBehaviour
                 Geral.value = Geral.minValue;
             }
         }
-        
+        if(Input.GetKey(KeyCode.DownArrow))
+        {
+            EventSystem.current.SetSelectedGameObject(Button.gameObject);
+        }
     }
     void Awake()
     {

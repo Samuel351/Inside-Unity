@@ -87,7 +87,7 @@
           </component>
         </trackAudioParameters>
         <editParameter parameterIndex="0" slotIndex="4294967280"/>
-        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="321544" fileID="0" hue="-1" id="0" lockedInTime="false" looped="false" name="Ato1Perg4Esc2D 44100 1" offline="false" select="false" sourceInPoint="0" sourceOutPoint="243906" startPoint="77638" zOrder="0">
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="321544" fileID="0" hue="-1" id="0" lockedInTime="false" looped="false" name="Ato1Perg4Esc2D 44100 1" offline="false" select="true" sourceInPoint="0" sourceOutPoint="243906" startPoint="77638" zOrder="0">
           <effectsRack preFader="true">
             <component componentGuid="244a2141-e911-4976-b8b1-86ec4410c0ca" componentID="Audition.ComponentGroup" id="rackMix" powered="true">
               <parameter index="0" parameterValue="0"/>
@@ -185,10 +185,10 @@
             </slot>
           </effectsRack>
           <component componentGuid="bdf5d2b7-63ce-4429-93bd-158db850e6b3" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
-            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="0" name="volume" parameterValue="0.15567691624164581298828125"/>
             <parameter index="1" name="static gain" parameterValue="1"/>
           </component>
-          <component componentGuid="a2dea9bf-3127-45f2-9c34-8b8fe67d4203" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+          <component componentGuid="76688570-897c-4fed-9091-bee04b0c0390" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
             <parameter index="0" parameterValue="0"/>
             <parameter index="1" name="mute" parameterValue="0"/>
           </component>
@@ -197,8 +197,8 @@
           </component>
           <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="19" startPoint="0" type="log"/>
           <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="243906" shape="19" startPoint="243906" type="log"/>
-          <editParameter parameterIndex="0" slotIndex="4294967280"/>
           <editParameter parameterIndex="0" slotIndex="4294967281"/>
+          <editParameter parameterIndex="0" slotIndex="4294967280"/>
           <channelMap>
             <channel index="0" sourceIndex="0"/>
             <channel index="1" sourceIndex="1"/>
@@ -320,7 +320,7 @@
             <parameter index="0" name="volume" parameterValue="1"/>
             <parameter index="1" name="static gain" parameterValue="1"/>
           </component>
-          <component componentGuid="bee76fdb-e62f-447d-bf00-fa5fc0187e02" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+          <component componentGuid="99161727-8409-4445-86b6-62cd10742646" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
             <parameter index="0" parameterValue="0"/>
             <parameter index="1" name="mute" parameterValue="0"/>
           </component>
@@ -368,7 +368,7 @@
             <parameter index="0" name="volume" parameterValue="1"/>
             <parameter index="1" name="static gain" parameterValue="1"/>
           </component>
-          <component componentGuid="b354c853-03a4-4274-8cb3-87f88fb23dbb" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+          <component componentGuid="acb42f83-7642-4dd4-abb8-0f4fc0fcc42f" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
             <parameter index="0" parameterValue="0"/>
             <parameter index="1" name="mute" parameterValue="0"/>
           </component>
@@ -473,7 +473,7 @@
             <parameter index="0" name="volume" parameterValue="1"/>
             <parameter index="1" name="static gain" parameterValue="1"/>
           </component>
-          <component componentGuid="ed81a444-ea84-4a47-8f4a-42101d231371" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+          <component componentGuid="ab61d335-4662-43fe-a35b-1b95830b84ce" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
             <parameter index="0" parameterValue="0"/>
             <parameter index="1" name="mute" parameterValue="0"/>
           </component>
@@ -578,7 +578,7 @@
             <parameter index="0" name="volume" parameterValue="1"/>
             <parameter index="1" name="static gain" parameterValue="1"/>
           </component>
-          <component componentGuid="a01eda90-1801-4292-a52c-7f84928425d1" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+          <component componentGuid="8c43f60a-9244-48a6-8b27-1406ca6a93ea" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
             <parameter index="0" parameterValue="0"/>
             <parameter index="1" name="mute" parameterValue="0"/>
           </component>
@@ -849,9 +849,9 @@
             xmlns:xmpDM="http://ns.adobe.com/xmp/1.0/DynamicMedia/">
          <xmp:CreatorTool>Adobe Audition 22.0 (Windows)</xmp:CreatorTool>
          <xmp:CreateDate>2022-06-17T15:01:48-03:00</xmp:CreateDate>
-         <xmp:MetadataDate>2022-06-21T17:31:57-03:00</xmp:MetadataDate>
-         <xmp:ModifyDate>2022-06-21T17:31:57-03:00</xmp:ModifyDate>
-         <xmpMM:InstanceID>xmp.iid:e5a4ca99-9a96-ef4a-8d2a-edfe87ef8816</xmpMM:InstanceID>
+         <xmp:MetadataDate>2022-06-25T20:26:23-03:00</xmp:MetadataDate>
+         <xmp:ModifyDate>2022-06-25T20:26:23-03:00</xmp:ModifyDate>
+         <xmpMM:InstanceID>xmp.iid:4022aeea-1074-314f-9817-85da268a6ecb</xmpMM:InstanceID>
          <xmpMM:DocumentID>xmp.did:de77fb36-d7d9-d54e-85ef-95f440ac2b6c</xmpMM:DocumentID>
          <xmpMM:OriginalDocumentID>xmp.did:de77fb36-d7d9-d54e-85ef-95f440ac2b6c</xmpMM:OriginalDocumentID>
          <xmpMM:History>
@@ -888,6 +888,20 @@
                   <stEvt:action>saved</stEvt:action>
                   <stEvt:instanceID>xmp.iid:e5a4ca99-9a96-ef4a-8d2a-edfe87ef8816</stEvt:instanceID>
                   <stEvt:when>2022-06-21T17:31:57-03:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.0 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:cd151026-2209-724c-9aab-8dd83d2beb3c</stEvt:instanceID>
+                  <stEvt:when>2022-06-25T20:26:23-03:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.0 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:4022aeea-1074-314f-9817-85da268a6ecb</stEvt:instanceID>
+                  <stEvt:when>2022-06-25T20:26:23-03:00</stEvt:when>
                   <stEvt:softwareAgent>Adobe Audition 22.0 (Windows)</stEvt:softwareAgent>
                   <stEvt:changed>/</stEvt:changed>
                </rdf:li>
@@ -1030,22 +1044,22 @@
   </session>
 
   <files>
-    <file absolutePath="C:\Users\Windows\OneDrive - Etec Centro Paula Souza\Desktop\VersãoFinal\VersãoFinal\Segmento4\NÃO\NÃO_ARMA\Conformed Files\Ato1Perg4Esc2D 44100 1.wav" id="0" importerPrivateSettings="Compression:0:0;LargeFileSupport:0:0;SampleType:0:1;" mediaHandler="AmioWav" relativePath="Conformed Files/Ato1Perg4Esc2D 44100 1.wav"/>
-    <file absolutePath="C:\Users\Windows\OneDrive - Etec Centro Paula Souza\Desktop\VersãoFinal\VersãoFinal\Segmento4\NÃO\NÃO_ARMA\Conformed Files\Radio turning on sound effect 44100 1.wav" id="1" importerPrivateSettings="Compression:0:0;LargeFileSupport:0:0;SampleType:0:1;" mediaHandler="AmioWav" relativePath="Conformed Files/Radio turning on sound effect 44100 1.wav"/>
-    <file absolutePath="C:\Users\Windows\OneDrive - Etec Centro Paula Souza\Desktop\VersãoFinal\VersãoFinal\Segmento4\NÃO\NÃO_ARMA\Arquivos importados\Radio Static - Sound Effect (1).mp3" id="2" importerPrivateSettings="BitsPerSecond:0:192000;CompressionQuality:0:4;CompressionType:0:0;Encoder:0:1181239072;" mediaHandler="AmioMP3" relativePath="Arquivos importados/Radio Static - Sound Effect (1).mp3"/>
-    <file absolutePath="C:\Users\Windows\OneDrive - Etec Centro Paula Souza\Desktop\VersãoFinal\VersãoFinal\Segmento4\NÃO\NÃO_ARMA\Arquivos importados\heartbeat sound effect.mp3" id="3" importerPrivateSettings="BitsPerSecond:0:192000;CompressionQuality:0:4;CompressionType:0:0;Encoder:0:1181239072;" mediaHandler="AmioMP3" relativePath="Arquivos importados/heartbeat sound effect.mp3"/>
+    <file absolutePath="C:\Users\samue\OneDrive\Área de Trabalho\VersãoFinal\Segmento4\NÃO\NÃO_ARMA\Conformed Files\Ato1Perg4Esc2D 44100 1.wav" id="0" importerPrivateSettings="Compression:0:0;LargeFileSupport:0:0;SampleType:0:1;" mediaHandler="AmioWav" relativePath="../../NÃO/NÃO_ARMA/Conformed Files/Ato1Perg4Esc2D 44100 1.wav"/>
+    <file absolutePath="C:\Users\samue\OneDrive\Área de Trabalho\VersãoFinal\Segmento4\NÃO\NÃO_ARMA\Conformed Files\Radio turning on sound effect 44100 1.wav" id="1" importerPrivateSettings="Compression:0:0;LargeFileSupport:0:0;SampleType:0:1;" mediaHandler="AmioWav" relativePath="../../NÃO/NÃO_ARMA/Conformed Files/Radio turning on sound effect 44100 1.wav"/>
+    <file absolutePath="C:\Users\samue\OneDrive\Área de Trabalho\VersãoFinal\Segmento4\NÃO\NÃO_ARMA\Arquivos importados\Radio Static - Sound Effect (1).mp3" id="2" importerPrivateSettings="BitsPerSecond:0:192000;CompressionQuality:0:4;CompressionType:0:0;Encoder:0:1181239072;" mediaHandler="AmioMP3" relativePath="../../NÃO/NÃO_ARMA/Arquivos importados/Radio Static - Sound Effect (1).mp3"/>
+    <file absolutePath="C:\Users\samue\OneDrive\Área de Trabalho\VersãoFinal\Segmento4\NÃO\NÃO_ARMA\Arquivos importados\heartbeat sound effect.mp3" id="3" importerPrivateSettings="BitsPerSecond:0:192000;CompressionQuality:0:4;CompressionType:0:0;Encoder:0:1181239072;" mediaHandler="AmioMP3" relativePath="../../NÃO/NÃO_ARMA/Arquivos importados/heartbeat sound effect.mp3"/>
   </files>
 
   <audioDevice inputID="22222222-2222-2222-2222-22222222" outputID="11111111-1111-1111-1111-11111111">
     <inputPort id="1" name="Entrada estéreo padrão"/>
-    <inputPort id="2" name="[01M] Sistema padrão - Microfone (Realtek High Definition Audio) 1"/>
-    <inputPort id="3" name="[02M] Sistema padrão - Microfone (Realtek High Definition Audio) 2"/>
-    <inputPort id="4" name="[01S] Sistema padrão - Microfone (Realtek High Definition Audio) 1"/>
+    <inputPort id="2" name="[01M] Sistema padrão - Microfone (Realtek(R) Audio) 1"/>
+    <inputPort id="3" name="[02M] Sistema padrão - Microfone (Realtek(R) Audio) 2"/>
+    <inputPort id="4" name="[01S] Sistema padrão - Microfone (Realtek(R) Audio) 1"/>
     <outputPort id="1" name="Saída padrão"/>
-    <outputPort id="2" name="[01M] Sistema padrão - Alto-falantes (Realtek High Definition Audio) 1"/>
-    <outputPort id="3" name="[02M] Sistema padrão - Alto-falantes (Realtek High Definition Audio) 2"/>
+    <outputPort id="2" name="[01M] Sistema padrão - Realtek HD Audio 2nd output (Realtek(R) Audio) 1"/>
+    <outputPort id="3" name="[02M] Sistema padrão - Realtek HD Audio 2nd output (Realtek(R) Audio) 2"/>
     <outputPort id="4" name="Saída estéreo padrão"/>
-    <outputPort id="5" name="[01S] Sistema padrão - Alto-falantes (Realtek High Definition Audio) 1"/>
+    <outputPort id="5" name="[01S] Sistema padrão - Realtek HD Audio 2nd output (Realtek(R) Audio) 1"/>
     <outputPort id="6" name="Saída surround padrão"/>
   </audioDevice>
 

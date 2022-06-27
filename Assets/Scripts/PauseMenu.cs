@@ -6,11 +6,13 @@ public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenu;
     public GameObject button;
+    public AudioSource audio;
+    private bool input = false;
     public static bool estaPausado = false;
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if(Input.GetKeyDown(KeyCode.Space))
         {
             if(estaPausado)
             {
@@ -21,11 +23,11 @@ public class PauseMenu : MonoBehaviour
                 PauseGame();
             }
         }
-    }
-
-    void Start()
-    {
-        pauseMenu.SetActive(false);
+        if(Input.GetKey(KeyCode.DownArrow) && input == false)
+        {
+            EventSystem.current.SetSelectedGameObject(button.gameObject);
+            input = true;
+        }
     }
 
     private void Awake()
@@ -42,7 +44,7 @@ public class PauseMenu : MonoBehaviour
 
     public void PauseGame()
     {
-        EventSystem.current.SetSelectedGameObject(button.gameObject);
+        audio.Play();
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
         estaPausado = true;

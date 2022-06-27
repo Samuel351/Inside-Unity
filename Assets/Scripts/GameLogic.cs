@@ -12,7 +12,10 @@ public class GameLogic : MonoBehaviour
     public Sound[] esquerda;
     public Sound[] direita;
     private Sound somSource;
-    private bool temArma = false;
+    private bool temArma = false, repete = false, fugir = false;
+
+    [HideInInspector]
+    public static bool final = false;
 
     [HideInInspector]
     public Sound som;
@@ -67,7 +70,7 @@ public class GameLogic : MonoBehaviour
         Play(0, "instancia", esquerda);
         Play(0, "instancia", direita);
         Play(0, "instancia", historia);
-        StartCoroutine(Historia());
+        StartCoroutine(Inicio());
     }
      
 
@@ -93,18 +96,29 @@ public class GameLogic : MonoBehaviour
         {
             somSource.source.UnPause();
         }
-        if(Input.GetKey(KeyCode.Space))
+    }
+
+    IEnumerator Inicio()
+    {
+        
+        Play(0, "Inicio", historia);
+        while (somSource.source.isPlaying)
         {
-            saveManager.Delete();
+            yield return null;
         }
+        StartCoroutine(Historia());
     }
 
     IEnumerator Historia()
     {
         yield return null;
-        if (id_historia == 1)
+        if (id_historia == 1 && repete == false)
         {
            Play(1, "NarracaoInicial", historia);
+        }
+        else if (id_historia == 1 && repete == true)
+        {
+            Play(1, "EscolhaRepete", historia);
         }
         else if (id_historia == 2)
         {
@@ -129,6 +143,12 @@ public class GameLogic : MonoBehaviour
         else if (id_historia == 7)
         {
             Play(7, "Final", historia);
+            while (somSource.source.isPlaying)
+            {
+                yield return null;
+            }
+            StartCoroutine(Final());
+            StopCoroutine(Historia());
         }
         saveManager.Save(id_historia, id_direita, id_esquerda);
         id_historia++;
@@ -144,6 +164,7 @@ public class GameLogic : MonoBehaviour
         if(id_esquerda == 1)
         {
             Play(1, "sim", esquerda);
+            repete = false;
         }
         else if (id_esquerda == 2)
         {
@@ -183,6 +204,7 @@ public class GameLogic : MonoBehaviour
         if (id_direita == 1)
         {
             Play(1, "não", direita);
+            repete = true;
             id_direita--;
             id_esquerda--;
             id_historia--;
@@ -190,10 +212,20 @@ public class GameLogic : MonoBehaviour
         else if (id_direita == 2)
         {
             Play(2, "LadoDireito", direita);
+            while (somSource.source.isPlaying)
+            {
+                yield return null;
+            }
+            Play(2, "LadoEsquerdo", esquerda);
         }
         else if (id_esquerda == 3)
         {
             Play(3, "Lutar", direita);
+            while (somSource.source.isPlaying)
+            {
+                yield return null;
+            }
+            Play(3, "Fugir", esquerda);
         }
         else if (id_esquerda == 4)
         {
@@ -213,6 +245,7 @@ public class GameLogic : MonoBehaviour
         else if (id_esquerda == 6)
         {
             Play(6, "Fugir", direita);
+            fugir = true;
             Debug.Log("Final do jogo");
         }
         saveManager.Save(id_historia, id_direita, id_esquerda);
@@ -225,15 +258,30 @@ public class GameLogic : MonoBehaviour
         StartCoroutine(Historia());
         StopCoroutine(eDireita());
     }
+    IEnumerator Final()
+    {
+        if(fugir == false)
+        {
+            Play(8, "Final-bom", historia);
+        }
+        else if(fugir == true)
+        {
+            Play(8, "Final-ruim", historia);
+        }
+        while (somSource.source.isPlaying)
+        {
+            yield return null;
+        }
+        yield return new WaitForSeconds(0.5f);
+        MiniTutorial.final = true;
+        saveManager.Delete();
+        SceneManager.LoadScene(1);
+    }
 
     // Fun��es que buscam os a�dios no vetores por nome
     public void Play(int id, string name, Sound[] vetor)
     {
         somSource = Array.Find(vetor, som => som.name == name && som.id == id);
-        if (som == null)
-        {
-            Debug.LogWarning("O som: " + name + " n�o foi encontrado!");
-        }
         somSource.source.Play();
     }
 

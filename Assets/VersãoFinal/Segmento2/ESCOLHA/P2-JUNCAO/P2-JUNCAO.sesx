@@ -4,7 +4,7 @@
 
   <session appBuild="22.0.0.96" appVersion="22.0" audioChannelType="fivePointOne" bitDepth="32" duration="1323000" sampleRate="44100">
     <tracks>
-      <audioTrack automationLaneOpenState="false" id="10001" index="1" select="false" visible="true">
+      <audioTrack automationLaneOpenState="false" id="10001" index="1" select="true" visible="true">
         <trackParameters trackHeight="134" trackHue="160" trackMinimized="false">
           <name>Faixa 1</name>
         </trackParameters>
@@ -92,7 +92,7 @@
             <parameter index="0" name="volume" parameterValue="1"/>
             <parameter index="1" name="static gain" parameterValue="1"/>
           </component>
-          <component componentGuid="47162bcf-e4d6-4551-92be-493437f9365f" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+          <component componentGuid="9561421d-13bf-494a-86dd-9e27e543e683" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
             <parameter index="0" parameterValue="0"/>
             <parameter index="1" name="mute" parameterValue="0"/>
           </component>
@@ -109,30 +109,29 @@
             <channel index="5" sourceIndex="5"/>
           </channelMap>
         </audioClip>
-        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="555009" fileID="2" hue="-1" id="1" lockedInTime="false" looped="false" name="Escolha" offline="false" select="true" sourceInPoint="0" sourceOutPoint="93940" startPoint="461069" zOrder="1">
-          <component componentGuid="7590f0ae-ff0b-49a7-a8f4-eaf24c55f19e" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="500428" fileID="2" hue="-1" id="1" lockedInTime="false" looped="false" name="Escolha" offline="false" select="true" sourceInPoint="0" sourceOutPoint="36996" startPoint="463432" zOrder="1">
+          <component componentGuid="d9badb2f-7f77-42df-ab8e-a63c29a83768" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
             <parameter index="0" name="volume" parameterValue="1"/>
             <parameter index="1" name="static gain" parameterValue="1"/>
           </component>
-          <component componentGuid="1057371b-2eba-4e14-90d7-416165a02647" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+          <component componentGuid="7441dc3f-395f-46a5-81db-bdfc5bae948b" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
             <parameter index="0" parameterValue="0"/>
             <parameter index="1" name="mute" parameterValue="0"/>
           </component>
-          <component id="clipPan" powered="true"/>
+          <component componentGuid="d609d823-a69f-4c6d-a789-8e2e0d38865b" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Deslocar" parameterValue="0"/>
+          </component>
           <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="19" startPoint="0" type="log"/>
-          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="98234" shape="19" startPoint="98234" type="log"/>
+          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="40386" shape="19" startPoint="40386" type="log"/>
           <editParameter parameterIndex="0" slotIndex="4294967280"/>
+          <editParameter parameterIndex="0" slotIndex="4294967281"/>
           <channelMap>
             <channel index="0" sourceIndex="0"/>
             <channel index="1" sourceIndex="1"/>
-            <channel index="2" sourceIndex="2"/>
-            <channel index="3" sourceIndex="3"/>
-            <channel index="4" sourceIndex="4"/>
-            <channel index="5" sourceIndex="5"/>
           </channelMap>
         </audioClip>
       </audioTrack>
-      <audioTrack automationLaneOpenState="false" id="10002" index="2" select="true" visible="true">
+      <audioTrack automationLaneOpenState="false" id="10002" index="2" select="false" visible="true">
         <trackParameters trackHeight="134" trackHue="267" trackMinimized="false">
           <name>Faixa 2</name>
         </trackParameters>
@@ -220,7 +219,7 @@
             <parameter index="0" name="volume" parameterValue="1"/>
             <parameter index="1" name="static gain" parameterValue="1"/>
           </component>
-          <component componentGuid="431c32b8-3971-44c2-a928-aaea822d45a1" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+          <component componentGuid="d455f708-ae57-4471-8323-2b0bde55407c" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
             <parameter index="0" parameterValue="0"/>
             <parameter index="1" name="mute" parameterValue="0"/>
           </component>
@@ -660,9 +659,9 @@
             xmlns:xmpDM="http://ns.adobe.com/xmp/1.0/DynamicMedia/">
          <xmp:CreatorTool>Adobe Audition 22.0 (Windows)</xmp:CreatorTool>
          <xmp:CreateDate>2022-06-18T14:42:31-03:00</xmp:CreateDate>
-         <xmp:MetadataDate>2022-06-18T14:46:58-03:00</xmp:MetadataDate>
-         <xmp:ModifyDate>2022-06-18T14:46:58-03:00</xmp:ModifyDate>
-         <xmpMM:InstanceID>xmp.iid:f6191897-68ca-984a-bc9e-9bc1249067a4</xmpMM:InstanceID>
+         <xmp:MetadataDate>2022-06-25T21:04:27-03:00</xmp:MetadataDate>
+         <xmp:ModifyDate>2022-06-25T21:04:27-03:00</xmp:ModifyDate>
+         <xmpMM:InstanceID>xmp.iid:57db2310-1cc0-0e42-94b4-43ad33edc988</xmpMM:InstanceID>
          <xmpMM:DocumentID>xmp.did:4ef9def2-6aeb-874d-8222-f558c8854615</xmpMM:DocumentID>
          <xmpMM:OriginalDocumentID>xmp.did:4ef9def2-6aeb-874d-8222-f558c8854615</xmpMM:OriginalDocumentID>
          <xmpMM:History>
@@ -699,6 +698,20 @@
                   <stEvt:action>saved</stEvt:action>
                   <stEvt:instanceID>xmp.iid:f6191897-68ca-984a-bc9e-9bc1249067a4</stEvt:instanceID>
                   <stEvt:when>2022-06-18T14:46:58-03:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.0 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:a0f9d198-3977-914a-9619-03f61a3e7014</stEvt:instanceID>
+                  <stEvt:when>2022-06-25T21:04:27-03:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.0 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:57db2310-1cc0-0e42-94b4-43ad33edc988</stEvt:instanceID>
+                  <stEvt:when>2022-06-25T21:04:27-03:00</stEvt:when>
                   <stEvt:softwareAgent>Adobe Audition 22.0 (Windows)</stEvt:softwareAgent>
                   <stEvt:changed>/</stEvt:changed>
                </rdf:li>
@@ -841,9 +854,9 @@
   </session>
 
   <files>
-    <file absolutePath="C:\Users\samue\OneDrive\Área de Trabalho\PPS\PP2\P2-JUNCAO\P2-JUNCAO\Arquivos importados\ESQUERDA.mp3" id="0" importerPrivateSettings="BitsPerSecond:0:192000;CompressionQuality:0:4;CompressionType:0:0;Encoder:0:1181239072;" mediaHandler="AmioMP3" relativePath="Arquivos importados/ESQUERDA.mp3"/>
-    <file absolutePath="C:\Users\samue\OneDrive\Área de Trabalho\PPS\PP2\P2-JUNCAO\P2-JUNCAO\Arquivos importados\DIREITA.mp3" id="1" importerPrivateSettings="BitsPerSecond:0:192000;CompressionQuality:0:4;CompressionType:0:0;Encoder:0:1181239072;" mediaHandler="AmioMP3" relativePath="Arquivos importados/DIREITA.mp3"/>
-    <file absolutePath="C:\Users\samue\OneDrive\Área de Trabalho\PPS\PP2\P2-JUNCAO\P2-JUNCAO\Arquivos importados\Escolha.mp3" id="2" importerPrivateSettings="BitsPerSecond:0:192000;CompressionQuality:0:4;CompressionType:0:0;Encoder:0:1181239072;" mediaHandler="AmioMP3" relativePath="Arquivos importados/Escolha.mp3"/>
+    <file absolutePath="C:\Users\samue\OneDrive\Área de Trabalho\VersãoFinal\Segmento2\ESCOLHA\P2-JUNCAO\Arquivos importados\ESQUERDA.mp3" id="0" importerPrivateSettings="BitsPerSecond:0:192000;CompressionQuality:0:4;CompressionType:0:0;Encoder:0:1181239072;" mediaHandler="AmioMP3" relativePath="Arquivos importados/ESQUERDA.mp3"/>
+    <file absolutePath="C:\Users\samue\OneDrive\Área de Trabalho\VersãoFinal\Segmento2\ESCOLHA\P2-JUNCAO\Arquivos importados\DIREITA.mp3" id="1" importerPrivateSettings="BitsPerSecond:0:192000;CompressionQuality:0:4;CompressionType:0:0;Encoder:0:1181239072;" mediaHandler="AmioMP3" relativePath="Arquivos importados/DIREITA.mp3"/>
+    <file absolutePath="C:\Users\samue\OneDrive\Área de Trabalho\VersãoFinal\Segmento2\ESCOLHA\P2-JUNCAO\Arquivos importados\Escolha.mp3" id="2" importerPrivateSettings="BitsPerSecond:0:192000;CompressionQuality:0:4;CompressionType:0:0;Encoder:0:1181239072;" mediaHandler="AmioMP3" relativePath="Arquivos importados/Escolha.mp3"/>
   </files>
 
   <audioDevice inputID="22222222-2222-2222-2222-22222222" outputID="11111111-1111-1111-1111-11111111">

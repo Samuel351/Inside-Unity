@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class Movimento : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class Movimento : MonoBehaviour
     public GameObject Button;
     public GameObject Button2;
     public GameObject Button3;
+    public AudioSource audioMp, audioMop, audioJg;
     private bool menu = true, opcoes = false, jogar = false, input = false;
 
     void Update()
@@ -33,8 +35,10 @@ public class Movimento : MonoBehaviour
             }
         }
     }
+
     public void Jogar()
     {
+        audioJg.Play();
         jogar = true;
         menu = false;
         input = false;
@@ -43,6 +47,7 @@ public class Movimento : MonoBehaviour
     }
     public void Opcoes()
     {
+        audioMop.Play();
         opcoes = true;
         menu = false;
         input = false;
@@ -57,6 +62,8 @@ public class Movimento : MonoBehaviour
     {
         if (opcoes == true)
         {
+            audioMop.Stop();
+            audioMp.Play();
             opcoes = false;
             menu = true;
             input = false;
@@ -65,11 +72,17 @@ public class Movimento : MonoBehaviour
         }
         if (jogar == true)
         {
+            audioMp.Play();
             jogar = false;
             menu = true;
             input = false;
             menuPrincipal.SetActive(menu);
             menuJogar.SetActive(jogar);
         }
+    }
+
+    public void Tutorial()
+    {
+        SceneManager.LoadScene(0);
     }
 }

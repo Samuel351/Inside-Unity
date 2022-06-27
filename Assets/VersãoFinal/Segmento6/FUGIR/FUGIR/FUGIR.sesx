@@ -185,10 +185,10 @@
             </slot>
           </effectsRack>
           <component componentGuid="0019a34a-0006-4bd3-881a-4196591c6820" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
-            <parameter index="0" name="volume" parameterValue="5.62341403961181640625"/>
+            <parameter index="0" name="volume" parameterValue="0.534597218036651611328125"/>
             <parameter index="1" name="static gain" parameterValue="1"/>
           </component>
-          <component componentGuid="c84a4768-e16a-4e63-b3a6-55420a8eb3bd" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+          <component componentGuid="7856bf69-099b-415d-bb68-9dd7f26e8e5e" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
             <parameter index="0" parameterValue="0"/>
             <parameter index="1" name="mute" parameterValue="0"/>
           </component>
@@ -302,10 +302,10 @@
             </slot>
           </effectsRack>
           <component componentGuid="78123644-ae07-4e75-97c8-f9a21741aa4c" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
-            <parameter index="0" name="volume" parameterValue="5.62341403961181640625"/>
+            <parameter index="0" name="volume" parameterValue="0.513130605220794677734375"/>
             <parameter index="1" name="static gain" parameterValue="1"/>
           </component>
-          <component componentGuid="a830875a-59b0-4d4a-a882-11230a6acd24" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+          <component componentGuid="ba8614e2-046d-4efd-9ff0-62d4042d3d6e" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
             <parameter index="0" parameterValue="0"/>
             <parameter index="1" name="mute" parameterValue="0"/>
           </component>
@@ -319,6 +319,128 @@
           <channelMap>
             <channel index="0" sourceIndex="0"/>
             <channel index="1" sourceIndex="1"/>
+          </channelMap>
+        </audioClip>
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="1960671" fileID="1" hue="-1" id="2" lockedInTime="false" looped="false" name="FUGIR 44100 1" offline="false" select="false" sourceInPoint="108593" sourceOutPoint="259308" startPoint="1809956" zOrder="4">
+          <effectsRack preFader="true">
+            <component componentGuid="6568dff6-6836-4f35-80ac-085e55828cb4" componentID="Audition.ComponentGroup" id="rackMix" powered="true">
+              <parameter index="0" parameterValue="0"/>
+              <parameter index="1" parameterValue="0"/>
+            </component>
+            <component componentGuid="4d4ff4dd-a9b0-48e7-befb-cc4221127ad9" id="rackInput" powered="true">
+              <parameter index="0" parameterValue="1"/>
+              <parameter index="1" parameterValue="0"/>
+            </component>
+            <component componentGuid="23a34ffb-f1ef-46f0-baed-e6db08568dd5" id="rackOutput" powered="true">
+              <parameter index="0" parameterValue="1"/>
+              <parameter index="1" parameterValue="0"/>
+            </component>
+            <slot powered="true" slotIndex="0">
+              <component componentGuid="ed12997f-244c-4d2f-a230-59ad94ef1fd1" componentID="4f327230-f04c-4c34-9ea5-a998b4459221" name="Filtro de FFT" presetName="(Personalizado)">
+                <busConfig><![CDATA[{"in":[{"layout":[0],"name":"","type":0}],"out":[{"layout":[0],"name":"","type":0}]}]]></busConfig>
+                <presetChunkData><![CDATA[AEQsRwAAAAAQP3w9AADAPgAAAAAOdFo6AACAPwAAAAAAAIA/AADgQPv8bToAAAAAwyG0O3eQ+D6qFyk8XxcKPyfBVTweJD4/l+drPg00Pz+Lz+o+AAAAAAAAgD8AAAAA]]></presetChunkData>
+              </component>
+            </slot>
+            <slot powered="true" slotIndex="1">
+              <component componentGuid="b2615274-abc0-4f08-b655-9191bc531d07" componentID="c23a8acb-affc-4ff4-9ca6-2b560b340a56" name="Conjunto de guitarras" presetName="(Personalizado)">
+                <busConfig><![CDATA[{"in":[{"layout":[0],"name":"","type":0}],"out":[{"layout":[0],"name":"","type":0}]}]]></busConfig>
+                <presetChunkData><![CDATA[EyBuYWZldFMNAAAAAQAAAOYSIUIAAHpEAACgQZ/noUEAAMhCAAEAAAAAAAABAAAAAAAAAAkAAAA=]]></presetChunkData>
+              </component>
+            </slot>
+            <slot powered="true" slotIndex="2">
+              <component componentGuid="35744c7d-5fae-42ce-9799-e1e76ee96093" componentID="c5ca9e29-df07-42a6-8800-ba80324e5cbc" name="Misturador de canais" presetName="(Personalizado)">
+                <busConfig><![CDATA[{"in":[{"layout":[0],"name":"","type":0}],"out":[{"layout":[0],"name":"","type":0}]}]]></busConfig>
+                <parameter index="0" name="Número de canais" parameterValue="0.125"/>
+                <parameter index="1" name="1 para 1" parameterValue="0.75"/>
+                <parameter index="2" name="2 para 1" parameterValue="0.75"/>
+                <parameter index="3" name="3 para 1" parameterValue="0.5"/>
+                <parameter index="4" name="4 para 1" parameterValue="0.5"/>
+                <parameter index="5" name="5 para 1" parameterValue="0.5"/>
+                <parameter index="6" name="6 para 1" parameterValue="0.5"/>
+                <parameter index="7" name="7 para 1" parameterValue="0.5"/>
+                <parameter index="8" name="8 para 1" parameterValue="0.5"/>
+                <parameter index="9" name="1 para 2" parameterValue="0.75"/>
+                <parameter index="10" name="2 para 2" parameterValue="0.75"/>
+                <parameter index="11" name="3 para 2" parameterValue="0.5"/>
+                <parameter index="12" name="4 para 2" parameterValue="0.5"/>
+                <parameter index="13" name="5 para 2" parameterValue="0.5"/>
+                <parameter index="14" name="6 para 2" parameterValue="0.5"/>
+                <parameter index="15" name="7 para 2" parameterValue="0.5"/>
+                <parameter index="16" name="8 para 2" parameterValue="0.5"/>
+                <parameter index="17" name="1 para 3" parameterValue="0.5"/>
+                <parameter index="18" name="2 para 3" parameterValue="0.5"/>
+                <parameter index="19" name="3 para 3" parameterValue="1"/>
+                <parameter index="20" name="4 para 3" parameterValue="0.5"/>
+                <parameter index="21" name="5 para 3" parameterValue="0.5"/>
+                <parameter index="22" name="6 para 3" parameterValue="0.5"/>
+                <parameter index="23" name="7 para 3" parameterValue="0.5"/>
+                <parameter index="24" name="8 para 3" parameterValue="0.5"/>
+                <parameter index="25" name="1 para 4" parameterValue="0.5"/>
+                <parameter index="26" name="2 para 4" parameterValue="0.5"/>
+                <parameter index="27" name="3 para 4" parameterValue="0.5"/>
+                <parameter index="28" name="4 para 4" parameterValue="1"/>
+                <parameter index="29" name="5 para 4" parameterValue="0.5"/>
+                <parameter index="30" name="6 para 4" parameterValue="0.5"/>
+                <parameter index="31" name="7 para 4" parameterValue="0.5"/>
+                <parameter index="32" name="8 para 4" parameterValue="0.5"/>
+                <parameter index="33" name="1 para 5" parameterValue="0.5"/>
+                <parameter index="34" name="2 para 5" parameterValue="0.5"/>
+                <parameter index="35" name="3 para 5" parameterValue="0.5"/>
+                <parameter index="36" name="4 para 5" parameterValue="0.5"/>
+                <parameter index="37" name="5 para 5" parameterValue="1"/>
+                <parameter index="38" name="6 para 5" parameterValue="0.5"/>
+                <parameter index="39" name="7 para 5" parameterValue="0.5"/>
+                <parameter index="40" name="8 para 5" parameterValue="0.5"/>
+                <parameter index="41" name="1 para 6" parameterValue="0.5"/>
+                <parameter index="42" name="2 para 6" parameterValue="0.5"/>
+                <parameter index="43" name="3 para 6" parameterValue="0.5"/>
+                <parameter index="44" name="4 para 6" parameterValue="0.5"/>
+                <parameter index="45" name="5 para 6" parameterValue="0.5"/>
+                <parameter index="46" name="6 para 6" parameterValue="1"/>
+                <parameter index="47" name="7 para 6" parameterValue="0.5"/>
+                <parameter index="48" name="8 para 6" parameterValue="0.5"/>
+                <parameter index="49" name="1 para 7" parameterValue="0.5"/>
+                <parameter index="50" name="2 para 7" parameterValue="0.5"/>
+                <parameter index="51" name="3 para 7" parameterValue="0.5"/>
+                <parameter index="52" name="4 para 7" parameterValue="0.5"/>
+                <parameter index="53" name="5 para 7" parameterValue="0.5"/>
+                <parameter index="54" name="6 para 7" parameterValue="0.5"/>
+                <parameter index="55" name="7 para 7" parameterValue="1"/>
+                <parameter index="56" name="8 para 7" parameterValue="0.5"/>
+                <parameter index="57" name="1 para 8" parameterValue="0.5"/>
+                <parameter index="58" name="2 para 8" parameterValue="0.5"/>
+                <parameter index="59" name="3 para 8" parameterValue="0.5"/>
+                <parameter index="60" name="4 para 8" parameterValue="0.5"/>
+                <parameter index="61" name="5 para 8" parameterValue="0.5"/>
+                <parameter index="62" name="6 para 8" parameterValue="0.5"/>
+                <parameter index="63" name="7 para 8" parameterValue="0.5"/>
+                <parameter index="64" name="8 para 8" parameterValue="1"/>
+              </component>
+            </slot>
+            <slot powered="true" slotIndex="3">
+              <component componentGuid="36cce50e-ec93-4032-9d03-ab7d83d190da" componentID="c6762838-e451-4d22-9c90-b0eaa734605a" editorHeight="477" editorLeft="641" editorTop="282" editorWidth="639" name="Eliminar ruído" presetName="(Personalizado)">
+                <busConfig><![CDATA[{"in":[{"layout":[0],"name":"","type":0}],"out":[{"layout":[0],"name":"","type":0}]}]]></busConfig>
+                <presetChunkData><![CDATA[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AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></presetChunkData>
+              </component>
+            </slot>
+          </effectsRack>
+          <component componentGuid="b3ae4c92-c9c9-4de6-854c-7a31508aa9b0" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="d965f588-b585-4157-a048-5aaa5ded4587" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="f2878b7d-f286-4cf2-bf32-dabd4a8cb905" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Deslocar" parameterValue="0"/>
+          </component>
+          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="19" startPoint="0" type="log"/>
+          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="150715" shape="19" startPoint="150715" type="log"/>
+          <editParameter parameterIndex="0" slotIndex="4294967281"/>
+          <editParameter parameterIndex="0" slotIndex="4294967280"/>
+          <channelMap>
+            <channel index="0" sourceIndex="0"/>
           </channelMap>
         </audioClip>
       </audioTrack>
@@ -458,7 +580,7 @@
             <parameter index="0" name="volume" parameterValue="1"/>
             <parameter index="1" name="static gain" parameterValue="1"/>
           </component>
-          <component componentGuid="196623de-e4b1-46f9-8524-f81c582ce9d7" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+          <component componentGuid="2e40c082-3547-4ced-b4b4-8af977014e61" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
             <parameter index="0" parameterValue="0"/>
             <parameter index="1" name="mute" parameterValue="0"/>
           </component>
@@ -474,7 +596,7 @@
             <channel index="1" sourceIndex="1"/>
           </channelMap>
         </audioClip>
-        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="0" crossFadeTailClipID="-1" endPoint="303945" fileID="1" hue="-1" id="1" lockedInTime="false" looped="false" name="Radio turning on sound effect 44100 1" offline="false" select="false" sourceInPoint="0" sourceOutPoint="131241" startPoint="172704" zOrder="0">
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="0" crossFadeTailClipID="-1" endPoint="303945" fileID="2" hue="-1" id="1" lockedInTime="false" looped="false" name="Radio turning on sound effect 44100 1" offline="false" select="false" sourceInPoint="0" sourceOutPoint="131241" startPoint="172704" zOrder="0">
           <properties properties="{&quot;BasicAdjustmentsProperty&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;AdjustmentMode&quot;:{&quot;type&quot;:&quot;UTF8String&quot;,&quot;value&quot;:&quot;ambience&quot;},&quot;ClipType&quot;:{&quot;type&quot;:&quot;std::int32_t&quot;,&quot;value&quot;:5},&quot;PresetGuid&quot;:{&quot;type&quot;:&quot;UTF8String&quot;,&quot;value&quot;:&quot;b3526c89-21a6-48b6-bb5e-7f323a45a206&quot;},&quot;SoundEffectsSection&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Enabled&quot;:{&quot;type&quot;:&quot;bool&quot;,&quot;value&quot;:true},&quot;Reverb&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;3&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Value&quot;:{&quot;type&quot;:&quot;float&quot;,&quot;value&quot;:1}}}}}}},&quot;StereoWidthSection&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Enabled&quot;:{&quot;type&quot;:&quot;bool&quot;,&quot;value&quot;:true}}},&quot;VolumeSection&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Enabled&quot;:{&quot;type&quot;:&quot;bool&quot;,&quot;value&quot;:true},&quot;Gain&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;2&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Value&quot;:{&quot;type&quot;:&quot;float&quot;,&quot;value&quot;:-5}}},&quot;Enabled&quot;:{&quot;type&quot;:&quot;bool&quot;,&quot;value&quot;:true},&quot;UUID&quot;:{&quot;type&quot;:&quot;UTF8String&quot;,&quot;value&quot;:&quot;6715f1f8-2869-41ec-8888-570ed8db84e6&quot;}}}}}}}}"/>
           <effectsRack preFader="true">
             <component componentGuid="b6453dfd-b038-48f8-8bbc-d4f758d78b8a" componentID="Audition.ComponentGroup" id="rackMix" powered="true">
@@ -506,7 +628,7 @@
             <parameter index="0" name="volume" parameterValue="1"/>
             <parameter index="1" name="static gain" parameterValue="1"/>
           </component>
-          <component componentGuid="dac4384d-32ba-4f98-87d9-203e2384e9b1" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+          <component componentGuid="8ac20cb0-3ce7-48b4-b70b-09976f72fb6d" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
             <parameter index="0" parameterValue="0"/>
             <parameter index="1" name="mute" parameterValue="0"/>
           </component>
@@ -522,7 +644,7 @@
             <channel index="1" sourceIndex="1"/>
           </channelMap>
         </audioClip>
-        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="1791872" fileID="1" hue="-1" id="2" lockedInTime="false" looped="false" name="Radio turning on sound effect 44100 1" offline="false" select="false" sourceInPoint="0" sourceOutPoint="131241" startPoint="1660631" zOrder="2">
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="1817873" fileID="2" hue="-1" id="2" lockedInTime="false" looped="false" name="Radio turning on sound effect 44100 1" offline="false" select="false" sourceInPoint="0" sourceOutPoint="131241" startPoint="1686632" zOrder="2">
           <properties properties="{&quot;BasicAdjustmentsProperty&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;AdjustmentMode&quot;:{&quot;type&quot;:&quot;UTF8String&quot;,&quot;value&quot;:&quot;ambience&quot;},&quot;ClipType&quot;:{&quot;type&quot;:&quot;std::int32_t&quot;,&quot;value&quot;:5},&quot;PresetGuid&quot;:{&quot;type&quot;:&quot;UTF8String&quot;,&quot;value&quot;:&quot;b3526c89-21a6-48b6-bb5e-7f323a45a206&quot;},&quot;SoundEffectsSection&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Enabled&quot;:{&quot;type&quot;:&quot;bool&quot;,&quot;value&quot;:true},&quot;Reverb&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;3&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Value&quot;:{&quot;type&quot;:&quot;float&quot;,&quot;value&quot;:1}}}}}}},&quot;StereoWidthSection&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Enabled&quot;:{&quot;type&quot;:&quot;bool&quot;,&quot;value&quot;:true}}},&quot;VolumeSection&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Enabled&quot;:{&quot;type&quot;:&quot;bool&quot;,&quot;value&quot;:true},&quot;Gain&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;2&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Value&quot;:{&quot;type&quot;:&quot;float&quot;,&quot;value&quot;:-5}}},&quot;Enabled&quot;:{&quot;type&quot;:&quot;bool&quot;,&quot;value&quot;:true},&quot;UUID&quot;:{&quot;type&quot;:&quot;UTF8String&quot;,&quot;value&quot;:&quot;fdea8aa9-a6a8-461d-9ce5-995a93675c38&quot;}}}}}}}}"/>
           <effectsRack preFader="true">
             <component componentGuid="055812aa-9848-4f55-abee-2321704c3a48" componentID="Audition.ComponentGroup" id="rackMix" powered="true">
@@ -554,7 +676,7 @@
             <parameter index="0" name="volume" parameterValue="1"/>
             <parameter index="1" name="static gain" parameterValue="1"/>
           </component>
-          <component componentGuid="9652c896-2e92-430c-9de7-8768aceb4f9f" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+          <component componentGuid="78f92150-a2b8-42d1-acf5-c431dd7a8bbb" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
             <parameter index="0" parameterValue="0"/>
             <parameter index="1" name="mute" parameterValue="0"/>
           </component>
@@ -571,7 +693,7 @@
           </channelMap>
         </audioClip>
       </audioTrack>
-      <audioTrack automationLaneOpenState="false" id="10003" index="3" select="false" visible="true">
+      <audioTrack automationLaneOpenState="false" id="10003" index="3" select="true" visible="true">
         <trackParameters trackHeight="134" trackHue="51" trackMinimized="false">
           <name>Faixa 3</name>
         </trackParameters>
@@ -654,7 +776,7 @@
           </component>
         </trackAudioParameters>
         <editParameter parameterIndex="0" slotIndex="4294967280"/>
-        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="1715661" fileID="2" hue="-1" id="0" lockedInTime="false" looped="false" name="Radio Static - Sound Effect (1)" offline="false" select="false" sourceInPoint="141014" sourceOutPoint="1628517" startPoint="228158" zOrder="0">
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="1715661" fileID="3" hue="-1" id="0" lockedInTime="false" looped="false" name="Radio Static - Sound Effect (1)" offline="false" select="true" sourceInPoint="141014" sourceOutPoint="1628517" startPoint="228158" zOrder="0">
           <properties properties="{&quot;BasicAdjustmentsProperty&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;AdjustmentMode&quot;:{&quot;type&quot;:&quot;UTF8String&quot;,&quot;value&quot;:&quot;ambience&quot;},&quot;ClipType&quot;:{&quot;type&quot;:&quot;std::int32_t&quot;,&quot;value&quot;:5},&quot;PresetGuid&quot;:{&quot;type&quot;:&quot;UTF8String&quot;,&quot;value&quot;:&quot;b3526c89-21a6-48b6-bb5e-7f323a45a206&quot;},&quot;SoundEffectsSection&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Enabled&quot;:{&quot;type&quot;:&quot;bool&quot;,&quot;value&quot;:true},&quot;Reverb&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;3&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Value&quot;:{&quot;type&quot;:&quot;float&quot;,&quot;value&quot;:1}}}}}}},&quot;StereoWidthSection&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Enabled&quot;:{&quot;type&quot;:&quot;bool&quot;,&quot;value&quot;:true}}},&quot;VolumeSection&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Enabled&quot;:{&quot;type&quot;:&quot;bool&quot;,&quot;value&quot;:true},&quot;Gain&quot;:{&quot;type&quot;:&quot;tree::any&quot;,&quot;value&quot;:{&quot;Enabled&quot;:{&quot;type&quot;:&quot;bool&quot;,&quot;value&quot;:true},&quot;UUID&quot;:{&quot;type&quot;:&quot;UTF8String&quot;,&quot;value&quot;:&quot;e556a7ad-b436-45e9-85ee-a4a2d991234c&quot;}}}}}}}}"/>
           <effectsRack preFader="true">
             <component componentGuid="58ad94bf-7dbb-4c58-a110-ca4b45eac87c" componentID="Audition.ComponentGroup" id="rackMix" powered="true">
@@ -686,7 +808,7 @@
             <parameter index="0" name="volume" parameterValue="1"/>
             <parameter index="1" name="static gain" parameterValue="1"/>
           </component>
-          <component componentGuid="096b43c0-9909-4dff-a002-484e3a7f267b" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+          <component componentGuid="f0745f69-4fdd-4822-8b2f-01d4ea90cd2d" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
             <parameter index="0" parameterValue="0"/>
             <parameter index="1" name="mute" parameterValue="0"/>
           </component>
@@ -839,7 +961,7 @@
             <parameter index="0" name="volume" parameterValue="0.2743675708770751953125"/>
             <parameter index="1" name="static gain" parameterValue="1"/>
           </component>
-          <component componentGuid="c0548a4b-261c-4b5c-a5f7-376a98979ded" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+          <component componentGuid="fb6bdb40-cc78-490c-a980-a524daa3b3e6" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
             <parameter index="0" parameterValue="0"/>
             <parameter index="1" name="mute" parameterValue="0"/>
           </component>
@@ -856,7 +978,7 @@
           </channelMap>
         </audioClip>
       </audioTrack>
-      <audioTrack automationLaneOpenState="false" id="10005" index="5" select="true" visible="true">
+      <audioTrack automationLaneOpenState="false" id="10005" index="5" select="false" visible="true">
         <trackParameters trackHeight="134" trackHue="294" trackMinimized="false">
           <name>Faixa 5</name>
         </trackParameters>
@@ -939,7 +1061,7 @@
           </component>
         </trackAudioParameters>
         <editParameter parameterIndex="0" slotIndex="4294967280"/>
-        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="571391" fileID="6" hue="-1" id="0" lockedInTime="false" looped="false" name="Walking Barefoot - Sound Effect" offline="false" select="true" sourceInPoint="0" sourceOutPoint="322708" startPoint="248683" zOrder="3">
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="571391" fileID="5" hue="-1" id="0" lockedInTime="false" looped="false" name="Walking Barefoot - Sound Effect" offline="false" select="false" sourceInPoint="0" sourceOutPoint="322708" startPoint="248683" zOrder="1">
           <effectsRack preFader="true">
             <component componentGuid="f62f79a2-dff0-4c65-bef7-43678f9b401e" componentID="Audition.ComponentGroup" id="rackMix" powered="true">
               <parameter index="0" parameterValue="0"/>
@@ -992,7 +1114,7 @@
             <parameter index="0" name="volume" parameterValue="1.49528408050537109375"/>
             <parameter index="1" name="static gain" parameterValue="1"/>
           </component>
-          <component componentGuid="5fb5ddca-12b0-41ed-a5b5-d4ce6841cd3b" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+          <component componentGuid="c4f10f68-5593-46b3-8618-4faffb579eae" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
             <parameter index="0" parameterValue="0"/>
             <parameter index="1" name="mute" parameterValue="0"/>
           </component>
@@ -1008,7 +1130,7 @@
             <channel index="1" sourceIndex="1"/>
           </channelMap>
         </audioClip>
-        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="1775789" fileID="5" hue="-1" id="1" lockedInTime="false" looped="false" name="ShockWave Effect  Impact Sound" offline="false" select="false" sourceInPoint="0" sourceOutPoint="452736" startPoint="1323053" zOrder="0">
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="1775789" fileID="6" hue="-1" id="1" lockedInTime="false" looped="false" name="ShockWave Effect  Impact Sound" offline="false" select="false" sourceInPoint="0" sourceOutPoint="452736" startPoint="1323053" zOrder="0">
           <effectsRack preFader="true">
             <component componentGuid="7befefd5-e040-4b77-a4b0-468b0f95c871" componentID="Audition.ComponentGroup" id="rackMix" powered="true">
               <parameter index="0" parameterValue="0"/>
@@ -1074,7 +1196,7 @@
             </parameter>
             <parameter index="1" name="static gain" parameterValue="1"/>
           </component>
-          <component componentGuid="c7b110a7-4e96-4e79-a16e-1882ecec65ea" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+          <component componentGuid="9e37a933-e00a-419e-b220-07a762400d7a" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
             <parameter index="0" parameterValue="0"/>
             <parameter index="1" name="mute" parameterValue="0"/>
           </component>
@@ -1174,7 +1296,7 @@
           </component>
         </trackAudioParameters>
         <editParameter parameterIndex="0" slotIndex="4294967280"/>
-        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="1" endPoint="876347" fileID="3" hue="-1" id="0" lockedInTime="false" looped="false" name="SCP-015-IT sounds" offline="false" select="false" sourceInPoint="0" sourceOutPoint="876347" startPoint="0" zOrder="0">
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="1" endPoint="876347" fileID="7" hue="-1" id="0" lockedInTime="false" looped="false" name="SCP-015-IT sounds" offline="false" select="false" sourceInPoint="0" sourceOutPoint="876347" startPoint="0" zOrder="0">
           <effectsRack preFader="true">
             <component componentGuid="fa3edac7-b984-4a45-8b07-488bbf9ca34d" componentID="Audition.ComponentGroup" id="rackMix" powered="true">
               <parameter index="0" parameterValue="0"/>
@@ -1232,7 +1354,7 @@
             </parameter>
             <parameter index="1" name="static gain" parameterValue="1"/>
           </component>
-          <component componentGuid="d0a53c94-b82e-43bc-ac0b-8ff35ed75f3a" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+          <component componentGuid="c419bb3e-9f4d-46bc-a57d-247eec547573" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
             <parameter index="0" parameterValue="0"/>
             <parameter index="1" name="mute" parameterValue="0"/>
           </component>
@@ -1248,7 +1370,7 @@
             <channel index="1" sourceIndex="1"/>
           </channelMap>
         </audioClip>
-        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="0" crossFadeTailClipID="-1" endPoint="1644937" fileID="3" hue="-1" id="1" lockedInTime="false" looped="false" name="SCP-015-IT sounds" offline="false" select="false" sourceInPoint="1491840" sourceOutPoint="2266647" startPoint="870130" zOrder="1">
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="0" crossFadeTailClipID="-1" endPoint="1644937" fileID="7" hue="-1" id="1" lockedInTime="false" looped="false" name="SCP-015-IT sounds" offline="false" select="false" sourceInPoint="1491840" sourceOutPoint="2266647" startPoint="870130" zOrder="1">
           <effectsRack preFader="true">
             <component componentGuid="ef592c39-0199-45c2-8765-1a9a8b8cd46c" componentID="Audition.ComponentGroup" id="rackMix" powered="true">
               <parameter index="0" parameterValue="0"/>
@@ -1315,7 +1437,7 @@
             </parameter>
             <parameter index="1" name="static gain" parameterValue="1"/>
           </component>
-          <component componentGuid="019f203f-088e-4b45-93d5-14612fb03a7f" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+          <component componentGuid="7cdc67d8-eeed-49da-9414-6a70280d8e2a" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
             <parameter index="0" parameterValue="0"/>
             <parameter index="1" name="mute" parameterValue="0"/>
           </component>
@@ -1401,9 +1523,9 @@
         <editParameter parameterIndex="0" slotIndex="4294967280"/>
       </masterTrack>
     </tracks>
-    <sessionState ctiPosition="324574" smpteStart="0">
-      <selectionState selectionDuration="0" selectionStart="324574"/>
-      <viewState horizontalViewDuration="1323000" horizontalViewStart="1750" trackControlsWidth="224" verticalScrollOffset="-120"/>
+    <sessionState ctiPosition="68561" smpteStart="0">
+      <selectionState selectionDuration="0" selectionStart="68561"/>
+      <viewState horizontalViewDuration="1323000" horizontalViewStart="643" trackControlsWidth="224" verticalScrollOffset="0"/>
       <timeFormatState beatsPerBar="4" beatsPerMinute="120" customFrameRate="12" linkToDefaultTimeSettings="true" noteLength="4" subdivisions="16" timeCodeDropFrame="false" timeCodeFrameRate="30" timeCodeNTSC="false" timeFormat="timeFormatDecimal"/>
       <mixingOptionState defaultPanModeLogarithmic="false" panPower="-3" playOverlappingClips="false"/>
     </sessionState>
@@ -1418,9 +1540,9 @@
             xmlns:xmpDM="http://ns.adobe.com/xmp/1.0/DynamicMedia/">
          <xmp:CreatorTool>Adobe Audition 22.0 (Windows)</xmp:CreatorTool>
          <xmp:CreateDate>2022-06-18T08:48:39-03:00</xmp:CreateDate>
-         <xmp:MetadataDate>2022-06-21T11:58:43-03:00</xmp:MetadataDate>
-         <xmp:ModifyDate>2022-06-21T11:58:43-03:00</xmp:ModifyDate>
-         <xmpMM:InstanceID>xmp.iid:3996bd29-a656-c04f-93e6-8dad6f501d25</xmpMM:InstanceID>
+         <xmp:MetadataDate>2022-06-25T20:49:38-03:00</xmp:MetadataDate>
+         <xmp:ModifyDate>2022-06-25T20:49:38-03:00</xmp:ModifyDate>
+         <xmpMM:InstanceID>xmp.iid:17c2c460-a686-f241-ab3f-82b00c094a38</xmpMM:InstanceID>
          <xmpMM:DocumentID>xmp.did:6c87e273-d82d-d345-bf12-eca3e66d212f</xmpMM:DocumentID>
          <xmpMM:OriginalDocumentID>xmp.did:6c87e273-d82d-d345-bf12-eca3e66d212f</xmpMM:OriginalDocumentID>
          <xmpMM:History>
@@ -1457,6 +1579,48 @@
                   <stEvt:action>saved</stEvt:action>
                   <stEvt:instanceID>xmp.iid:3996bd29-a656-c04f-93e6-8dad6f501d25</stEvt:instanceID>
                   <stEvt:when>2022-06-21T11:58:43-03:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.0 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:055c263b-7137-3b49-99c5-4b49b19cde47</stEvt:instanceID>
+                  <stEvt:when>2022-06-24T14:52:20-03:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.0 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:5b7a1a68-bf4e-6e42-8b66-3d5c388b26d1</stEvt:instanceID>
+                  <stEvt:when>2022-06-24T14:52:20-03:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.0 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:3975248b-aa66-0247-84cf-c32f13788c34</stEvt:instanceID>
+                  <stEvt:when>2022-06-24T14:52:43-03:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.0 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:108e8ddf-fc20-1840-851a-2e4a119b1e69</stEvt:instanceID>
+                  <stEvt:when>2022-06-24T14:52:43-03:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.0 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:b346d4b8-0992-9041-88c0-caf1947773c2</stEvt:instanceID>
+                  <stEvt:when>2022-06-25T20:49:38-03:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.0 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:17c2c460-a686-f241-ab3f-82b00c094a38</stEvt:instanceID>
+                  <stEvt:when>2022-06-25T20:49:38-03:00</stEvt:when>
                   <stEvt:softwareAgent>Adobe Audition 22.0 (Windows)</stEvt:softwareAgent>
                   <stEvt:changed>/</stEvt:changed>
                </rdf:li>
@@ -1600,12 +1764,13 @@
 
   <files>
     <file absolutePath="C:\Users\samue\OneDrive\Área de Trabalho\VersãoFinal\Segmento6\FUGIR\FUGIR\Conformed Files\Ato1Per6Esc2E 44100 1.wav" id="0" importerPrivateSettings="Compression:0:0;LargeFileSupport:0:0;SampleType:0:1;" mediaHandler="AmioWav" relativePath="Conformed Files/Ato1Per6Esc2E 44100 1.wav"/>
-    <file absolutePath="C:\Users\samue\OneDrive\Área de Trabalho\VersãoFinal\Segmento6\FUGIR\FUGIR\Conformed Files\Radio turning on sound effect 44100 1.wav" id="1" importerPrivateSettings="Compression:0:0;LargeFileSupport:0:0;SampleType:0:1;" mediaHandler="AmioWav" relativePath="Conformed Files/Radio turning on sound effect 44100 1.wav"/>
-    <file absolutePath="C:\Users\samue\OneDrive\Área de Trabalho\VersãoFinal\Segmento6\FUGIR\FUGIR\Arquivos importados\Radio Static - Sound Effect (1).mp3" id="2" importerPrivateSettings="BitsPerSecond:0:192000;CompressionQuality:0:4;CompressionType:0:0;Encoder:0:1181239072;" mediaHandler="AmioMP3" relativePath="Arquivos importados/Radio Static - Sound Effect (1).mp3"/>
-    <file absolutePath="C:\Users\samue\OneDrive\Área de Trabalho\VersãoFinal\Segmento6\FUGIR\FUGIR\Arquivos importados\SCP-015-IT sounds.mp3" id="3" importerPrivateSettings="BitsPerSecond:0:192000;CompressionQuality:0:4;CompressionType:0:0;Encoder:0:1181239072;" mediaHandler="AmioMP3" relativePath="Arquivos importados/SCP-015-IT sounds.mp3"/>
+    <file absolutePath="C:\Users\samue\OneDrive\Área de Trabalho\VersãoFinal\Segmento6\FUGIR\FUGIR\Conformed Files\FUGIR 44100 1.wav" id="1" importerPrivateSettings="Compression:0:0;LargeFileSupport:0:0;SampleType:0:1;" mediaHandler="AmioWav" relativePath="Conformed Files/FUGIR 44100 1.wav"/>
+    <file absolutePath="C:\Users\samue\OneDrive\Área de Trabalho\VersãoFinal\Segmento6\FUGIR\FUGIR\Conformed Files\Radio turning on sound effect 44100 1.wav" id="2" importerPrivateSettings="Compression:0:0;LargeFileSupport:0:0;SampleType:0:1;" mediaHandler="AmioWav" relativePath="Conformed Files/Radio turning on sound effect 44100 1.wav"/>
+    <file absolutePath="C:\Users\samue\OneDrive\Área de Trabalho\VersãoFinal\Segmento6\FUGIR\FUGIR\Arquivos importados\Radio Static - Sound Effect (1).mp3" id="3" importerPrivateSettings="BitsPerSecond:0:192000;CompressionQuality:0:4;CompressionType:0:0;Encoder:0:1181239072;" mediaHandler="AmioMP3" relativePath="Arquivos importados/Radio Static - Sound Effect (1).mp3"/>
     <file absolutePath="C:\Users\samue\OneDrive\Área de Trabalho\VersãoFinal\Segmento6\FUGIR\FUGIR\Arquivos importados\closing door sound effect.mp3" id="4" importerPrivateSettings="BitsPerSecond:0:192000;CompressionQuality:0:4;CompressionType:0:0;Encoder:0:1181239072;" mediaHandler="AmioMP3" relativePath="Arquivos importados/closing door sound effect.mp3"/>
-    <file absolutePath="C:\Users\samue\OneDrive\Área de Trabalho\VersãoFinal\Segmento6\FUGIR\FUGIR\Arquivos importados\ShockWave Effect  Impact Sound.mp3" id="5" importerPrivateSettings="BitsPerSecond:0:192000;CompressionQuality:0:4;CompressionType:0:0;Encoder:0:1181239072;" mediaHandler="AmioMP3" relativePath="Arquivos importados/ShockWave Effect  Impact Sound.mp3"/>
-    <file absolutePath="C:\Users\samue\OneDrive\Área de Trabalho\VersãoFinal\Segmento6\FUGIR\FUGIR\Arquivos importados\Walking Barefoot - Sound Effect.mp3" id="6" importerPrivateSettings="BitsPerSecond:0:192000;CompressionQuality:0:4;CompressionType:0:0;Encoder:0:1181239072;" mediaHandler="AmioMP3" relativePath="Arquivos importados/Walking Barefoot - Sound Effect.mp3"/>
+    <file absolutePath="C:\Users\samue\OneDrive\Área de Trabalho\VersãoFinal\Segmento6\FUGIR\FUGIR\Arquivos importados\Walking Barefoot - Sound Effect.mp3" id="5" importerPrivateSettings="BitsPerSecond:0:192000;CompressionQuality:0:4;CompressionType:0:0;Encoder:0:1181239072;" mediaHandler="AmioMP3" relativePath="Arquivos importados/Walking Barefoot - Sound Effect.mp3"/>
+    <file absolutePath="C:\Users\samue\OneDrive\Área de Trabalho\VersãoFinal\Segmento6\FUGIR\FUGIR\Arquivos importados\ShockWave Effect  Impact Sound.mp3" id="6" importerPrivateSettings="BitsPerSecond:0:192000;CompressionQuality:0:4;CompressionType:0:0;Encoder:0:1181239072;" mediaHandler="AmioMP3" relativePath="Arquivos importados/ShockWave Effect  Impact Sound.mp3"/>
+    <file absolutePath="C:\Users\samue\OneDrive\Área de Trabalho\VersãoFinal\Segmento6\FUGIR\FUGIR\Arquivos importados\SCP-015-IT sounds.mp3" id="7" importerPrivateSettings="BitsPerSecond:0:192000;CompressionQuality:0:4;CompressionType:0:0;Encoder:0:1181239072;" mediaHandler="AmioMP3" relativePath="Arquivos importados/SCP-015-IT sounds.mp3"/>
   </files>
 
   <audioDevice inputID="22222222-2222-2222-2222-22222222" outputID="11111111-1111-1111-1111-11111111">
