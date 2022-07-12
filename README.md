@@ -17,3 +17,5 @@ ou use o QRCode:
 ## Esse repositório
 
 Esse é um dos repositórios do constribuintes para o desenvolvimento do projeto. 
+
+O jogo foi desenvolvido na plataforma Unity em C#
